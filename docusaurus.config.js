@@ -1,11 +1,13 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Блог _AMD_',
+  tagline: 'Блог _AMD_',
+  url: 'https://duco.amd-nick.me',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'AMD-NICK', // Usually your GitHub org/user name.
+  projectName: 'docusaurustest', // Usually your repo name.
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
   themeConfig: {
     navbar: {
       title: 'My Site',
@@ -22,7 +24,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/AMD-NICK/docusaurustest',
           label: 'GitHub',
           position: 'right',
         },
@@ -75,7 +77,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Блог @amd_nick, Built with Docusaurus.`,
     },
   },
   presets: [
@@ -86,13 +88,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/AMD-NICK/docusaurustest/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/AMD-NICK/docusaurustest/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
