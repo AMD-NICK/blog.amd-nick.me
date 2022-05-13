@@ -66,10 +66,24 @@ const config = {
 						label: 'Кодоштуки',
 					},
 					{
-						href: "https://github.com/AMD-NICK/",
+						href: "https://www.instagram.com/amd_nick",
 						position: "right",
-						className: "header-github-link",
-						"aria-label": "GitHub",
+						label: "📷 Instagram",
+					},
+					{
+						href: "https://vk.com/amd_nick",
+						position: "right",
+						label: "👥 VK",
+					},
+					{
+						href: "https://t.me/amd_nick",
+						position: "right",
+						label: "💬 Telegram",
+					},
+					{
+						href: "https://github.com/AMD-NICK",
+						position: "right",
+						label: "🐙 GitHub",
 					},
 				],
 			},
