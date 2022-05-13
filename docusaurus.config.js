@@ -6,8 +6,6 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'AMD-NICK', // Usually your GitHub org/user name.
   projectName: 'docusaurustest', // Usually your repo name.
-  onBrokenLinks: "warn",
-  onBrokenMarkdownLinks: "warn",
   themeConfig: {
     navbar: {
       title: 'My Site',
