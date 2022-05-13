@@ -1,5 +1,5 @@
 ---
-slug: /
+slug: huindex
 title: Main blog page
 authors:
   name: Gao Wei
