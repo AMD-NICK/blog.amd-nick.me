@@ -1,6 +1,6 @@
 ---
 slug: /
-title: Главная страница
+title: My Blog
 ---
 
 # Tutorial Intro
