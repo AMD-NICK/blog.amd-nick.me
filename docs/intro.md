@@ -1,6 +1,6 @@
 ---
-title: Главная страница
 slug: /
+title: Главная страница
 ---
 
 # Tutorial Intro
