@@ -36,11 +36,14 @@ const config = {
 					sidebarPath: require.resolve('./sidebars.js'),
 					routeBasePath: "/",
 					// Remove this to remove the "edit this page" links.
-					editUrl:
-						'https://github.com/AMD-NICK/docusaurustest/tree/main/',
+					editUrl: 'https://github.com/AMD-NICK/docusaurustest/tree/main/',
 				},
 
-				blog: false,
+				blog: {
+					showReadingTime: true,
+					// Remove this to remove the "edit this page" links.
+					// editUrl: 'https://github.com/AMD-NICK/docusaurustest/tree/main/',
+				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
 				},
@@ -58,7 +61,7 @@ const config = {
 					src: 'img/logo.svg',
 				},
 				items: [
-					// {to: '/blog', label: 'Blog', position: 'left'},
+					{to: '/blog', label: 'Блог', position: 'left'},
 					{
 						type: 'doc',
 						docId: 'intro',
