@@ -10,7 +10,7 @@ const config = {
   tagline: 'Блог _AMD_',
   url: 'https://duco.amd-nick.me',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
