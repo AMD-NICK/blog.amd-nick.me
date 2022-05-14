@@ -1,7 +1,7 @@
 ---
 slug: main
 title: Main blog post
-authors: endi
+authors: amd
 tags: [hola, docusaurus]
 ---
 
