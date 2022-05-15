@@ -16,9 +16,12 @@ tags:
 
 Корутины не ускоряют работу ваших функций. Они "размазывают" их и выполняют шагами. **Словно это повторяющийся таймер**
 
-<!--kg-card-end: markdown--><!--kg-card-begin: html-->
+<!--kg-card-end: markdown-->
+<!--kg-card-begin: html-->
 
-<script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script><!--kg-card-end: html--><!--kg-card-begin: markdown-->
+<script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<!--kg-card-end: html-->
+<!--kg-card-begin: markdown-->
 # Примеры использования
 
 - Есть 100 игроков и каждому нужно просчитать баланс. Допустим, это тяжелая функция
