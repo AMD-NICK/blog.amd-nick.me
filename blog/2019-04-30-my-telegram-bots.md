@@ -2,6 +2,7 @@
 layout: post
 title: Мои Telegram боты
 date: '2019-04-30 10:37:00'
+slug: telegram-bot
 tags:
 - programming
 - review
