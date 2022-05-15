@@ -1,6 +1,6 @@
 ---
 title: Monero. Linux CPU mining (Ubuntu)
-date: '2018-09-04 10:37:00'
+date: '2018-09-04 13:37:00'
 slug: monero-linux-cpu-mining
 ---
 

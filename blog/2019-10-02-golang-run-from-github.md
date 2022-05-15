@@ -1,6 +1,6 @@
 ---
 title: Запускаем GoLang приложение с GitHub
-date: '2019-10-02 10:37:00'
+date: '2019-10-02 13:37:00'
 slug: golang-run-from-github
 tags:
 - notes

@@ -1,6 +1,6 @@
 ---
 title: О человеческой глупости
-date: '2017-07-12 15:10:00'
+date: '2017-07-12 18:10:00'
 slug: chelovecheskaya-glupost
 tags:
 - garrys-mod

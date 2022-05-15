@@ -1,6 +1,6 @@
 ---
 title: CPU Майнинг KOTO через Docker
-date: '2018-07-13 18:41:52'
+date: '2018-07-13 21:41:00'
 slug: koto-mining-docker
 tags:
 - notes

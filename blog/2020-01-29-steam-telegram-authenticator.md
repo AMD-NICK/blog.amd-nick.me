@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Steam Authenticator через бот в Telegram
-date: '2020-01-29 10:37:00'
+date: '2020-01-29 13:37:00'
 slug: steam-telegram-authenticator
 tags:
 - programming

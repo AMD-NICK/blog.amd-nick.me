@@ -1,6 +1,6 @@
 ---
 title: Каким должен быть Garry's Mod проект. История trigon.im
-date: '2016-11-30 11:24:00'
+date: '2016-11-30 14:24:00'
 slug: how-to-create-gmod-server
 tags:
 - garrys-mod

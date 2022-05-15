@@ -1,6 +1,6 @@
 ---
 title: Переключение раскладки в Elementary OS по Alt + Shift
-date: '2015-04-13 19:39:00'
+date: '2015-04-13 22:39:00'
 slug: alt-shift-elementary
 tags:
 - notes

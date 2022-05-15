@@ -1,6 +1,6 @@
 ---
 title: 'Плюсы и минусы #monobank. Личный опыт'
-date: '2018-07-24 11:12:57'
+date: '2018-07-24 14:12:00'
 slug: monobank-features
 tags:
 - life

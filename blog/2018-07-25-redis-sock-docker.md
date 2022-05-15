@@ -1,6 +1,6 @@
 ---
 title: Как вытащить redis.sock с Docker
-date: '2018-07-25 13:25:25'
+date: '2018-07-25 16:25:00'
 slug: redis-sock-docker
 tags:
 - notes

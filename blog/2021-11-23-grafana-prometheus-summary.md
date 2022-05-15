@@ -1,6 +1,6 @@
 ---
 title: Grafana + Prometheus. Заметки новичка
-date: '2021-11-23 10:37:00'
+date: '2021-11-23 13:37:00'
 slug: grafana-prometheus-summary
 tags:
 - notes

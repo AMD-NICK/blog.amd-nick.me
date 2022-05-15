@@ -1,6 +1,6 @@
 ---
 title: OpenVPN сервер через Docker
-date: '2018-07-15 10:37:00'
+date: '2018-07-15 13:37:00'
 slug: docker-openvpn-server
 tags:
 - notes

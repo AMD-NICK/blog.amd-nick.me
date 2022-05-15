@@ -1,6 +1,6 @@
 ---
 title: Переключение раскладки KDE на Alt + Shift
-date: '2014-11-05 09:30:00'
+date: '2014-11-05 12:30:00'
 slug: smena-raskladki-kde-alt-shift
 tags:
 - notes

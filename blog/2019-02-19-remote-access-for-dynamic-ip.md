@@ -1,6 +1,6 @@
 ---
 title: Хостим приложения с динамическим IP
-date: '2019-02-19 10:37:00'
+date: '2019-02-19 13:37:00'
 slug: remote-access-for-dynamic-ip
 ---
 

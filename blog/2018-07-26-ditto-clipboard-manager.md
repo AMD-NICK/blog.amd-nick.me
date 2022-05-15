@@ -1,6 +1,6 @@
 ---
 title: Ditto - лучший clipboard manager
-date: '2018-07-26 10:37:00'
+date: '2018-07-26 13:37:00'
 slug: ditto-clipboard-manager
 tags:
 - notes

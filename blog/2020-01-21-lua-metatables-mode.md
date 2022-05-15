@@ -1,6 +1,6 @@
 ---
 title: LUA Как использовать __mode в метатаблицах
-date: '2020-01-21 10:37:00'
+date: '2020-01-21 13:37:00'
 slug: lua-metatables-mode
 tags:
 - programming

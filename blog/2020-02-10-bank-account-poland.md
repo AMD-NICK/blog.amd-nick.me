@@ -1,6 +1,6 @@
 ---
 title: Открытие банковского счета в Польше. Bank Millennium
-date: '2020-02-10 10:37:00'
+date: '2020-02-10 13:37:00'
 slug: bank-account-poland
 tags:
 - life
