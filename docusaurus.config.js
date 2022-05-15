@@ -42,6 +42,8 @@ const config = {
 				blog: {
 					showReadingTime: true,
 					routeBasePath: '/',
+					blogSidebarCount: 'ALL',
+					blogSidebarTitle: 'Другие посты',
 					// Remove this to remove the "edit this page" links.
 					// editUrl: 'https://github.com/AMD-NICK/docusaurustest/tree/main/',
 				},
