@@ -97,7 +97,7 @@ const config = {
 			},
 			algolia: {
 				appId: "KCG1D3KM0H",
-				apiKey: "5cd76a6ffa17bb7b576003f818139788",
+				apiKey: "41160d53edbd5216eecfe06fa1ac37be",
 				indexName: "duco",
 			},
 		}),
