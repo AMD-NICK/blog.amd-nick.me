@@ -81,7 +81,7 @@ tags:
 
 Еще часок возни и есть финалочка
 
-<figure class="kg-card kg-image-card kg-width-full"><img src="https://s3.blog.amd-nick.me/2019/11/image-10.png" class="kg-image" alt loading="lazy"></figure><figure class="kg-card kg-image-card kg-width-full"><img src="https://s3.blog.amd-nick.me/2019/11/image-11.png" class="kg-image" alt loading="lazy"></img></figure>
+<figure class="kg-card kg-image-card kg-width-full"><img src="https://s3.blog.amd-nick.me/2019/11/image-10.png" class="kg-image" alt loading="lazy"></figure></img><figure class="kg-card kg-image-card kg-width-full"><img src="https://s3.blog.amd-nick.me/2019/11/image-11.png" class="kg-image" alt loading="lazy"></img></figure>
 
 Отправляем и ждем, потому что рабочий день давно закончился
 

@@ -24,7 +24,7 @@ poll.gmod.app — микросервис, который может выступ
 <span class="kg-bookmark-author">Блог _AMD_</span><span class="kg-bookmark-publisher">_AMD_</span>
 </div>
 </div>
-<div class="kg-bookmark-thumbnail"><img src="https://s3.blog.amd-nick.me/2021/11/poll-gmod-app-docs.jpg" alt=""></div></a></img></figure>
+<div class="kg-bookmark-thumbnail"><img src="https://s3.blog.amd-nick.me/2021/11/poll-gmod-app-docs.jpg" alt=""></img></div></a></figure>
 ## Применения
 
 > Главная цель – сделать единую точку, куда все сервисы будут присылать апдейты, а клиенты забирать все сразу с одного единственного места. **Проще выполнить один GET запрос вместо 20 разных**.

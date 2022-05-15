@@ -23,7 +23,7 @@ tags:
 <span class="kg-bookmark-author">Блог _AMD_</span><span class="kg-bookmark-publisher">_AMD_</span>
 </div>
 </div>
-<div class="kg-bookmark-thumbnail"><img src="https://s3.blog.amd-nick.me/2021/03/long-polling-instead-webhook.jpg" alt=""></div></a></img></figure>
+<div class="kg-bookmark-thumbnail"><img src="https://s3.blog.amd-nick.me/2021/03/long-polling-instead-webhook.jpg" alt=""></img></div></a></figure>
 # API
 
 Мы хотели сделать максимально простой API, поэтому нет никаких токенов, паролей, регистраций. Все данные считаются публичными (любой может прочесть или записать), но вы можете спрятать их, подставив вместо SECRET\_UID что-то вроде пароля или токена.
@@ -48,7 +48,7 @@ POST запрос может принять любые параметры. Он�
 <div class="kg-bookmark-title">IGS/akupol_sv.lua at main · GM-DONATE/IGS</div>
 <div class="kg-bookmark-description">🛍 Внутриигровой магазин для Garry’s Mod https://git.io/IGS - IGS/akupol_sv.lua at main · GM-DONATE/IGS</div>
 <div class="kg-bookmark-metadata">
-<img class="kg-bookmark-icon" src="https://github.com/fluidicon.png" alt=""><span class="kg-bookmark-author">GitHub</span><span class="kg-bookmark-publisher">GM-DONATE</span>
+<img class="kg-bookmark-icon" src="https://github.com/fluidicon.png" alt=""><span class="kg-bookmark-author">GitHub</span><span class="kg-bookmark-publisher">GM-DONATE</span></img>
 </div>
-</div></img>
-<div class="kg-bookmark-thumbnail"><img src="https://opengraph.githubassets.com/50151420544baf6e3cec164638c8a9dea5d33bfeda6d3a439f64c3050ac00dc5/GM-DONATE/IGS" alt=""></div></a></img></figure>
+</div>
+<div class="kg-bookmark-thumbnail"><img src="https://opengraph.githubassets.com/50151420544baf6e3cec164638c8a9dea5d33bfeda6d3a439f64c3050ac00dc5/GM-DONATE/IGS" alt=""></img></div></a></figure>
