@@ -2,7 +2,7 @@
 layout: post
 title: Как мы gm-donate.ru открывали
 date: '2018-01-23 15:39:00'
-slug: gmdonate-how-to
+slug: kak-mi-delali-avtodonat-dlya-garrys-mod
 tags:
 - gm-donate
 - garrys-mod
