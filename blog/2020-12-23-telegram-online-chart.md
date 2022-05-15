@@ -125,6 +125,6 @@ tags:
 <div class="kg-bookmark-description">Simple telegram online spy logger bot. Contribute to Forichok/TelegramOnlineSpy development by creating an account on GitHub.</div>
 <div class="kg-bookmark-metadata">
 <img class="kg-bookmark-icon" src="https://github.githubassets.com/favicons/favicon.svg"><span class="kg-bookmark-author">GitHub</span><span class="kg-bookmark-publisher">Forichok</span>
+</img></div>
 </div>
-</div></img>
-<div class="kg-bookmark-thumbnail"><img src="https://opengraph.githubassets.com/8b090998f94350cb31f0436aef962e5dfd2496a631a1eb8bdeaba38880e171a1/Forichok/TelegramOnlineSpy"></div></a></img></figure>
+<div class="kg-bookmark-thumbnail"><img src="https://opengraph.githubassets.com/8b090998f94350cb31f0436aef962e5dfd2496a631a1eb8bdeaba38880e171a1/Forichok/TelegramOnlineSpy"></img></div></a></figure>
