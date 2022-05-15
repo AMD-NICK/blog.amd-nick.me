@@ -86,6 +86,7 @@ const config = {
 						position: "right",
 						label: "💬 Telegram",
 					},
+					{
 						href: "https://github.com/AMD-NICK",
 						position: "right",
 						className: "header-github-link",
