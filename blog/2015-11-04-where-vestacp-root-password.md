@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Найти и изменить root пароль VestaCP
 date: '2015-11-04 09:15:00'
+slug: where-vestacp-root-password
 tags:
 - notes
 ---

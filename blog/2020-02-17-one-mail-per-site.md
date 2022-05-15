@@ -1,7 +1,7 @@
 ---
-layout: post
 title: 1 почта - 1 сайт. Лайфхак с почтой на домене
 date: '2020-02-17 10:37:00'
+slug: one-mail-per-site
 tags:
 - notes
 ---

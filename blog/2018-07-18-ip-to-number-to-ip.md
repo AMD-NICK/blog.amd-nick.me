@@ -1,7 +1,7 @@
 ---
-layout: post
 title: ip to int и int to ip на пальцах
 date: '2018-07-18 10:31:14'
+slug: ip-to-number-to-ip
 tags:
 - programming
 ---

@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Мой MacBook – приложения и конфиг
 date: '2022-05-12 10:37:00'
+slug: macbook-apps-and-settings
 tags:
 - review
 ---

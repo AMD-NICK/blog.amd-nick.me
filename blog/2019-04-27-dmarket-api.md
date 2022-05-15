@@ -1,7 +1,7 @@
 ---
-layout: post
 title: DMarket API - практика и замечания
 date: '2019-04-27 10:37:00'
+slug: dmarket-api
 tags:
 - programming
 ---

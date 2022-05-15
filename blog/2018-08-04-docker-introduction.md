@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Просто о сложном - Docker
 date: '2018-08-04 10:37:00'
+slug: docker-introduction
 tags:
 - docker
 ---

@@ -1,7 +1,7 @@
 ---
-layout: post
 title: 'Плюсы и минусы #monobank. Личный опыт'
 date: '2018-07-24 11:12:57'
+slug: monobank-features
 tags:
 - life
 ---

@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Ненавижу тех, кто пишет много сообщений подряд
 date: '2016-10-16 11:15:00'
+slug: hate-flood
 tags:
 - notes
 - life

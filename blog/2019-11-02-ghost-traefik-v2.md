@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Ghost + Traefik v2 = блог с автообновлением SSL
 date: '2019-11-02 10:37:00'
+slug: ghost-traefik-v2
 tags:
 - docker
 - soft

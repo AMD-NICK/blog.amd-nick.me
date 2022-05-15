@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Создание надежного и легкозапоминающегося пароля
 date: '2016-04-01 18:53:00'
+slug: prostoy-no-slozniy-parol-lifehack
 tags:
 - notes
 ---

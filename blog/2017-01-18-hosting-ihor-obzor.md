@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Честный обзор хостинга ihor.ru (Marosnet). Кратко - говно
 date: '2017-01-18 12:13:00'
+slug: hosting-ihor-obzor
 tags:
 - hosting
 - review

@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Как сделать Raspberry Pi доступным из интернета
 date: '2019-02-18 10:37:00'
+slug: raspberry-remote-ssh
 ---
 
 # Задача

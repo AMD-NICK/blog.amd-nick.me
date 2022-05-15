@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Как вытащить redis.sock с Docker
 date: '2018-07-25 13:25:25'
+slug: redis-sock-docker
 tags:
 - notes
 - docker

@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Точное время сообщения в Telegram
 date: '2018-08-16 10:37:00'
+slug: exact-time-telegram
 tags:
 - notes
 ---

@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Какую клаву взять? Мои клавы
 date: '2019-11-30 10:37:00'
+slug: my-keyboards
 tags:
 - notes
 ---

@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Настройка git для работы через ssh
 date: '2021-11-02 10:37:00'
+slug: git-ssh-setup
 tags:
 - notes
 ---

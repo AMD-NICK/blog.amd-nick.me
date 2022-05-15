@@ -1,7 +1,7 @@
 ---
-layout: post
 title: CPU Майнинг KOTO через Docker
 date: '2018-07-13 18:41:52'
+slug: koto-mining-docker
 tags:
 - notes
 - docker

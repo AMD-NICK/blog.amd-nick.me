@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Понимаем корутины в Lua
 date: '2019-08-14 10:37:00'
+slug: lua-coroutines
 tags:
 - programming
 ---

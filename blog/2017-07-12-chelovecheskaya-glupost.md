@@ -1,7 +1,7 @@
 ---
-layout: post
 title: О человеческой глупости
 date: '2017-07-12 15:10:00'
+slug: chelovecheskaya-glupost
 tags:
 - garrys-mod
 - gm-donate

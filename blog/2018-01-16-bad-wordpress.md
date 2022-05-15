@@ -1,7 +1,7 @@
 ---
-layout: post
 title: WordPress отбивает желание писать
 date: '2018-01-16 15:35:00'
+slug: bad-wordpress
 tags:
 - notes
 - life
