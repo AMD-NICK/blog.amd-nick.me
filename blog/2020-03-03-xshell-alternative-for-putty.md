@@ -10,7 +10,7 @@ tags:
 
 putty - наверное, самый популярный SSH клиент, о котором знает каждый, кто имел дело с SSH. Но он не единственный бесплатный и несколько лет назад я полностью перешел с него на [xShell](https://www.netsarang.com/ru/xshell/), получив ряд преимуществ
 
-<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2020/03/xshell-sessions.png" class="kg-image" alt loading="lazy"><figcaption>Окно управления сессиями в xShell</figcaption></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2020/03/xshell-sessions.png" class="kg-image" alt loading="lazy"><figcaption>Окно управления сессиями в xShell</figcaption></img></figure>
 
 xShell как и Putty бесплатен (для домашнего использования), но в отличии от Putty имеет вкладки, удобное управление сессиями, возможность ресайзить рабочие пространства, в нем есть сниппеты, современный дизайн, управление паролями, и супергибкая настойка всего и вся. Пожалуй, единственное, чего в нем не хватает это кроссплатформенности.
 

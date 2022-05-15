@@ -14,21 +14,21 @@ tags:
 
 Мембранка, тихоня, заливалась, засыпалась, но не ломалась. Фото не мое, моя уже в говно, но исправно работает. Подсветки хватает. Сейчас с нее пишу
 
-<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2019/11/image-13.png" class="kg-image" alt loading="lazy"></figure>
+<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2019/11/image-13.png" class="kg-image" alt loading="lazy"></img></figure>
 ## Tesoro Lobera Spectrum
 
 [Покупал тут](https://hard.rozetka.com.ua/tesoro_lobera_spectrum_rgb_g5sfl_brown_switch/p8375830/) в августе 2016 за 2999 грн
 
 Мой любимец: непревзойденная подсветка, куча настроек, макросы, хуякросы, но ушла в утиль из-за громкого хода клавиш. Бонус: [vk.com/wall-95087107\_17266](https://vk.com/wall-95087107_17266) (тут просил подсказать ей замену)
 
-<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2019/11/image-14.png" class="kg-image" alt loading="lazy"></figure>
+<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2019/11/image-14.png" class="kg-image" alt loading="lazy"></img></figure>
 ## Trust GXT 890 Cada
 
 [Покупал тут](https://hard.rozetka.com.ua/trust_gxt_890_21808/p23581116/) в августе 2018 за 1898 грн
 
 Макросы, минимализм, хорошая регулируемая подсветка, легко чистить. Только опять громкая, ибо механика, хотя и тише, чем Tesoro. Используется дома
 
-<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2019/11/image-15.png" class="kg-image" alt loading="lazy"></figure>
+<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2019/11/image-15.png" class="kg-image" alt loading="lazy"></img></figure>
 * * *
 
 Пришел к выводу, что мне нужна мембранная клава, т.к. грохот не для меня. Думал брать какую-то из этих:

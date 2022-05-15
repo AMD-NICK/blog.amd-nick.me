@@ -21,7 +21,7 @@ Open Source [репозиторий](https://github.com/GM-DONATE/IGS) на GitH
 > Вкратце: проще для пользователей и разработчиков
 
 - Пользователям не нужно учиться, как создавать коллекцию в Steam Workshop, добавить в нее ваш/наш аддон, а потом еще привязать к серверу. Для установки достаточно 1 файла с http.Fetch + RunString
-- Разработчикам с базовым знанием Git проще релизить аддон, потому что упаковать его в .gma, затем загружать в Workshop после малейших фиксов это геморрой. Разработчики на Linux/Mac без установленного Steam и вовсе не смогут залить обновление в Workshop, зато с этим способом это простой `git tag NAME -am "Hello world!"` + `git push origin NAME` 
+- Разработчикам с базовым знанием Git проще релизить аддон, потому что упаковать его в .gma, затем загружать в Workshop после малейших фиксов это геморрой. Разработчики на Linux/Mac без установленного Steam и вовсе не смогут залить обновление в Workshop, зато с этим способом это простой `git tag NAME -am "Hello world!"` + `git push origin NAME`
 - Когда Workshop лежит или на аддон кто-то пожаловался или вдруг Steam изменил API (а мы сталкивались со всем из перечисленного), то страдают все. Аддон становится недоступным и отключается на всех серверах
 - Пользователи могут сделать форк репозитория, делать свои модификации IGS и использовать свои версии вместо нашего репозитория. Код открытый, любой может его изменить или убедиться в безопасности
 - Возможность поддержки сразу нескольких версий скрипта без необходимости выкладывать новый аддон в воркшоп, когда происходят изменения без обратной совместимости. Каждый обновляется как хочет и когда хочет
@@ -41,7 +41,7 @@ Open Source [репозиторий](https://github.com/GM-DONATE/IGS) на GitH
 
 Нельзя просто так взять и залить какой-нить zip в интернет, скачать его с гмода, распаковать там и запустить, как ни в чем не бывало. Ну вообще-то кое-что подобное сделать можно, но не суть. Нельзя короче.
 
-<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2021/04/image.png" class="kg-image" alt loading="lazy" width="1400" height="788"></figure>
+<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2021/04/image.png" class="kg-image" alt loading="lazy" width="1400" height="788"></img></figure>
 
 Исходный код содержится во множестве файлов, включая отдельные энтити, требующие особых правил загрузки и сторонние модули, которых нет в репозитории, но которые все равно должны подгружаться скачанным кодом.
 
@@ -65,7 +65,7 @@ Open Source [репозиторий](https://github.com/GM-DONATE/IGS) на GitH
 
 Нужно написать программку ([вот](https://github.com/GM-DONATE/IGS/blob/f69d14219b68d616f5ffeca3943aab22e10528e2/luapack/main.lua)), которая упакует ваш аддон в 1 файл. В нашем случае это superfile.txt. На момент написания поста это происходит так: скрипт рекурсивно "бегает" по папке `addons/igs-core`, читает каждый файл, превращает его в одну строку, а затем добавляет в superfile.txt путь к этому файлу и его содержимое.
 
-<figure class="kg-card kg-image-card kg-width-wide kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2021/04/image-1.png" class="kg-image" alt loading="lazy" width="1402" height="466"><figcaption>Частичка superfile.txt. Много строк типа <code>igs/init.lua print("я очечко")</code></figcaption></figure>
+<figure class="kg-card kg-image-card kg-width-wide kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2021/04/image-1.png" class="kg-image" alt loading="lazy" width="1402" height="466"><figcaption>Частичка superfile.txt. Много строк типа <code>igs/init.lua print("я очечко")</code></figcaption></img></figure>
 ### Автоматизатор + Доставщик
 
 GitHub будет сам [делать superfile.txt](https://github.com/GM-DONATE/IGS/blob/f42c833b443557fbca6e3506603d2093d6a6c5f8/.github/workflows/release_superfile.yml#L22-L25) и создавать с ним [релиз](https://github.com/GM-DONATE/IGS/releases) каждый раз, когда будет создаваться новый `git tag`.

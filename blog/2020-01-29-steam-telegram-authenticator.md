@@ -11,7 +11,7 @@ tags:
 
 В свое время, чтобы не устанавливать лишний софт себе на телефон, я использовал [Steam Desktop Authenticator](https://github.com/Jessecar96/SteamDesktopAuthenticator), который позволял авторизироваться через коды, а также отправлять трейд офферы, но с покупкой MacBook жизнь немного усложнилась – вышеуказанное приложение только для Windows.
 
-<figure class="kg-card kg-image-card kg-width-full"><img src="https://s3.blog.amd-nick.me/2020/01/image.png" class="kg-image" alt loading="lazy"></figure>
+<figure class="kg-card kg-image-card kg-width-full"><img src="https://s3.blog.amd-nick.me/2020/01/image.png" class="kg-image" alt loading="lazy"></img></figure>
 
 Тогда я нашел плагин для Chrome, который умел генерировать коды авторизации, хотя и не умел подтверждать офферы, что не было для меня проблемой. Все было бы хорошо, если бы я мог пользоваться им с телефона, а это было довольно востребовано в моем случае. Кстати, плагин, похоже, удалили с Chrome Store.
 
@@ -23,7 +23,7 @@ tags:
 
 [Мой примитивный бот](https://t.me/steam_code_bot), который только то и умеет, что генерировать коды авторизации. Трейды я все еще подтверждаю через комп, но это так редко мне нужно, что я не чувствую ни капли дискомфорта.
 
-<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2020/01/image-1.png" class="kg-image" alt loading="lazy"></figure>
+<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2020/01/image-1.png" class="kg-image" alt loading="lazy"></img></figure>
 
 Бот написан на Lua, работает прямо на моем [Garry's Mod](https://vk.com/trigonim) сервере, требует исключительно `shared_secret` и больше ничего. Ни паролей, ни даже стим логина. Даже если я захочу украсть чей-то `shared_secret` – я все равно не буду знать чей он, не говоря уже о пароле и никак не смогу его применить.
 

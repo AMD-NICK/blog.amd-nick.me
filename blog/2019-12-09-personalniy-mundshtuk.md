@@ -29,14 +29,14 @@ tags:
 
 Поигравшись пару часов со шрифтами и вариантами, начинаю приходить к выводу, что ни я, ни дизайнер не вытягиваем то, что хотелось бы видеть
 
-<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image.png" class="kg-image" alt loading="lazy"><figcaption>Промежуточный набросок дизайна кусочка ленты</figcaption></figure><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image-1.png" class="kg-image" alt loading="lazy"><figcaption>Еще один</figcaption></figure><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image-2.png" class="kg-image" alt loading="lazy"><figcaption>И еще</figcaption></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image.png" class="kg-image" alt loading="lazy"><figcaption>Промежуточный набросок дизайна кусочка ленты</figcaption></img></figure><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image-1.png" class="kg-image" alt loading="lazy"><figcaption>Еще один</figcaption></img></figure><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image-2.png" class="kg-image" alt loading="lazy"><figcaption>И еще</figcaption></img></figure>
 * * *
 
 ## Разработка дизайна со сторонним дизайнером
 
 Недавно познакомился с человеком, с которым вместе работаем над интерфейсом одного приложения и я предложил ему попробовать сделать ленточку.
 
-<figure class="kg-card kg-image-card kg-width-full kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image-3.png" class="kg-image" alt loading="lazy"><figcaption>Через час получаю такой вариант</figcaption></figure>
+<figure class="kg-card kg-image-card kg-width-full kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image-3.png" class="kg-image" alt loading="lazy"><figcaption>Через час получаю такой вариант</figcaption></img></figure>
 
 Сказать, что я удивлен - ничего не сказать. Мне это нравится. Но вот они, снова **нюансы** , которые мы поздно учли (некоторые из них узнавались хождением по граблям и заранее не озвучивались):
 
@@ -45,19 +45,19 @@ tags:
 - Нет гарантии, что надрез будет точно в месте окончания/начала рисунка
 - С лентой 25мм макет нужно делать 30мм и делать 3мм отступы сверху и снизу - в тех зонах печать может сместиться и кусочек лого мог бы не попасть на ленту
 - 3 сантиметра одного конца ленты оборачивают 1 см с другого конца
-<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image-4.png" class="kg-image" alt loading="lazy"><figcaption>Те самые 3 и 1 см</figcaption></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image-4.png" class="kg-image" alt loading="lazy"><figcaption>Те самые 3 и 1 см</figcaption></img></figure>
 
 Как работает печатающий станок я могу только догадываться, но я предположил, что там что-то вроде того, что было в газетах – круглая штука бесконечно долго наносит краску на полоски, тоесть лучше, если картинка будет являться текстурой. Дизайнер постарался над еще одним вариантом:
 
-<figure class="kg-card kg-image-card kg-width-full kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image-5.png" class="kg-image" alt loading="lazy"><figcaption>При склейке верхней части получалась аккуратная вторая</figcaption></figure>
+<figure class="kg-card kg-image-card kg-width-full kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image-5.png" class="kg-image" alt loading="lazy"><figcaption>При склейке верхней части получалась аккуратная вторая</figcaption></img></figure>
 
 И тут, когда уже все казалось бы, готово, жди печать и радуйся, с фабрики (на всякий случай подмечу, что персоналка тут не при чем) присылают такой вариант, потому что PS им не подходил, **нужен был CorelDraw** и они его перерисовали:
 
-<figure class="kg-card kg-image-card kg-width-wide kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image-6.png" class="kg-image" alt loading="lazy"><figcaption>Иконки peace становятся черными пятнами, блики превращаются в пятна, специально подобранный цвет фона изменяется</figcaption></figure>
+<figure class="kg-card kg-image-card kg-width-wide kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image-6.png" class="kg-image" alt loading="lazy"><figcaption>Иконки peace становятся черными пятнами, блики превращаются в пятна, специально подобранный цвет фона изменяется</figcaption></img></figure>
 
 А за ним немного исправляют положение. Или не исправляют:
 
-<figure class="kg-card kg-image-card kg-width-wide"><img src="https://s3.blog.amd-nick.me/2019/11/image-7.png" class="kg-image" alt loading="lazy"></figure>
+<figure class="kg-card kg-image-card kg-width-wide"><img src="https://s3.blog.amd-nick.me/2019/11/image-7.png" class="kg-image" alt loading="lazy"></img></figure>
 
 Может быть, сам бы я и принял это, внеся некоторые правки, но я знаю, что..
 
@@ -69,7 +69,7 @@ tags:
 
 Я расстроен, уже ничего не хочу. Просто молчу, пока не получаю сообщение от персоналки))
 
-<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image-8.png" class="kg-image" alt loading="lazy"><figcaption>Это сообщение почему-то подняло мне настроение)</figcaption></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image-8.png" class="kg-image" alt loading="lazy"><figcaption>Это сообщение почему-то подняло мне настроение)</figcaption></img></figure>
 
 В ходе поиска решений проблемы, договариваемся, что мы пришлем отдельно фон и лого в векторе. Вроде все просто, поехали
 
@@ -77,11 +77,11 @@ tags:
 
 Тут нам говорят, что фон должен быть ровно 90 см. Не просто текстурой с возможностью бесконечно продлять, а именно 90 см. При этом мы даже не знаем, чем должен являться этот фон: png, jpeg, psd или и вовсе svg каким-нибудь. Известно лишь, что лого должны быть в формате "кривых". Никогда такого не слышал, рабочий день закончился, так что и спросить не у кого - будет svg.
 
-<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image-9.png" class="kg-image" alt loading="lazy"><figcaption>Часть объяснений дизайнеру</figcaption></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/11/image-9.png" class="kg-image" alt loading="lazy"><figcaption>Часть объяснений дизайнеру</figcaption></img></figure>
 
 Еще часок возни и есть финалочка
 
-<figure class="kg-card kg-image-card kg-width-full"><img src="https://s3.blog.amd-nick.me/2019/11/image-10.png" class="kg-image" alt loading="lazy"></figure><figure class="kg-card kg-image-card kg-width-full"><img src="https://s3.blog.amd-nick.me/2019/11/image-11.png" class="kg-image" alt loading="lazy"></figure>
+<figure class="kg-card kg-image-card kg-width-full"><img src="https://s3.blog.amd-nick.me/2019/11/image-10.png" class="kg-image" alt loading="lazy"></figure><figure class="kg-card kg-image-card kg-width-full"><img src="https://s3.blog.amd-nick.me/2019/11/image-11.png" class="kg-image" alt loading="lazy"></img></figure>
 
 Отправляем и ждем, потому что рабочий день давно закончился
 
@@ -89,7 +89,7 @@ tags:
 
 На фабрике снова не приняли финальный вариант, а сил спорить и переделывать уже просто не было. Они снова прислали свою версию и я одобрил, просто попросив выровнять надписи
 
-<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2019/12/IMG_9044-1.jpg" class="kg-image" alt loading="lazy"></figure>
+<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2019/12/IMG_9044-1.jpg" class="kg-image" alt loading="lazy"></img></figure>
 
 Надписи не выровняли, градиент убрали, иконок Peace осталось 2-3 штуки на всю ленту. Тем не менее, результат стоил эмоций при вручении подарка :)
 

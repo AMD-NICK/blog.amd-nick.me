@@ -7,7 +7,7 @@ tags:
 - notes
 ---
 
-<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2021/11/image-4.png" class="kg-image" alt loading="lazy" width="809" height="427"><figcaption>Табы для отступов, пробелы для выравниваний</figcaption></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2021/11/image-4.png" class="kg-image" alt loading="lazy" width="809" height="427"><figcaption>Табы для отступов, пробелы для выравниваний</figcaption></img></figure>
 
 Вопрос сдвига кода при изменении ширины таба в редакторе решен
 

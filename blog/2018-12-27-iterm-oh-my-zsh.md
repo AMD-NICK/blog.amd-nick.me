@@ -4,7 +4,7 @@ title: Oh My Zsh - Улучшаем iTerm
 date: '2018-12-27 10:37:00'
 ---
 
-<figure class="kg-card kg-image-card"><img src=" __GHOST_URL__ /content/images/2018/12/image-1.png" class="kg-image" alt loading="lazy"></figure>
+<figure class="kg-card kg-image-card"><img src=" __GHOST_URL__ /content/images/2018/12/image-1.png" class="kg-image" alt loading="lazy"></img></figure>
 
 Эта инструкция написана для Mac'овского iTerm, но при помощи несложных манипуляций может применяться и в других термианалах в т.ч. на удаленных Linux машинах
 
@@ -54,7 +54,7 @@ date: '2018-12-27 10:37:00'
 Открываем настройки iTerm \> Profiles \> Default \> Command: /bin/zsh
 При перезапуске iTerm у вас уже будет Zsh (пока что ненастроенный)
 
-<figure class="kg-card kg-image-card kg-card-hascaption"><img src=" __GHOST_URL__ /content/images/2018/12/image-2.png" class="kg-image" alt loading="lazy"><figcaption>command &gt; /bin/zsh</figcaption></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src=" __GHOST_URL__ /content/images/2018/12/image-2.png" class="kg-image" alt loading="lazy"><figcaption>command &gt; /bin/zsh</figcaption></img></figure>
 
 <!--kg-card-begin: markdown-->
 # Установка цветовой схемы iTerm
@@ -133,7 +133,7 @@ date: '2018-12-27 10:37:00'
     source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
-<!--kg-card-end: markdown--><figure class="kg-card kg-image-card"><img src=" __GHOST_URL__ /content/images/2018/12/image-3.png" class="kg-image" alt loading="lazy"></figure><!--kg-card-begin: markdown-->
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card"><img src=" __GHOST_URL__ /content/images/2018/12/image-3.png" class="kg-image" alt loading="lazy"></img></figure><!--kg-card-begin: markdown-->
 # Ссылки
 
 - [Англоязычная статья, которая меня вдохновила](https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c) | [Вторая](https://medium.com/swlh/power-up-your-terminal-using-oh-my-zsh-iterm2-c5a03f73a9fb) | [Третья](https://dev.to/aspittel/my-terminal-setup-iterm2--zsh--30lm)

@@ -8,7 +8,7 @@ tags:
 
 Когда-то я рассказывал о своем способе [создания сложного и запоминающегося пароля]( __GHOST_URL__ /prostoy-no-slozniy-parol-lifehack/), но он все равно недостаточно надежен для использования повсеместно. В идеале пароль от каждого сайта должен отличаться и совсем не обязательно его помнить, чтобы быстро и удобно авторизироваться.
 
-<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/02/kak-ne-nuzno-hranit-paroli.png" class="kg-image" alt loading="lazy"><figcaption>Многие хранят пароли в открытом виде и "управляют" ими простой копи-пастой</figcaption></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2019/02/kak-ne-nuzno-hranit-paroli.png" class="kg-image" alt loading="lazy"><figcaption>Многие хранят пароли в открытом виде и "управляют" ими простой копи-пастой</figcaption></img></figure>
 
 [KeePass](https://keepass.info) - это бесплатный менеджер паролей. Возможно, вы слышали про 1Password или LastPass. Вот это вот оно, но бесплатно и безопаснее. Благодаря KeePass я использую на каждом сайте и сервере разные пароли большой длины и не беспокоюсь о том, что когда-то увижу свои данные в [HaveIBeenPwned](https://haveibeenpwned.com/Passwords) или подобных сервисах.
 

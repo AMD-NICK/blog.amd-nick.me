@@ -22,12 +22,12 @@ tags:
 
 У почты для домена есть настройка сбора писем с несуществующих ящиков. Например, если у вас создан только _kek@lol.com_ и _heh@lol.com_, а письмо пришло на _mda@lol.com_, то оно попадет на какой-нибудь _collector@lol.com_ или что угодно другое, что вы укажете в качестве адреса для сбора "потерянных" писем
 
-<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2020/02/image.png" class="kg-image" alt loading="lazy"></figure>
+<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2020/02/image.png" class="kg-image" alt loading="lazy"></img></figure>
 ## Проблема
 
 Сегодня друг прислал мне забавное сообщение от "Следователя"
 
-<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2020/02/image-1.png" class="kg-image" alt loading="lazy"></figure>
+<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2020/02/image-1.png" class="kg-image" alt loading="lazy"></img></figure>
 
 Внутри классическая схема вымогательства денег: "у нас есть пруфы, что вы мудак и мы вас накажем, если вы не заплатите бетховены".
 

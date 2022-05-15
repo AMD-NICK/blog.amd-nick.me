@@ -29,7 +29,7 @@ tags:
 # Сбор данных
 <!--kg-card-begin: markdown-->
 
-Копируем репозиторий для отслеживания  
+Копируем репозиторий для отслеживания
 `git clone https://github.com/gentoo-root/telegram-tracker.git`
 
 <!--kg-card-end: markdown-->
@@ -47,8 +47,8 @@ tags:
 
 <!--kg-card-begin: markdown-->
 
-В главной папке репозитория выполняем  
-`python3 -m track '+380991234567'`  
+В главной папке репозитория выполняем
+`python3 -m track '+380991234567'`
 Вас попросит ввести еще свой номер, код подтверждения из Telegram и пароль двухфакторной аутенфикации (если включена). Я параноик, поэтому делал все с фейкового аккаунта
 
 <!--kg-card-end: markdown--><!--kg-card-begin: markdown-->
@@ -66,20 +66,20 @@ tags:
 
 Я гавнокодер и [написал](https://gist.github.com/AMD-NICK/ea2bd29d9db782fadd456865e4ea770c) свой конвертер на модифицированном Lua прямо внутри одной игры, так что он будет тебе мало чем полезен, но держи:
 
-<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2020/12/image.png" class="kg-image" alt loading="lazy"><figcaption>чем воняет?</figcaption></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2020/12/image.png" class="kg-image" alt loading="lazy"><figcaption>чем воняет?</figcaption></img></figure>
 
 Выглядеть сформированный лог будет вот так:
 
-<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2020/12/image-1.png" class="kg-image" alt loading="lazy"></figure>
+<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2020/12/image-1.png" class="kg-image" alt loading="lazy"></img></figure>
 # Визуализация
 
 Заходим на [сайт GDS](https://datastudio.google.com), создаем новый отчет, выбираем источник данных "Загрузка файла", заливаем наш csv файл
 
-<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2020/12/image-2.png" class="kg-image" alt loading="lazy"></figure>
+<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2020/12/image-2.png" class="kg-image" alt loading="lazy"></img></figure>
 
 Дальше добавляем диаграммы
 
-<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2020/12/image-3.png" class="kg-image" alt loading="lazy"></figure>
+<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2020/12/image-3.png" class="kg-image" alt loading="lazy"></img></figure>
 
 Настраиваем
 
@@ -107,7 +107,7 @@ tags:
 
 Получится вот такое чудо:
 
-<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2020/12/image-4.png" class="kg-image" alt loading="lazy"><figcaption>Сортировку по часам приходится делать в режиме просмотра отчета вручную, потому что для самой таблицы почему-то у меня не получается прописать сортировку по полю даты </figcaption></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2020/12/image-4.png" class="kg-image" alt loading="lazy"><figcaption>Сортировку по часам приходится делать в режиме просмотра отчета вручную, потому что для самой таблицы почему-то у меня не получается прописать сортировку по полю даты </figcaption></img></figure>
 # Улучшения
 
 В моем варианте анализируется один единственный день. В GDS можно добавить выборку по датам и сделать, чтобы анализировать можно было хоть целый месяц, хоть отдельные дни
@@ -126,5 +126,5 @@ tags:
 <div class="kg-bookmark-metadata">
 <img class="kg-bookmark-icon" src="https://github.githubassets.com/favicons/favicon.svg"><span class="kg-bookmark-author">GitHub</span><span class="kg-bookmark-publisher">Forichok</span>
 </div>
-</div>
-<div class="kg-bookmark-thumbnail"><img src="https://opengraph.githubassets.com/8b090998f94350cb31f0436aef962e5dfd2496a631a1eb8bdeaba38880e171a1/Forichok/TelegramOnlineSpy"></div></a></figure>
+</div></img>
+<div class="kg-bookmark-thumbnail"><img src="https://opengraph.githubassets.com/8b090998f94350cb31f0436aef962e5dfd2496a631a1eb8bdeaba38880e171a1/Forichok/TelegramOnlineSpy"></div></a></img></figure>

@@ -26,11 +26,11 @@ Bibar можно настроить почти под любой функцио�
 
 В preferences iTerm создайте новый профиль, где command будет $$ и в url schemes выбран ssh.
 
-<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2020/01/image-3.png" class="kg-image" alt loading="lazy"><figcaption>Новый профиль + command + url scheme</figcaption></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2020/01/image-3.png" class="kg-image" alt loading="lazy"><figcaption>Новый профиль + command + url scheme</figcaption></img></figure>
 
 Теперь нужно сделать, чтобы `ssh://` ссылки обрабатывались в iTerm. Для этого в меню приложения сделайте iTerm терминалом по умолчанию или просто нажмите `^+shift+cmd+\`
 
-<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2020/01/image-4.png" class="kg-image" alt loading="lazy"><figcaption>Третья кнопка снизу (^+shift+cmd+\)</figcaption></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2020/01/image-4.png" class="kg-image" alt loading="lazy"><figcaption>Третья кнопка снизу (^+shift+cmd+\)</figcaption></img></figure>
 
 И последнее. Установите крошечный SSH [плагин](https://getbitbar.com/plugins/Network/ssh.sh) для bitbar, откройте его и измените так, чтобы в строке с awk получилось `awk  '/^Host / && !/*/ {print $2" | bash=/usr/bin/open param1=ssh://"$2" terminal=false"}' ~/.ssh/config`
 
