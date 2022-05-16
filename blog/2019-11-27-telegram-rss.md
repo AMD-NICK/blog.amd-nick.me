@@ -18,7 +18,7 @@ tags:
 
 Вкратце - [vk.com/rurage](https://vk.com/rurage). Сюда временно дублируется содержание моего [t.me/tlitter](https://t.me/tlitter) канала
 
-<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2019/11/image-12.png" class="kg-image" alt loading="lazy"></img></figure>
+![](https://s3.blog.amd-nick.me/2019/11/image-12.png)
 
 Я почти забросил VK после начала активного использования телеги и даже [написал бота](my-telegram-bots), который присылает мне в телегу посты с групп ВК. Но и у меня самого остается несколько групп в VK, в которые мне самому нужно писать. Чтобы не писать в Telegram и группу одновременно, я сделал, чтобы VK сам забирал новые посты с Telegram
 
