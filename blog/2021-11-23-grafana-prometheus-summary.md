@@ -31,7 +31,7 @@ Prometheus это сборщик метрик, инструмент аналит
 
 ### Экспортеры
 
-Другие экспортеры и порты, на которых они работают:  
+Другие экспортеры и порты, на которых они работают:
 [https://github.com/prometheus/prometheus/wiki/Default-port-allocations](https://github.com/prometheus/prometheus/wiki/Default-port-allocations)
 
 Экспортеры получают данные сервиса и отформатировав, возвращают их через http в plain text. Ничего не хранят и не кешируют (только берут, форматируют и отдают)
@@ -44,21 +44,21 @@ Prometheus это сборщик метрик, инструмент аналит
 
 * * *
 
-Презентация про сбор метрик с MySQL, которая вводила меня в курс дела:  
+Презентация про сбор метрик с MySQL, которая вводила меня в курс дела:
 [https://www.slideshare.net/roidelapluie/monitoring-mysql-with-prometheus-grafana-and-percona-dashbaords](https://www.slideshare.net/roidelapluie/monitoring-mysql-with-prometheus-grafana-and-percona-dashbaords)
 
 Из нее кратко:
 
-- Метрики должны:  
-- определить недоступность сервера раньше юзера  
-- понимать, что произошло  
+- Метрики должны:
+- определить недоступность сервера раньше юзера
+- понимать, что произошло
 - предвидеть (это)
-- Сбор метрик:  
-- Нужно собирать как можно больше метрик  
+- Сбор метрик:
+- Нужно собирать как можно больше метрик
 - Как можно чаще (раз в 5 мин недостаточно)
-- Чем собирать:  
-- Graphite  
-- Zabbix  
+- Чем собирать:
+- Graphite
+- Zabbix
 - **Prometheus**
 
 #### Мониторинг MySQL:
@@ -77,5 +77,5 @@ prometheus + mysql exporter собирают МНОГО данных, в тч г
 
 ## На почитать:
 
-- [Удобство SSH ключей]( __GHOST_URL__ /ssh-keys/)
-- [Если используете Steam 2FA]( __GHOST_URL__ /steam-telegram-authenticator/)
+- [Удобство SSH ключей](ssh-keys)
+- [Если используете Steam 2FA](steam-telegram-authenticator)

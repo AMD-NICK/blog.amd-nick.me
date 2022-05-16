@@ -12,7 +12,9 @@ tags:
 
 ### Генерируем ключ на машине, которая будет выполнять git команды
 
-    ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/.ssh/github
+```sh
+$ ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/.ssh/github
+```
 
 ### Говорим хосту использовать наш ключ
 
@@ -20,9 +22,11 @@ tags:
 
 Создаем или редактируем `~/.ssh/config`. Прописываем следующее:
 
-    Host github.com
-       HostName github.com
-       IdentityFile ~/.ssh/github
+```
+Host github.com
+	HostName github.com
+	IdentityFile ~/.ssh/github
+```
 
 Если `~/.ssh/config` не существовал, то может потребоваться ввести `chmod 600 ~/.ssh/config`.
 
@@ -37,13 +41,14 @@ tags:
 
 Разница наглядно:
 
-    git clone git@github.com:USER_NAME/REPO_NAME.git
-    git clone https://github.com/USER_NAME/REPO_NAME.git
+```sh
+$ git clone git@github.com:USER_NAME/REPO_NAME.git
+$ git clone https://github.com/USER_NAME/REPO_NAME.git
+```
 
 # Может быть полезно:
 
-- Вот тут я писал про SSH ключи в целом. Почему они на самом деле проще, чем пароли: [https://blog.amd-nick.me/ssh-keys/]( __GHOST_URL__ /ssh-keys/)
-- Если вы на винде и используете Putty, Kitty, то это может стать хорошей заменой: [https://blog.amd-nick.me/xshell-alternative-for-putty/]( __GHOST_URL__ /xshell-alternative-for-putty/)
+- [Вот тут я писал про SSH ключи в целом](ssh-keys). Почему они на самом деле проще, чем пароли
+- Если вы на винде и используете Putty, Kitty, то [это может стать](xshell-alternative-for-putty) хорошей заменой
 
-Ну и на главной странице сайта есть другая всячина: [https://blog.amd-nick.me]( __GHOST_URL__ /)
-
+Ну и на [главной странице](/) есть другая всячина

@@ -16,7 +16,7 @@ tags:
 
 Нет ничего сложного в использовании докера. Для большинства задач нужны совсем поверхностные знания, которые можно получить, почитав всего пару статей или, еще лучше, [раздел Get started](https://docs.docker.com/get-started/) официальной документации, затем подкрепить все эти знания практикой. Например, запустить MySQL сервер + Adminer в один клик [на этой странице](https://hub.docker.com/_/mysql/). Там есть кнопочка. Но это только для начала.
 
-![A white coffee mug with “begin” written on it on a wooden table](https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ&s=19cb3f8faa546e028839b6985ee2491d)  
+![A white coffee mug with “begin” written on it on a wooden table](https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ&s=19cb3f8faa546e028839b6985ee2491d)
 <small>Photo by <a href="https://unsplash.com/@dsmacinnes?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">Danielle MacInnes</a> / <a href="https://unsplash.com/?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">Unsplash</a></small>
 
 * * *
@@ -45,8 +45,8 @@ tags:
 
 ## docker-compose.yml
 
-В докере один Dockerfile это один сервис. Если вам нужен один сервис, например, торрентокачалка или генерация LetsEncrypt сертификата, вы можете запустить его через `docker run`. Но если у вас приложение, состоящее из нескольких сервисов (PHP + Nginx + MySQL), то запускать их все по очереди длинными командами с кучей параметров было бы, как минимум, неудобно. Этот файл объединяет все в одном месте и управляется через команду `docker-compose`  
- ![docker-compose-help]( __GHOST_URL__ /content/images/2018/08/docker-compose-help.png)  
+В докере один Dockerfile это один сервис. Если вам нужен один сервис, например, торрентокачалка или генерация LetsEncrypt сертификата, вы можете запустить его через `docker run`. Но если у вас приложение, состоящее из нескольких сервисов (PHP + Nginx + MySQL), то запускать их все по очереди длинными командами с кучей параметров было бы, как минимум, неудобно. Этот файл объединяет все в одном месте и управляется через команду `docker-compose`
+ ![docker-compose-help](https://s3.blog.amd-nick.me/2018/08/docker-compose-help.png)
 Я выделил популярные команды. Они частично будут описаны ниже
 
 ## Репозиторий
@@ -84,68 +84,68 @@ tags:
 
 ### Запуск контейнера
 
-- Фоновый (Запустили и отключились detach)  
+- Фоновый (Запустили и отключились detach)
 `docker run -d mysql`
-- Со своим названием  
+- Со своим названием
 `docker run --name database mysql`
-- Этот удалится после отключения от него или выполнения задачи  
+- Этот удалится после отключения от него или выполнения задачи
 `docker run -rm ubuntu pwd`
-- Проброс порта с контейнера на хост. Слева порт на хосте (Published)  
+- Проброс порта с контейнера на хост. Слева порт на хосте (Published)
 `docker run -p 8080:80 -d nginx`
-- Остановка работающего (Данные внутри сохраняются. Запуск через start)  
+- Остановка работающего (Данные внутри сохраняются. Запуск через start)
 `docker stop NAME`
-- Удаление контейнера (Проброшенные в него файлы сохраняются)  
+- Удаление контейнера (Проброшенные в него файлы сохраняются)
 `docker rm NAME` (-f удаляет даже если контейнер запущен)
 
 ### Отладка
 
-- Подключение к терминалу контейнера  
+- Подключение к терминалу контейнера
 `docker exec -it NAME bash`
-- Посмотреть логи внутри контейнера (STDOUT, STDERR)  
+- Посмотреть логи внутри контейнера (STDOUT, STDERR)
 `docker logs -f NAME`
 
 ### Управление образами
 
-- Сборка образа контейнера на базе Dockerfile (точка в конце нужна)  
+- Сборка образа контейнера на базе Dockerfile (точка в конце нужна)
 `docker build --tag image-name .`
-- Список  
+- Список
 `docker images -a`
-- Удаление  
+- Удаление
 `docker image rm NAME` (-f force)
-- Переименование  
+- Переименование
 `docker image tag SOURCE[:TAG] TARGET[:TAG]`
 
 ### docker-compose
 
-- Создание/обновление контейнеров приложения в фоне (-d)  
+- Создание/обновление контейнеров приложения в фоне (-d)
 `docker-compose up -d APP_NAME`
-- Остановка  
+- Остановка
 `docker-compose stop`
-- Запуск остановленного приложения  
+- Запуск остановленного приложения
 `docker-compose start`
-- Остановка и удаление  
+- Остановка и удаление
 `docker-compose down`
-- Логи всех сервисов приложения  
+- Логи всех сервисов приложения
 `docker-compose logs -f`
 
 ### Другие полезности
 
-- Работающие и остановленные контейнеры  
+- Работающие и остановленные контейнеры
 `docker ps -a` (Без -a только работающие)
-- Показать данные контейнера (Тут можно найти его IP, пути к volumes и кучу другого)  
+- Показать данные контейнера (Тут можно найти его IP, пути к volumes и кучу другого)
 `docker inspect NAME`
 
 ### Чистка мусора
 
-- Удалить все остановленные контейнеры  
+- Удалить все остановленные контейнеры
 `docker rm $(docker ps -a -q)`
-- Удалить незакрепленные ни за каким контейнером volumes  
+- Удалить незакрепленные ни за каким контейнером volumes
 `docker volume rm $(docker volume ls -f dangling=true -q)`
-- Удалить неиспользуемые сети  
+- Удалить неиспользуемые сети
 `docker network prune`
-- Удалить все неиспользуемые данные  
+- Удалить все неиспользуемые данные
 `docker system prune -a`
-- Удалить контейнеры, что остановлены больше часа назад + образы, с которыми не работает ни один контейнер (продвинутый способ)  
+- Удалить контейнеры, что остановлены больше часа назад + образы, с которыми не работает ни один контейнер (продвинутый способ)
 `docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v /etc:/etc:ro spotify/docker-gc`
 
 # Вместо вывода
@@ -154,10 +154,10 @@ tags:
 
 # Ништяки
 
-![transmission-web-interface]( __GHOST_URL__ /content/images/2018/08/transmission-web-interface.png)
+![transmission-web-interface](https://s3.blog.amd-nick.me/2018/08/transmission-web-interface.png)
 
 - **Docker WEB Panel** `docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v $PWD/portainer:/data portainer/portainer` [тут русский обзор](https://dev-ops-notes.ru/docker/portainer-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-docker-%D0%B8-swarm-%D0%BF%D1%80%D0%B8-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D0%B8-web-ui/)
-- [OpenVPN сервер на Docker]( __GHOST_URL__ /docker-openvpn-server/)
+- [OpenVPN сервер на Docker](docker-openvpn-server)
 - [Garry's Mod сервер через Docker](https://github.com/AMD-NICK/docker-garrysmod-server) (мое изобретение :))
 - [Торрентокачалка](https://hub.docker.com/r/linuxserver/transmission/)
 - [Ghost](https://hub.docker.com/_/ghost/) (blog CMS на JS)
@@ -169,4 +169,3 @@ tags:
 - [Docker для Windows](https://docs.docker.com/toolbox/toolbox_install_windows/)
 - [Тьма полезной информации](https://github.com/wsargent/docker-cheat-sheet)
 - [Основные инструкции Dockerfile](https://habr.com/company/infobox/blog/240623/)
-<!--kg-card-end: markdown-->
