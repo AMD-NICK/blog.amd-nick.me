@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Webhook без веб сервера
-date: '2021-03-08 10:37:00'
+date: '2021-03-08 13:37:00'
+slug: webhook-bez-web-servera
 tags:
 - programming
 ---
@@ -17,14 +17,10 @@ poll.gmod.app — микросервис, который может выступ
 Там где вам нужно указать ссылку на вебхук, вы указываете ссылку на наш микросервис. Мы принимаем входящие сообщения, храним их у себя, а вы потом получаете их через http GET запрос
 
 ## Документация
-<figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href=" __GHOST_URL__ /poll-gmod-app-docs/"><div class="kg-bookmark-content">
-<div class="kg-bookmark-title">poll.gmod.app документация</div>
-<div class="kg-bookmark-description">Это простейший Long Polling микросервис, который выступает в качестве своеобразного WebHook сервера для POST запросов. Принятые данные можно получить с сервера по GET запросу. Рассчитан для ограниченной среды, где усложнена или отсутствует возможность поднятия Web сервера для своих вебхуков.Рекоменд…</div>
-<div class="kg-bookmark-metadata">
-<span class="kg-bookmark-author">Блог _AMD_</span><span class="kg-bookmark-publisher">_AMD_</span>
-</div>
-</div>
-<div class="kg-bookmark-thumbnail"><img src="https://s3.blog.amd-nick.me/2021/11/poll-gmod-app-docs.jpg" alt=""></img></div></a></figure>
+
+<!-- ![](https://s3.blog.amd-nick.me/2021/11/poll-gmod-app-docs.jpg) -->
+[poll.gmod.app документация](poll-gmod-app-docs)
+
 ## Применения
 
 > Главная цель – сделать единую точку, куда все сервисы будут присылать апдейты, а клиенты забирать все сразу с одного единственного места. **Проще выполнить один GET запрос вместо 20 разных**.
