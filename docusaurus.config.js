@@ -99,9 +99,9 @@ const config = {
 				darkTheme: darkCodeTheme,
 			},
 			algolia: {
-				appId: "KCG1D3KM0H",
-				apiKey: "41160d53edbd5216eecfe06fa1ac37be",
-				indexName: "duco",
+				appId: "AZAB94E4VO",
+				apiKey: "292e51da5a65ae6baf14145a3fe61897",
+				indexName: "blog",
 			},
 		}),
 };
