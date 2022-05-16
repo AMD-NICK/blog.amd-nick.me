@@ -43,5 +43,3 @@ tags:
 ![koto-litepool-stats](https://s3.blog.amd-nick.me/2018/07/koto-litepool-stats.png)
 
 Если есть несколько воркеров (aka rigs), то его имя можно указать через точку после адреса при запуске майнера: `--user ADDRESS.rigname`
-
-<!--kg-card-end: markdown-->
