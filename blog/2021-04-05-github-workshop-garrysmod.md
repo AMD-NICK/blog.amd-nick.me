@@ -1,7 +1,7 @@
 ---
-layout: post
 title: GitHub вместо Steam Workshop для Garry's Mod
-date: '2021-04-05 11:23:00'
+date: '2021-04-05 14:23:00'
+slug: github-workshop-garrysmod
 tags:
 - gm-donate
 - garrys-mod
@@ -34,14 +34,14 @@ Open Source [репозиторий](https://github.com/GM-DONATE/IGS) на GitH
 - Код после упаковки становится однострочным и если где-то возникнет ошибка, то вызывайте экстрасенсов (возможно, в будущем будет новый json упаковщик, который решит эту проблему)
 - Если на серверах есть блокираторы RunString/CompileString, то это не гуд
 - Кастомные модельки придется загружать сторонним аддоном. В веб скрипт их засунуть не получится
-- Если у вас используются .dll, то придется искать им альтернативу. Для замены пушей через socket.dll мы сделали [long polling microservice]( __GHOST_URL__ /webhook-bez-web-servera).
+- Если у вас используются .dll, то придется искать им альтернативу. Для замены пушей через socket.dll мы сделали [long polling microservice](webhook-bez-web-servera).
 - Некоторые хостинги могут блокировать запросы к GitHub
 
 ## В чем сложность?
 
 Нельзя просто так взять и залить какой-нить zip в интернет, скачать его с гмода, распаковать там и запустить, как ни в чем не бывало. Ну вообще-то кое-что подобное сделать можно, но не суть. Нельзя короче.
 
-<figure class="kg-card kg-image-card"><img src="https://s3.blog.amd-nick.me/2021/04/image.png" class="kg-image" alt loading="lazy" width="1400" height="788"></img></figure>
+![](https://s3.blog.amd-nick.me/2021/04/image.png)
 
 Исходный код содержится во множестве файлов, включая отдельные энтити, требующие особых правил загрузки и сторонние модули, которых нет в репозитории, но которые все равно должны подгружаться скачанным кодом.
 
@@ -65,12 +65,18 @@ Open Source [репозиторий](https://github.com/GM-DONATE/IGS) на GitH
 
 Нужно написать программку ([вот](https://github.com/GM-DONATE/IGS/blob/f69d14219b68d616f5ffeca3943aab22e10528e2/luapack/main.lua)), которая упакует ваш аддон в 1 файл. В нашем случае это superfile.txt. На момент написания поста это происходит так: скрипт рекурсивно "бегает" по папке `addons/igs-core`, читает каждый файл, превращает его в одну строку, а затем добавляет в superfile.txt путь к этому файлу и его содержимое.
 
-<figure class="kg-card kg-image-card kg-width-wide kg-card-hascaption"><img src="https://s3.blog.amd-nick.me/2021/04/image-1.png" class="kg-image" alt loading="lazy" width="1402" height="466"><figcaption>Частичка superfile.txt. Много строк типа <code>igs/init.lua print("я очечко")</code></figcaption></img></figure>
+![](https://s3.blog.amd-nick.me/2021/04/image-1.png)
+*Частичка superfile.txt. Много строк типа `igs/init.lua print("я очечко")`*
+
 ### Автоматизатор + Доставщик
 
 GitHub будет сам [делать superfile.txt](https://github.com/GM-DONATE/IGS/blob/f42c833b443557fbca6e3506603d2093d6a6c5f8/.github/workflows/release_superfile.yml#L22-L25) и создавать с ним [релиз](https://github.com/GM-DONATE/IGS/releases) каждый раз, когда будет создаваться новый `git tag`.
 
-> Вообще, GitHub это еще и хостинг для нашего аддона и история изменений и API для поиска и скачивания нужной версии кода и хипстерские иконки в readme и вычислительные мощности для каких угодно автоматизаций и совместная разработка и вообще GitHub это чудо света. Даже сын маминой подруги не так крут. Всем советую
+:::info
+
+Вообще, GitHub это еще и хостинг для нашего аддона и история изменений и API для поиска и скачивания нужной версии кода и хипстерские иконки в readme и вычислительные мощности для каких угодно автоматизаций и совместная разработка и вообще GitHub это чудо света. Даже сын маминой подруги не так крут. Всем советую
+
+:::
 
 Для удобства GitHub еще создаст igs-mod.zip (архив [этой папки](https://github.com/GM-DONATE/IGS/tree/main/addons/igs-modification/lua)), который владельцы серверов должны установить себе на сервер и тоже добавит его к релизу. Это позволяет легко скачать настройщик, не скачивая весь репозиторий
 
@@ -80,7 +86,9 @@ GitHub будет сам [делать superfile.txt](https://github.com/GM-DONA
 
 В самом упрощенном виде выглядит вот так:
 
-    http.Fetch("https://raw.githubusercontent.com/GM-DONATE/IGS/main/addons/igs-core/lua/autorun/l_ingameshop.lua", RunString, error)
+```lua
+http.Fetch("https://raw.githubusercontent.com/GM-DONATE/IGS/main/addons/igs-core/lua/autorun/l_ingameshop.lua", RunString, error)
+```
 
 ### Загрузчик
 
@@ -109,6 +117,6 @@ GitHub будет сам [делать superfile.txt](https://github.com/GM-DONA
 
 #### Если пост понравился, может вам понравятся и эти?
 
-- [Эффективная разработка в Garry's Mod]( __GHOST_URL__ /gmod-development)
-- [Как мы gm-donate.ru открывали]( __GHOST_URL__ /kak-mi-delali-avtodonat-dlya-garrys-mod/)
-- [Бот для генерации кодов авторизации Steam]( __GHOST_URL__ /steam-telegram-authenticator/)
+- [Эффективная разработка в Garry's Mod](gmod-development)
+- [Как мы gm-donate.ru открывали](kak-mi-delali-avtodonat-dlya-garrys-mod)
+- [Бот для генерации кодов авторизации Steam](steam-telegram-authenticator)
