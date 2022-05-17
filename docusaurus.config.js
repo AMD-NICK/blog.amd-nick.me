@@ -64,9 +64,9 @@ const config = {
 				typesenseServerConfig: {
 				  nodes: [
 					{
-					  host: 'typesense.amd-nick.me',
-					  port: 8108,
-					  protocol: 'http',
+					  host: 'fljut05r27eib9dnp-1.a1.typesense.net',
+					  port: 443,
+					  protocol: 'https',
 					},
 				  ],
 				  apiKey: 'venzbAVxiYiWpi4iBJUluWHzetQutbfr',
