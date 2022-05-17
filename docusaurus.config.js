@@ -85,7 +85,23 @@ const config = {
 					src: 'img/logo.svg',
 				},
 				items: [
-					{to: '/', label: 'Блог', position: 'left'},
+					{
+						type: 'dropdown',
+						label: '✍️ Блог',
+						position: 'left',
+						items: [
+						  {
+							label: 'Главная',
+							to: '/',
+						  },
+						  {
+							label: 'Обо мне',
+							to: 'about',
+						  },
+						  // ... more items
+						],
+					},
+					// {to: '/', label: 'Блог', position: 'left'},
 					{
 						type: 'doc',
 						docId: 'intro',
