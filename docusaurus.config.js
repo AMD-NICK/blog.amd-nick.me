@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
 	title: 'Блог _AMD_',
 	tagline: 'Всякое гиковское',
-	url: 'https://duco.amd-nick.me',
+	url: 'https://blog.amd-nick.me',
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
 	// onBrokenMarkdownLinks: 'warn',
