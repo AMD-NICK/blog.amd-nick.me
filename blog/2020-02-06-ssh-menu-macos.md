@@ -2,9 +2,14 @@
 title: SSH меню в Mac OS через bitbar и iTerm2
 date: '2020-02-06 13:37:00'
 slug: ssh-menu-macos
+image: https://s3.blog.amd-nick.me/2020/02/ssh-menu-macos.jpg
 ---
 
+![](https://s3.blog.amd-nick.me/2020/02/ssh-menu-macos.jpg)
+
 Я долго искал удобный кроссплатформенный SSH клиент для Mac OS, в котором можно было бы использовать те же конфиги, что и на Windows, но спустя всякие [Remote Desktop Manager](https://remotedesktopmanager.com/), [Royal TS](https://www.royalapps.com/ts/mac/features) и топовые клиенты так и не нашел то, что мне нужно, смирившись с мыслью о том, что придется все-таки заморачиваться и вводить данные серверов везде по отдельности.
+
+<!--truncate-->
 
 Чтобы хоть как-то упростить себе жизнь, я пробовал использовать bash алиасы, триггеры в iTerm2, пытался смириться с [shuttle](https://github.com/fitztrev/shuttle) и делал всякие прочие костыли, пока не добрался до того, что меня наконец устроило.
 
