@@ -3,6 +3,7 @@ title: Хостим приложения с динамическим IP
 date: '2019-02-19 13:37:00'
 slug: remote-access-for-dynamic-ip
 image: https://s3.blog.amd-nick.me/2019/02/duckdns-banner.png
+tags: [pi, api]
 ---
 
 ![](https://s3.blog.amd-nick.me/2019/02/duckdns-banner.png)

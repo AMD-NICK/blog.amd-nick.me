@@ -2,8 +2,7 @@
 title: Просто о сложном - Docker
 date: '2018-08-04 13:37:00'
 slug: docker-introduction
-tags:
-- docker
+tags: [docker]
 ---
 
  **Docker** — платформа для запуска приложений в изолированных контейнерах.

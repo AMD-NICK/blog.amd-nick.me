@@ -2,9 +2,7 @@
 title: Steam Authenticator через бот в Telegram
 date: '2020-01-29 13:37:00'
 slug: steam-telegram-authenticator
-tags:
-- programming
-- garrys-mod
+tags: [steam, telegram, bot]
 ---
 
 Стим любит усложнять жизнь, делая свои велосипеды и двухфакторная аутенфикация через их личное приложение - один из их "любимых" штрихов.

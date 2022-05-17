@@ -3,8 +3,7 @@ title: Нюансы при разработке дизайна и произво
 date: '2019-12-09 13:37:00'
 slug: personalniy-mundshtuk
 image: https://s3.blog.amd-nick.me/2019/12/IMG_9037.jpg
-tags:
-- life
+tags: [life, hookah, design]
 ---
 
 ![](https://s3.blog.amd-nick.me/2019/12/IMG_9037.jpg)

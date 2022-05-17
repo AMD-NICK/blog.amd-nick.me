@@ -3,9 +3,7 @@ title: Эффективная разработка в Garry's Mod
 date: '2020-03-17 13:37:00'
 slug: gmod-development
 image: https://s3.blog.amd-nick.me/2020/03/gmod-effective-development.jpg
-tags:
-- garrys-mod
-- programming
+tags: [garrysmod, lua, sublimetext, git, cyberduck, xshell, soft]
 ---
 
 ![](https://s3.blog.amd-nick.me/2020/03/gmod-effective-development.jpg)

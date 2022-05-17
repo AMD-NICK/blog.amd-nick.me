@@ -3,9 +3,7 @@ title: Ghost + Traefik v2 = блог с автообновлением SSL
 date: '2019-11-02 13:37:00'
 slug: ghost-traefik-v2
 image: https://s3.blog.amd-nick.me/2019/11/traefik-ghost-banner.jpg
-tags:
-- docker
-- soft
+tags: [docker, ghost, traefik, blog]
 ---
 
 ![](https://s3.blog.amd-nick.me/2019/11/traefik-ghost-banner.jpg)
@@ -110,5 +108,3 @@ tags:
 * * *
 
 Как-то так :) Если помог - буду рад, если вы подпишитесь на [t.me/uFeed](tg://resolve?domain=uFeed), где я вкратце пишу о том, что читаю
-
-####

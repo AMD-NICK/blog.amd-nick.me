@@ -3,8 +3,7 @@ title: KeePass - удобный и безопасный способ храни�
 date: '2019-02-12 13:37:00'
 slug: keepass-free-password-manager
 image: https://s3.blog.amd-nick.me/2019/02/keepassxc-screenshot-1.png
-tags:
-- soft
+tags: [keepass, soft]
 ---
 
 ![](https://s3.blog.amd-nick.me/2019/02/keepassxc-screenshot-1.png)

@@ -3,6 +3,7 @@ title: Oh My Zsh - Улучшаем iTerm
 date: '2018-12-27 13:37:00'
 slug: iterm-oh-my-zsh
 image: https://s3.blog.amd-nick.me/2018/12/image-1.png
+tags: [mac, soft, brew]
 ---
 
 ![](https://s3.blog.amd-nick.me/2018/12/image-1.png)

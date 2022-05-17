@@ -3,9 +3,7 @@ title: И табы И пробелы. Шах и мат
 date: '2021-12-01 13:37:00'
 slug: tabs-and-spaces
 image: https://s3.blog.amd-nick.me/2021/11/tabs-and-spaces.jpg
-tags:
-- programming
-- notes
+tags: [dev]
 ---
 
 ![](https://s3.blog.amd-nick.me/2021/11/tabs-and-spaces.jpg)

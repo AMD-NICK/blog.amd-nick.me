@@ -2,9 +2,7 @@
 title: Запускаем GoLang приложение с GitHub
 date: '2019-10-02 13:37:00'
 slug: golang-run-from-github
-tags:
-- notes
-- programming
+tags: [golang, github]
 ---
 
 Итак, вы уже знаете какой-то язык, нашли GitHub репозиторий с проектом на Golang и решили его поковырять. В основах, как тру проггер разберетесь методом тыка, нужно как-то только начать. Hello World для слабаков

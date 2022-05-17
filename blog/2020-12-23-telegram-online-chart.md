@@ -3,8 +3,7 @@ title: График онлайна человека в Telegram
 date: '2020-12-23 13:37:00'
 slug: telegram-online-chart
 image: https://s3.blog.amd-nick.me/2020/12/telegram-user-online-status-graph.png
-tags:
-- programming
+tags: [telegram, gds]
 ---
 
 ![](https://s3.blog.amd-nick.me/2020/12/telegram-user-online-status-graph.png)

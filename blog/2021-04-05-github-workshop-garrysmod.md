@@ -3,10 +3,7 @@ title: GitHub вместо Steam Workshop для Garry's Mod
 date: '2021-04-05 14:23:00'
 slug: github-workshop-garrysmod
 image: https://s3.blog.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg
-tags:
-- gm-donate
-- garrys-mod
-- programming
+tags: [gmdonate, garrysmod, git, github, lua, steam]
 ---
 
 ![](https://s3.blog.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg)

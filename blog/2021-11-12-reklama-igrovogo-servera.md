@@ -3,8 +3,7 @@ title: Бесплатная реклама игрового сервера
 date: '2021-11-12 13:37:00'
 slug: reklama-igrovogo-servera
 image: https://s3.blog.amd-nick.me/2021/11/game-server-piar.jpg
-tags:
-- garrys-mod
+tags: [garrysmod, steam]
 ---
 
 ![](https://s3.blog.amd-nick.me/2021/11/game-server-piar.jpg)

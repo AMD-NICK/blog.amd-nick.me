@@ -2,8 +2,6 @@
 title: Переключение раскладки в Elementary OS по Alt + Shift
 date: '2015-04-13 22:39:00'
 slug: alt-shift-elementary
-tags:
-- notes
 ---
 
 Вчера установил Elementary OS **Freya** и обнаружил один небольшой, но проблемный баг с переключением раскладки клавиатуры. Дело в том, что через Switchboard настроить переключение на **Alt+Shift** или **Ctrl+Shift** нельзя.

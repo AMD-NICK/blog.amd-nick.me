@@ -3,8 +3,7 @@ title: Открытие банковского счета в Польше. Bank 
 date: '2020-02-10 13:37:00'
 slug: bank-account-poland
 image: https://s3.blog.amd-nick.me/2020/02/poland-bank-account-for-paypal.jpg
-tags:
-- life
+tags: [finances, bank, paypal, poland travel]
 ---
 
 ![](https://s3.blog.amd-nick.me/2020/02/poland-bank-account-for-paypal.jpg)

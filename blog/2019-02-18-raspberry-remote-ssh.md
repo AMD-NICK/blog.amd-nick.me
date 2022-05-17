@@ -3,6 +3,7 @@ title: Как сделать Raspberry Pi доступным из интерне
 date: '2019-02-18 13:37:00'
 slug: raspberry-remote-ssh
 image: https://s3.blog.amd-nick.me/2019/02/IMG_2218.jpg
+tags: [pi]
 ---
 
 ![](https://s3.blog.amd-nick.me/2019/02/IMG_2218.jpg)

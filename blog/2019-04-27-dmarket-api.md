@@ -3,8 +3,7 @@ title: DMarket API - практика и замечания
 date: '2019-04-27 13:37:00'
 slug: dmarket-api
 image: https://s3.blog.amd-nick.me/2019/04/1_bq4grqwes3fcrchfatxmzw.jpg
-tags:
-- programming
+tags: [api]
 ---
 
 ![](https://s3.blog.amd-nick.me/2019/04/1_bq4grqwes3fcrchfatxmzw.jpg)

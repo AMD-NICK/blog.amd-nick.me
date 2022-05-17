@@ -3,6 +3,7 @@ title: SSH меню в Mac OS через bitbar и iTerm2
 date: '2020-02-06 13:37:00'
 slug: ssh-menu-macos
 image: https://s3.blog.amd-nick.me/2020/02/ssh-menu-macos.jpg
+tags: [mac, soft]
 ---
 
 ![](https://s3.blog.amd-nick.me/2020/02/ssh-menu-macos.jpg)
@@ -27,7 +28,7 @@ Bibar можно настроить почти под любой функцио�
 
 # Открываем соединения в iTerm, а не стандартном терминале
 
-В preferences iTerm создайте новый профиль, где command будет $$ и в url schemes выбран ssh.
+В preferences iTerm создайте новый профиль, где command будет `$$` и в url schemes выбран ssh.
 
 ![](https://s3.blog.amd-nick.me/2020/01/image-3.png)
 *Новый профиль + command + url scheme*

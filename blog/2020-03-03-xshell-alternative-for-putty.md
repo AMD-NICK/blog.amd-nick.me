@@ -2,10 +2,7 @@
 title: xShell - лучшая альтернатива Putty
 date: '2020-03-03 13:37:00'
 slug: xshell-alternative-for-putty
-tags:
-- soft
-- review
-- notes
+tags: [xshell, putty, windows, soft]
 ---
 
 putty - наверное, самый популярный SSH клиент, о котором знает каждый, кто имел дело с SSH. Но он не единственный бесплатный и несколько лет назад я полностью перешел с него на [xShell](https://www.netsarang.com/ru/xshell/), получив ряд преимуществ

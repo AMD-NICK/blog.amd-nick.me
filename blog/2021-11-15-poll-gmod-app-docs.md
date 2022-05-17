@@ -3,8 +3,7 @@ title: poll.gmod.app документация
 date: '2021-11-15 13:37:00'
 slug: poll-gmod-app-docs
 image: https://s3.blog.amd-nick.me/2021/11/poll-gmod-app-docs.jpg
-tags:
-- programming
+tags: [polling, lua, microservice, api]
 ---
 
 ![](https://s3.blog.amd-nick.me/2021/11/poll-gmod-app-docs.jpg)

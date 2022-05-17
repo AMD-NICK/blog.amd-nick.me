@@ -2,9 +2,7 @@
 title: CPU Майнинг KOTO через Docker
 date: '2018-07-13 21:41:00'
 slug: koto-mining-docker
-tags:
-- notes
-- docker
+tags: [docker, finances, mining, crypto]
 ---
 
 Ниже заметки, касательно KOTO и `yescrypt`, но используя `cpuminer-multi` майнятся и другие монеты

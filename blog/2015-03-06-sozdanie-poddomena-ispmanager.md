@@ -2,9 +2,7 @@
 title: Как создать поддомен ISPmanager за 5 минут?
 date: '2015-03-06 12:33:00'
 slug: sozdanie-poddomena-ispmanager
-tags:
-- notes
-- hosting
+tags: [ispmanager, hosting]
 ---
 
 # UPD 2018

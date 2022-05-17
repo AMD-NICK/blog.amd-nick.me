@@ -2,8 +2,7 @@
 title: RSS из любого Telegram канала
 date: '2019-11-27 13:37:00'
 slug: telegram-rss
-tags:
-- notes
+tags: [telegram, bot]
 ---
 
 Без навыков программирования, сторонних ботов, смс и регистрации!

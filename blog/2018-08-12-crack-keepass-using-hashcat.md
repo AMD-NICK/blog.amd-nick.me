@@ -2,8 +2,7 @@
 title: Взлом базы данных KeePass
 date: '2018-08-12 13:37:00'
 slug: crack-keepass-using-hashcat
-tags:
-- notes
+tags: [hack, keepass]
 ---
 
 Нашел на компе старую БД от [KeePass](keepass-free-password-manager), от которой уже сто лет как забыл пароль. Немного гугла + вычислительных мощностей и наслаждение ностальгией не оставило себя ждать

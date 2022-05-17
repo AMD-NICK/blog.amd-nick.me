@@ -1,7 +1,7 @@
 ---
 title: Ghost CMS vs Docusaurus
 slug: ghost-vs-docusaurus
-tags: [docusaurus, blog, ghost, github, markdown, vercel]
+tags: [docusaurus, blog, ghost, git, github, markdown, vercel]
 ---
 
 ![](https://d33wubrfki0l68.cloudfront.net/8164082c0ad2773310eba3f77725cb09cec0f815/ac8f5/assets/images/slash-introducing-411a16dd05086935b8e9ddae38ae9b45.svg)

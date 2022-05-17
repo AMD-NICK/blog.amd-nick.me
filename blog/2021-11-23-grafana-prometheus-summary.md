@@ -2,8 +2,7 @@
 title: Grafana + Prometheus. Заметки новичка
 date: '2021-11-23 13:37:00'
 slug: grafana-prometheus-summary
-tags:
-- notes
+tags: [grafana, prometheus, mysql]
 ---
 
 Без воды, очень сжато. Чисто заметки из 2018 года, но актуальные.

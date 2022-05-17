@@ -3,8 +3,7 @@ title: Webhook без веб сервера
 date: '2021-03-08 13:37:00'
 slug: webhook-bez-web-servera
 image: https://s3.blog.amd-nick.me/2021/03/long-polling-instead-webhook.jpg
-tags:
-- programming
+tags: [webhook, polling, microservice, api]
 ---
 
 ![](https://s3.blog.amd-nick.me/2021/03/long-polling-instead-webhook.jpg)
@@ -24,7 +23,7 @@ poll.gmod.app — микросервис, который может выступ
 ## Документация
 
 <!-- ![](https://s3.blog.amd-nick.me/2021/11/poll-gmod-app-docs.jpg) -->
-[poll.gmod.app документация](poll-gmod-app-docs)
+[poll.gmod.app документация](2021-11-15-poll-gmod-app-docs.md)
 
 ## Применения
 

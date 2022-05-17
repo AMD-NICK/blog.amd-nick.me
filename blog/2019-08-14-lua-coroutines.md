@@ -3,8 +3,7 @@ title: Понимаем корутины в Lua
 date: '2019-08-14 13:37:00'
 slug: lua-coroutines
 image: https://s3.blog.amd-nick.me/2019/08/lua-coroutines.jpg
-tags:
-- programming
+tags: [lua]
 ---
 
 ![](https://s3.blog.amd-nick.me/2019/08/lua-coroutines.jpg)

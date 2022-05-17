@@ -2,9 +2,7 @@
 title: Отзыв о хостинге Renter.ru
 date: '2014-12-14 14:06:00'
 slug: renter-otziv
-tags:
-- hosting
-- review
+tags: [hosting, renter]
 ---
 
 > Перенесена [отсюда](https://amd-nick.me/otzyv-renter-ru-mini-obzor/) с рядом заметных изменений. [Картинка](http://dl4.joxi.net/drive/2018/07/08/0002/2400/174432/32/abf2035362.png) на память

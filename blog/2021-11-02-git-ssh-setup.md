@@ -3,8 +3,7 @@ title: Настройка git для работы через ssh
 date: '2021-11-02 13:37:00'
 slug: git-ssh-setup
 image: https://s3.blog.amd-nick.me/2021/11/git-ssh-setup.jpg
-tags:
-- notes
+tags: [git, github, ssh]
 ---
 
 ![](https://s3.blog.amd-nick.me/2021/11/git-ssh-setup.jpg)

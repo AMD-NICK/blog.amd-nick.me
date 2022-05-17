@@ -2,9 +2,7 @@
 title: Как вытащить redis.sock с Docker
 date: '2018-07-25 16:25:00'
 slug: redis-sock-docker
-tags:
-- notes
-- docker
+tags: [docker, redis]
 ---
 
 Для одной задачи мне потребовалось подключиться к Redis внутри контейнера с хоста напрямую через `redis.sock`

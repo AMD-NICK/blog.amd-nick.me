@@ -2,6 +2,7 @@
 title: Monero. Linux CPU mining (Ubuntu)
 date: '2018-09-04 13:37:00'
 slug: monero-linux-cpu-mining
+tags: [crypto, finances, mining]
 ---
 
 Майнинг монеро основан на алгоритме CryptoNight, который устойчив к майнингу ASIC'ами. Особенностью алгоритма является возможность майнинга, как на CPU так и на GPU. У меня завалялось несколько серверов, поэтому я рассматриваю майнинг на CPU

@@ -2,9 +2,7 @@
 title: WordPress отбивает желание писать
 date: '2018-01-16 18:35:00'
 slug: bad-wordpress
-tags:
-- notes
-- life
+tags: [wordpress, telegram, ghost, blog]
 ---
 
 > Это [перепись моего поста с основного блога](https://amd-nick.me/chto-to-podzabil/), который написан на WordPress
