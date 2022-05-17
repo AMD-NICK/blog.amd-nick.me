@@ -113,7 +113,7 @@ const config = {
 						type: 'doc',
 						docId: 'intro',
 						position: 'left',
-						label: 'Кодоштуки',
+						label: '📦 Штуки',
 					},
 					{
 						href: "https://www.instagram.com/amd_nick",
