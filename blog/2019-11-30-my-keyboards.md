@@ -8,6 +8,8 @@ tags:
 
 Просто заметка, беспонтовый пост без смысловой нагрузки [для ответа](https://default.abcd.bz/blog/qa/19009.html) в посте одного закрытого сообщества
 
+<!--truncate-->
+
 ## Trust GXT 280
 
 Покупал не помню где, но [была тут](https://hard.rozetka.com.ua/trust_gxt280_led_gaming_keyboard_19470/p438849/)

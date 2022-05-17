@@ -2,14 +2,19 @@
 title: Ghost + Traefik v2 = блог с автообновлением SSL
 date: '2019-11-02 13:37:00'
 slug: ghost-traefik-v2
+image: https://s3.blog.amd-nick.me/2019/11/traefik-ghost-banner.jpg
 tags:
 - docker
 - soft
 ---
 
+![](https://s3.blog.amd-nick.me/2019/11/traefik-ghost-banner.jpg)
+
 Этот блог работает внутри Docker контейнера и использует Traefik в качестве reverse proxy для Ghost. Недавно вышла версия v2.0, в которой были изменены некоторые фундаментальные особенности, что требует переконфигурации trafik.toml, acme.json и docker-compose.yml
 
 У Traefik есть [официальная инструкция по обновлению](https://docs.traefik.io/migration/v1-to-v2/), и то ли я дурак, то ли ее стоит доработать, но факт в том, что после получаса вкуривания заново все настроить для меня было гораздо проще и полезнее
+
+<!--truncate-->
 
 ## Задача
 
@@ -28,21 +33,21 @@ tags:
     [global]
       checkNewVersion = true
       sendAnonymousUsage = true
-    
+
     [entryPoints]
       [entryPoints.insecure]
         address = ":80"
       [entryPoints.secure]
         address = ":443"
-    
+
     [providers]
       [providers.docker]
         endpoint = "unix:///var/run/docker.sock"
         exposedByDefault = false
-    
+
     [log]
       level = "WARNING"
-    
+
     [certificatesResolvers]
       [certificatesResolvers.default]
         [certificatesResolvers.default.acme]
@@ -60,7 +65,7 @@ tags:
 В нашем случае именно это файл динамической конфигурации
 
     version: '3.5'
-    
+
     services:
       ghost:
         image: ghost:2
@@ -75,7 +80,7 @@ tags:
           - traefik
         networks:
           - traefiknet
-    
+
       traefik:
         image: traefik:v2.0.4
         ports:
@@ -87,7 +92,7 @@ tags:
           - ./traefik/acme.json:/acme.json # описан дальше
         networks:
           - traefiknet
-    
+
     networks:
       traefiknet:
         name: traefiknet
@@ -106,4 +111,4 @@ tags:
 
 Как-то так :) Если помог - буду рад, если вы подпишитесь на [t.me/uFeed](tg://resolve?domain=uFeed), где я вкратце пишу о том, что читаю
 
-#### 
+####

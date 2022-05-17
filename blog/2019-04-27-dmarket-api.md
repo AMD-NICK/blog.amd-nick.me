@@ -2,11 +2,16 @@
 title: DMarket API - практика и замечания
 date: '2019-04-27 13:37:00'
 slug: dmarket-api
+image: https://s3.blog.amd-nick.me/2019/04/1_bq4grqwes3fcrchfatxmzw.jpg
 tags:
 - programming
 ---
 
+![](https://s3.blog.amd-nick.me/2019/04/1_bq4grqwes3fcrchfatxmzw.jpg)
+
 Заметки для тех, кто решил поработать с API DMarket.com. Сразу предупреждаю, что некоторые из них могут быть неуместны, поскольку все знать невозможно и я просто не понял разработчиков, что сделали ту или иную "странность"
+
+<!--truncate-->
 
 * * *
 
