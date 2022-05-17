@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	title: 'Блог _AMD_',
-	tagline: 'Блог _AMD_',
+	tagline: 'Всякое гиковское',
 	url: 'https://duco.amd-nick.me',
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
@@ -79,7 +79,7 @@ const config = {
 				contextualSearch: true,
 			},
 			navbar: {
-				title: 'Блог _AMD_',
+				title: '@amd_nick',
 				logo: {
 					alt: 'Лого',
 					src: 'https://i.imgur.com/FEwbyUh.png',
