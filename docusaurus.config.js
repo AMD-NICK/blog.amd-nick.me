@@ -96,9 +96,16 @@ const config = {
 						  },
 						  {
 							label: 'Обо мне',
-							to: '/about',
+							to: 'about',
 						  },
-						  // ... more items
+						  {
+							label: 'Telegram боты',
+							to: 'my-telegram-bots',
+						  },
+						  {
+							label: 'Все по годам',
+							to: 'archive',
+						  },
 						],
 					},
 					// {to: '/', label: 'Блог', position: 'left'},
