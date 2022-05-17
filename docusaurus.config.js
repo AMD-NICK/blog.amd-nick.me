@@ -96,7 +96,7 @@ const config = {
 						  },
 						  {
 							label: 'Обо мне',
-							to: 'about',
+							to: '/about',
 						  },
 						  // ... more items
 						],
