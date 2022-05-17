@@ -11,7 +11,8 @@ const config = {
 	url: 'https://duco.amd-nick.me',
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
-	onBrokenMarkdownLinks: 'warn',
+	// onBrokenMarkdownLinks: 'warn',
+	onBrokenMarkdownLinks: 'throw',
 	favicon: 'img/favicon.ico',
 
 	// GitHub pages deployment config.
@@ -58,26 +59,6 @@ const config = {
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
-			typesense: {
-				typesenseCollectionName: 'blog_1652729156', // Replace with your own doc site's name. Should match the collection name in the scraper settings.
-
-				typesenseServerConfig: {
-				  nodes: [
-					{
-					  host: 'fljut05r27eib9dnp-1.a1.typesense.net',
-					  port: 443,
-					  protocol: 'https',
-					},
-				  ],
-				  apiKey: 'venzbAVxiYiWpi4iBJUluWHzetQutbfr',
-				},
-
-				// Optional: Typesense search parameters: https://typesense.org/docs/0.21.0/api/documents.md#search-parameters
-				typesenseSearchParameters: {},
-
-				// Optional
-				contextualSearch: true,
-			},
 			navbar: {
 				title: '@amd_nick',
 				logo: {
@@ -141,7 +122,27 @@ const config = {
 			prism: {
 				theme: lightCodeTheme,
 				darkTheme: darkCodeTheme,
-			}
+			},
+			typesense: {
+				typesenseCollectionName: 'blog_1652729156', // Replace with your own doc site's name. Should match the collection name in the scraper settings.
+
+				typesenseServerConfig: {
+				  nodes: [
+					{
+					  host: 'fljut05r27eib9dnp-1.a1.typesense.net',
+					  port: 443,
+					  protocol: 'https',
+					},
+				  ],
+				  apiKey: 'venzbAVxiYiWpi4iBJUluWHzetQutbfr',
+				},
+
+				// Optional: Typesense search parameters: https://typesense.org/docs/0.21.0/api/documents.md#search-parameters
+				typesenseSearchParameters: {},
+
+				// Optional
+				contextualSearch: true,
+			},
 			// algolia: {
 			// 	appId: "AZAB94E4VO",
 			// 	apiKey: "292e51da5a65ae6baf14145a3fe61897",
