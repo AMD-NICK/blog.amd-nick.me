@@ -1,41 +1,19 @@
-# Website
+# blog.amd-nick.me
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+- WordPress 2014-2018
+- Ghost 2018-2022
+- Docusaurus 2022-?
 
-### Installation
+Перенос своего [блога](https://blog.amd-nick.me) с Ghost на GitHub.
 
-```
-$ yarn
-```
+Сайт теперь использует [Docusaurus 2](https://docusaurus.io/) – генератор статичных веб сайтов.
 
-### Local Development
+Вопросы и предложения можно оставить в Issues. Исправления ошибок через Pull Request.
 
-```
-$ yarn start
-```
+Вдохновлен идеей [Nikita Voloboev – Everything I Know](https://wiki.nikiv.dev)
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+---
 
-### Build
+### Как это работает?
 
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Любой коммит запускает Vercel App, а он билдит сайт и бесплатно хостит его на своих серверах. Для красивой ссылки в CloudFlare прописан CNAME, который ссылается на ссылку, что выдал Vercel.
