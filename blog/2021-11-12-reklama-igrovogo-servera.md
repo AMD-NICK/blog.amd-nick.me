@@ -2,9 +2,14 @@
 title: Бесплатная реклама игрового сервера
 date: '2021-11-12 13:37:00'
 slug: reklama-igrovogo-servera
+image: https://s3.blog.amd-nick.me/2021/11/game-server-piar.jpg
 tags:
 - garrys-mod
 ---
+
+![](https://s3.blog.amd-nick.me/2021/11/game-server-piar.jpg)
+
+<!--truncate-->
 
 Это обновленная версия [2 старых](https://web.archive.org/web/20211108183305/https://amd-nick.me/raskrutka-igrovyh-serverov/), но актуальных способов раскрутки игрового сервера.
 
