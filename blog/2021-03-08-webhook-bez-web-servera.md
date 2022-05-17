@@ -2,13 +2,18 @@
 title: Webhook без веб сервера
 date: '2021-03-08 13:37:00'
 slug: webhook-bez-web-servera
+image: https://s3.blog.amd-nick.me/2021/03/long-polling-instead-webhook.jpg
 tags:
 - programming
 ---
 
+![](https://s3.blog.amd-nick.me/2021/03/long-polling-instead-webhook.jpg)
+
 Если развернуть веб сервер с вебхуком возможности нет, а принимать сообщения от какого-то сервиса (например Telegram) нужно, мы используем polling. Это когда мы сами спрашиваем у сервиса, нет ли у него для нас новостей. В случае с Telegram, это происходит через запрос [getUpdates](https://core.telegram.org/bots/api#getupdates).
 
 Но что, если сервис не имеет своего поллинг сервера и предлагает лишь доставку апдейтов на webhook, как например GitHub? Или есть ряд других проблем, которые перечислены в разделе "Применения"?
+
+<!--truncate-->
 
 # Решение
 

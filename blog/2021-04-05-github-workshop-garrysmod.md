@@ -2,15 +2,20 @@
 title: GitHub вместо Steam Workshop для Garry's Mod
 date: '2021-04-05 14:23:00'
 slug: github-workshop-garrysmod
+image: https://s3.blog.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg
 tags:
 - gm-donate
 - garrys-mod
 - programming
 ---
 
+![](https://s3.blog.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg)
+
 InGameShop (IGS) - внутриигровая менюшка для Garry's Mod серверов, через которую игроки донатят их владельцам с помощью [gm-donate.ru](https://gm-donate.ru). До недавней поры установка происходила через Steam Workshop. Сейчас готова версия, которая 1 запросом скачивает и выполняет код. Внизу будет реализация
 
 Разработка такой версии изначально казалась задачкой на вечерок под кофеек, но много раз откладывалась из-за каких-то нюансов. Было много идей, как все реализовать, но выжила только одна, о которой пост
+
+<!--truncate-->
 
 ## Что получилось
 
