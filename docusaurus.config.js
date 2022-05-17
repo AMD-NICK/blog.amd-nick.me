@@ -82,7 +82,7 @@ const config = {
 				title: 'Блог _AMD_',
 				logo: {
 					alt: 'Лого',
-					src: 'img/logo.svg',
+					src: 'https://i.imgur.com/FEwbyUh.png',
 				},
 				items: [
 					{
