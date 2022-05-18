@@ -78,5 +78,5 @@ prometheus + mysql exporter собирают МНОГО данных, в тч г
 
 ## На почитать:
 
-- [Удобство SSH ключей](ssh-keys)
-- [Если используете Steam 2FA](steam-telegram-authenticator)
+- [Удобство SSH ключей](2021-10-05-ssh-keys.md)
+- [Если используете Steam 2FA](2020-01-29-steam-telegram-authenticator.md)

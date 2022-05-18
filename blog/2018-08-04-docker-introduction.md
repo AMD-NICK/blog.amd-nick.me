@@ -156,7 +156,7 @@ tags: [docker]
 ![transmission-web-interface](https://s3.blog.amd-nick.me/2018/08/transmission-web-interface.png)
 
 - **Docker WEB Panel** `docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v $PWD/portainer:/data portainer/portainer` [тут русский обзор](https://dev-ops-notes.ru/docker/portainer-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-docker-%D0%B8-swarm-%D0%BF%D1%80%D0%B8-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D0%B8-web-ui/)
-- [OpenVPN сервер на Docker](docker-openvpn-server)
+- [OpenVPN сервер на Docker](2018-07-15-docker-openvpn-server.md)
 - [Garry's Mod сервер через Docker](https://github.com/AMD-NICK/docker-garrysmod-server) (мое изобретение :))
 - [Торрентокачалка](https://hub.docker.com/r/linuxserver/transmission/)
 - [Ghost](https://hub.docker.com/_/ghost/) (blog CMS на JS)

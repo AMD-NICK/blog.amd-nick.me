@@ -36,7 +36,7 @@ Open Source [репозиторий](https://github.com/GM-DONATE/IGS) на GitH
 - Код после упаковки становится однострочным и если где-то возникнет ошибка, то вызывайте экстрасенсов (возможно, в будущем будет новый json упаковщик, который решит эту проблему)
 - Если на серверах есть блокираторы RunString/CompileString, то это не гуд
 - Кастомные модельки придется загружать сторонним аддоном. В веб скрипт их засунуть не получится
-- Если у вас используются .dll, то придется искать им альтернативу. Для замены пушей через socket.dll мы сделали [long polling microservice](webhook-bez-web-servera).
+- Если у вас используются .dll, то придется искать им альтернативу. Для замены пушей через socket.dll мы сделали [long polling microservice](2021-03-08-webhook-bez-web-servera.md).
 - Некоторые хостинги могут блокировать запросы к GitHub
 
 ## В чем сложность?
@@ -119,6 +119,6 @@ http.Fetch("https://raw.githubusercontent.com/GM-DONATE/IGS/main/addons/igs-core
 
 #### Если пост понравился, может вам понравятся и эти?
 
-- [Эффективная разработка в Garry's Mod](gmod-development)
-- [Как мы gm-donate.ru открывали](kak-mi-delali-avtodonat-dlya-garrys-mod)
-- [Бот для генерации кодов авторизации Steam](steam-telegram-authenticator)
+- [Эффективная разработка в Garry's Mod](2020-03-17-gmod-development.md)
+- [Как мы gm-donate.ru открывали](2018-01-23-kak-mi-delali-avtodonat-dlya-garrys-mod.md)
+- [Бот для генерации кодов авторизации Steam](2020-01-29-steam-telegram-authenticator.md)
