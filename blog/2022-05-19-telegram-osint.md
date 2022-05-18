@@ -10,6 +10,8 @@ image: https://i.imgur.com/Qu1bXEd.png
 
 ![](https://i.imgur.com/iCnB1eg.png)
 
+<!--truncate-->
+
 ## В чем проблема
 Таких тулов в сети достаточно и способов "нехорошего" применения тоже неприличная масса.
 
@@ -24,3 +26,6 @@ image: https://i.imgur.com/Qu1bXEd.png
 
 ![](https://i.imgur.com/nHXUHR1.png)
 
+[[2022-05-18-bitwarden]] Тест обсидиан линков
+[[2019-11-02-ghost-traefik-v2#^a5354c]] сослался на блок
+[[xshell-alternative-for-putty|Кастом название ссылки]]
