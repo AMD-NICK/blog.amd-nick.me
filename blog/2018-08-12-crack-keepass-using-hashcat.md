@@ -5,7 +5,9 @@ slug: crack-keepass-using-hashcat
 tags: [hack, keepass]
 ---
 
-Нашел на компе старую БД от [KeePass](keepass-free-password-manager), от которой уже сто лет как забыл пароль. Немного гугла + вычислительных мощностей и наслаждение ностальгией не оставило себя ждать
+Нашел на компе старую БД от [KeePass](2019-02-12-keepass-free-password-manager.md), от которой уже сто лет как забыл пароль. Немного гугла + вычислительных мощностей и наслаждение ностальгией не оставило себя ждать
+
+<!--truncate-->
 
 # Используем
 
@@ -51,6 +53,5 @@ $ echo "hash" > my.hash
 ?d - один символ от 0 до 9. Другие примеры в `./hashcat/hashcat --help`
 
 # Ссылки
-
 - [О взломе KeePass](https://defcon.ru/penetration-testing/3353/)
 - [Структура БД KeePass](https://habr.com/post/346820/)
