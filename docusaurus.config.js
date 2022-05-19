@@ -48,8 +48,14 @@ const config = {
 					// Remove this to remove the "edit this page" links.
 					// editUrl: 'https://github.com/AMD-NICK/docusaurustest/tree/main/',
 				},
+
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
+				},
+
+				gtag: {
+					trackingID: 'G-SXVYQX65GD',
+					anonymizeIP: true,
 				},
 			}),
 		],
