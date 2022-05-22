@@ -1,6 +1,6 @@
 ---
 title: Получаем бесплатно платные игры в Steam
-date: '2022-05-21 19:18'
+date: '2022-05-22 15:40'
 slug: steamgifts
 tags: [steam, steamgifts]
 image: https://i.imgur.com/xyXTvK2.png
