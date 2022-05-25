@@ -24,9 +24,7 @@ fux
 ---
 
 :::note
-
 Some **content** with _markdown_ `syntax`. Check [this `api`](#).
-
 :::
 
 :::tip
