@@ -130,7 +130,7 @@ const config = {
 				darkTheme: darkCodeTheme,
 			},
 			typesense: {
-				typesenseCollectionName: 'blog_1653495471', // Replace with your own doc site's name. Should match the collection name in the scraper settings.
+				typesenseCollectionName: 'blog', // Replace with your own doc site's name. Should match the collection name in the scraper settings.
 
 				typesenseServerConfig: {
 				  nodes: [
