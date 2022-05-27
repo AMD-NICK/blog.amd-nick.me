@@ -118,7 +118,7 @@ const config = {
 						label: "💬 Telegram",
 					},
 					{
-						href: "https://github.com/AMD-NICK",
+						href: "https://github.com/AMD-NICK/blog.amd-nick.me",
 						position: "right",
 						className: "header-github-link",
 						"aria-label": "GitHub repository",
