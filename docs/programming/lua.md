@@ -20,3 +20,10 @@
 - [luvit](https://luvit.io) - как express.js, но в lua
 - [deferred](https://github.com/zserge/lua-promises/blob/master/deferred.lua) - A+ промисы на Lua. Применяю почти везде. Особенность: error внутри цепочки вызывает reject
 - [copas](https://github.com/lunarmodules/copas) - асинхронные сокеты и http/https реквесты
+
+## Ссылки
+
+- [luash](https://github.com/zserge/luash) shell скрипты на Lua
+- [xFuscator](https://github.com/superfsm/XFuscator) обфускатор. Использовал сам
+- [luabundle](https://github.com/graue/luabundle) собирает модуль в один файл
+- [lockbox](https://github.com/somesocks/lua-lockbox) криптографические алгоритмы на чистом Lua
