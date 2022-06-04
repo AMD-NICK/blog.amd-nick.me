@@ -7,3 +7,7 @@
 ## Использую
 
 - [Переход к проге хоткеем](https://apps.apple.com/ua/app/thor-launcher/id1120999687?l=ru&mt=12) - 🖼 [мои настройки](https://i.imgur.com/Dxft4Bm.png) сейчас
+
+## Другие
+
+- [xbar](https://github.com/matryer/xbar) - stdout в menu bar. Юзал для Monobank баланса, пока не написал бот
