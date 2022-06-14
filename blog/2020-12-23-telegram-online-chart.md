@@ -123,3 +123,6 @@ API_HASH = '1234567890abcdef1234567890abcdef'
 
 Нашел еще одну штуку на питоне, которая позволяет следить за чьим-то онлайном более юзер-френдли: [GitHub - Forichok/TelegramOnlineSpy: Simple telegram online spy logger bot](https://github.com/Forichok/TelegramOnlineSpy)
 
+### UPD 2022-06-14
+
+Если нужна помощь с реализацией подобной слежки – пишите [мне](/about)

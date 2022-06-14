@@ -96,7 +96,7 @@ const config = {
 						  },
 						  {
 							label: 'Telegram боты',
-							to: 'my-telegram-bots',
+							to: '/docs/telegram/bots',
 						  },
 						  {
 							label: 'Все по годам',
