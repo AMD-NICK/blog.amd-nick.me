@@ -25,7 +25,7 @@ image: https://s3.blog.amd-nick.me/2020/02/amd_nick-cover.jpg
 - Ну допустим этот non-profit блог
 - Ну допустим канал [t.me/uFeed](https://t.me/uFeed), где я вкратце пишу о том, что читаю и помогаю людям экономить время
 - Ну допустим канал [t.me/boxie](https://t.me/boxie), где я высокомерно пишу то, что хочу
-- А еще люблю писать бесплатных [ботов для Telegram](my-telegram-bots)
+- А еще люблю писать бесплатных [ботов для Telegram](/docs/telegram/bots)
 
 ## Профессиональные навыки
 
