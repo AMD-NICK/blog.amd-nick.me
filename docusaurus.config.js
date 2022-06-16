@@ -70,7 +70,7 @@ const config = {
 		],
 	],
 
-	themes: ['docusaurus-theme-search-typesense'],
+	// themes: ['docusaurus-theme-search-typesense'],
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
