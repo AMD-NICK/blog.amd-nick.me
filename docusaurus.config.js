@@ -138,31 +138,31 @@ const config = {
 				theme: lightCodeTheme,
 				darkTheme: darkCodeTheme,
 			},
-			typesense: {
-				typesenseCollectionName: 'blog', // Replace with your own doc site's name. Should match the collection name in the scraper settings.
+			// typesense: {
+			// 	typesenseCollectionName: 'blog', // Replace with your own doc site's name. Should match the collection name in the scraper settings.
 
-				typesenseServerConfig: {
-				  nodes: [
-					{
-					  host: 'fljut05r27eib9dnp-1.a1.typesense.net',
-					  port: 443,
-					  protocol: 'https',
-					},
-				  ],
-				  apiKey: '9YGfJI152yzkK6jPx0ALm40KuJuYiSdT',
-				},
+			// 	typesenseServerConfig: {
+			// 	  nodes: [
+			// 		{
+			// 		  host: 'fljut05r27eib9dnp-1.a1.typesense.net',
+			// 		  port: 443,
+			// 		  protocol: 'https',
+			// 		},
+			// 	  ],
+			// 	  apiKey: '9YGfJI152yzkK6jPx0ALm40KuJuYiSdT',
+			// 	},
 
-				// Optional: Typesense search parameters: https://typesense.org/docs/0.21.0/api/documents.md#search-parameters
-				typesenseSearchParameters: {},
+			// 	// Optional: Typesense search parameters: https://typesense.org/docs/0.21.0/api/documents.md#search-parameters
+			// 	typesenseSearchParameters: {},
 
-				// Optional
-				contextualSearch: true,
-			},
-			// algolia: {
-			// 	appId: "AZAB94E4VO",
-			// 	apiKey: "292e51da5a65ae6baf14145a3fe61897",
-			// 	indexName: "blog",
+			// 	// Optional
+			// 	contextualSearch: true,
 			// },
+			algolia: {
+				appId: "03RIRS86OT",
+				apiKey: "a74f58efb237f210291f299f0c7e8769",
+				indexName: "amd-nick",
+			},
 		}),
 };
 
