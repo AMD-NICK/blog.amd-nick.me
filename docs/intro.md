@@ -1,6 +1,7 @@
 ---
 slug: /
 title: Моя Wiki
+sidebar_position: 1
 ---
 
 Вдохновлен идеей [My Knowledge Wiki](https://wiki.nikiv.dev)
