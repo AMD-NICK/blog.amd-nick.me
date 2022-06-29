@@ -1,4 +1,4 @@
-# Telegram
+# ✈️ Telegram
 
 ![](https://s3.blog.amd-nick.me/2019/04/telegram_banner.png)
 

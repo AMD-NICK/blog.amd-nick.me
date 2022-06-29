@@ -1,6 +1,6 @@
 ---
 slug: /
-title: Моя Wiki
+title: ❤️ Моя Wiki
 sidebar_position: 1
 ---
 
