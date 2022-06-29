@@ -1,6 +1,6 @@
 # Docusaurus
 
-Причины выбора после Ghost: [клик](../ghost-vs-docusaurus.md)
+Причины выбора после Ghost: [клик](/ghost-vs-docusaurus)
 
 ## notes
 
