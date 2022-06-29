@@ -19,7 +19,50 @@
 - Вручную нужно было искать и заменять `__GHOST_URL__` на правильные ссылки
 - Docusaurus впервые в репе деплоился через vercel, но он установил устаревшую версию
 
+---
+
+# Markdown заметки
+
+## Выделение строк кода
+
+```md {3-5}
+### This
+
+## Is
+
+# Markdown
+
+---
+
+fux
+```
+
+## Admonitions
+
+:::note
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+:::
+
+:::tip
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+:::
+
+:::info
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+:::
+
+:::caution
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+:::
+
+:::danger
+Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+:::
+
+---
+
 ## links
 
 - [docs introduction](https://docusaurus.io/docs/docs-introduction)
 - [routing](https://docusaurus.io/docs/advanced/routing)
+
