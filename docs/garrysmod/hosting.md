@@ -1,6 +1,6 @@
 # Хостинг и администрирование
 
-gmod server однопоточный и очень прожорливый. При выборе хостера старайтесь выбирать сервер с процессором, который повыше в [этом списке](https://www.cpubenchmark.net/singleThread.html). Выбор хостера: [клик](https://forum.gm-donate.ru/t/posovetujte-hosting/832/). ArtPlanet и MyArena для меня были неплохими вариантами. **Использую VDS**
+gmod server однопоточный и очень прожорливый. При выборе хостера старайтесь выбирать сервер с процессором, который повыше в [этом списке](https://www.cpubenchmark.net/singleThread.html). Выбор хостера: [клик](https://forum.gm-donate.net/t/posovetujte-hosting/832/). ArtPlanet и MyArena для меня были неплохими вариантами. **Использую VDS**
 
 Мой скрипт запуска сервера. Подробнее о [хостинге серверов](https://wiki.facepunch.com/gmod/Downloading_a_Dedicated_Server)
 

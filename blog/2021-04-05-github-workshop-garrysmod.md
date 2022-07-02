@@ -8,7 +8,7 @@ tags: [gmdonate, garrysmod, git, github, lua, steam]
 
 ![](https://s3.blog.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg)
 
-InGameShop (IGS) - внутриигровая менюшка для Garry's Mod серверов, через которую игроки донатят их владельцам с помощью [gm-donate.ru](https://gm-donate.ru). До недавней поры установка происходила через Steam Workshop. Сейчас готова версия, которая 1 запросом скачивает и выполняет код. Внизу будет реализация
+InGameShop (IGS) - внутриигровая менюшка для Garry's Mod серверов, через которую игроки донатят их владельцам с помощью [gm-donate.net](https://gm-donate.net). До недавней поры установка происходила через Steam Workshop. Сейчас готова версия, которая 1 запросом скачивает и выполняет код. Внизу будет реализация
 
 Разработка такой версии изначально казалась задачкой на вечерок под кофеек, но много раз откладывалась из-за каких-то нюансов. Было много идей, как все реализовать, но выжила только одна, о которой пост
 
@@ -120,5 +120,5 @@ http.Fetch("https://raw.githubusercontent.com/GM-DONATE/IGS/main/addons/igs-core
 #### Если пост понравился, может вам понравятся и эти?
 
 - [Эффективная разработка в Garry's Mod](2020-03-17-gmod-development.md)
-- [Как мы gm-donate.ru открывали](2018-01-23-kak-mi-delali-avtodonat-dlya-garrys-mod.md)
+- [Как мы gm-donate открывали](2018-01-23-kak-mi-delali-avtodonat-dlya-garrys-mod.md)
 - [Бот для генерации кодов авторизации Steam](2020-01-29-steam-telegram-authenticator.md)

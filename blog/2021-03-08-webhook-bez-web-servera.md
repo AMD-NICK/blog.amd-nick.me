@@ -31,7 +31,7 @@ poll.gmod.app — микросервис, который может выступ
 
 Изначальное применение найдено в Garry's Mod. Это игра, где разработчики имеют условно полную свободу действий на своих серверах, но поднять веб-сервер является проблемой.
 
-- [gm-donate](https://gm-donate.ru) – сервис приема пожертвований для Garry's Mod серверов [использует](https://github.com/GM-DONATE/IGS/tree/main/addons/igs-core/lua/igs/modules/pushes) poll.gmod.app как способ мгновенной доставки сообщений о платежах Garry's Mod серверам для мгновенного зачисления
+- [gm-donate](https://gm-donate.net) – сервис приема пожертвований для Garry's Mod серверов [использует](https://github.com/GM-DONATE/IGS/tree/main/addons/igs-core/lua/igs/modules/pushes) poll.gmod.app как способ мгновенной доставки сообщений о платежах Garry's Mod серверам для мгновенного зачисления
 - [ggram](https://git.io/ggram) – библиотека для создания Telegram ботов на Garry's Mod серверах может использовать и poll.gmod.app как единую точку, куда множество Telegram ботов присылают апдейты.
 - [Integromat](http://integromat.com) – nocode сервис для автоматизации всего и вся присылает отчеты на poll.gmod.app, которые в дальнейшем обрабатываются кодом на Garry's Mod сервере
 - [Monobank API](https://api.monobank.ua/docs/) – украинский мобильный банк, присылает на единственный URL poll.gmod.app пуши сразу с десятка аккаунтов, когда по карте проходит какая-то транзакция, а специальный Telegram бот отправляет информацию о транзакции в чат
