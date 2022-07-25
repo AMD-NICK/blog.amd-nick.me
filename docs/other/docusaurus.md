@@ -1,15 +1,18 @@
 # Docusaurus
 
-Причины выбора после Ghost: [клик](/ghost-vs-docusaurus)
+Генератор статичных сайтов. Подходит для блогов, документаций, даже лендинг страниц. Не требует своего хостинга, легко редактируется с любого устройства. Работает на Vercel, markdown хранится на GitHub
 
-## notes
+## Полезно знать
 
 - Контент при клике на категорию определяется в файле с `{folder_name}/{folder_name}.md`
 - Если файл начинается с header 1, то он определяет название страницы
 - При переходе на typesense билд увеличился где-то на 10-20 сек. Думаю, фиксится удалением algolia из пакетов
+- Algolia подтверждала заявку на подключение к ним где-то месяц
 - Для замены стандартной index страницы вроде в static удалил папку pages
 
 ### Перенос с Ghost
+
+Причины перехода с Ghost: [клик](/ghost-vs-docusaurus)
 
 - Чтобы ссылки с Ghost продолжили работать, нужно было blog поместить на /. Делается через routeBasePath = "/" для presets.blog в конфиге. Без этого ссылки были в site.com/blog/slug
 - В каждом посте сверху файла есть front-matter блок, где в каждом указан slug со старого блога
@@ -63,6 +66,4 @@ Some **content** with _markdown_ `syntax`. Check [this `api`](#).
 
 ## links
 
-- [docs introduction](https://docusaurus.io/docs/docs-introduction)
-- [routing](https://docusaurus.io/docs/advanced/routing)
-
+- [Поддержка дополнительных подсветок синтаксисов](https://docusaurus.io/docs/markdown-features/code-blocks#supported-languages)
