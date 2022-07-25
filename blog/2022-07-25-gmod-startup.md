@@ -1,5 +1,5 @@
 ---
-title: "Тюнинг Garry's Mod сервера #1: Ускоряем загрузку"
+title: "Garry's Mod - Ускоряем загрузку сервера"
 date: '2022-07-25 12:48'
 slug: gmod-startup
 tags: [garrysmod]
