@@ -17,7 +17,7 @@ tags: [hack, keepass]
 
 # Взлом
 
-```sh
+```bash
 # Создаем рабочую директорию и переносим в нее БД
 $ mkdir crack_keepass
 $ cd crack_keepass

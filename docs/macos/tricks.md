@@ -21,7 +21,7 @@
 - `⌘⌥D` фиксация отображения Dock
 - Ускорение Dock
 
-```sh
+```bash
 # Remove dock animation. https://www.reddit.com/r/apple/comments/6xg9xq/tip_of_the_day_one_thing_i_cant_live_without_in/
 defaults write com.apple.dock autohide-delay -int 0
 defaults write com.apple.dock autohide-time-modifier -float 0.4
@@ -38,7 +38,7 @@ killall Dock
 - [Можно](https://twitter.com/MBoffin/status/1218668903586394112) выделять текст внутри гиперссылки, удерживая Option. Не работает в Safari
 - 2FA QR коды [можно](https://twitter.com/rafahari/status/1456013646144933893) установить в iCloud Keychain
 - `networkQuality` в консоль замеряет скорость интернета (а-ля fast.com или speedtest.net)
-- `caffeinate` предотвращает уход мака в режим сна. 
+- `caffeinate` предотвращает уход мака в режим сна.
 - Другой способ для "Открыть с помощью". Если перенести файл в Finder или например картинку в браузере на иконку в Dock, то файл откроется при помощи этого приложения
 - Для переименования сразу многих файлов, выдели их все и в контекстном меню нажми "Переименовать"
 - Тап (не клик) двумя пальцами по иконке в Dock покажет все окна приложения и "Последние файлы"

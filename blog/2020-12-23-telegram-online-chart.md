@@ -34,7 +34,7 @@ tags: [telegram, gds]
 
 Копируем репозиторий для отслеживания
 
-```sh
+```bash
 $ git clone https://github.com/gentoo-root/telegram-tracker.git
 ```
 

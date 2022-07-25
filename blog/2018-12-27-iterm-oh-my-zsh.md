@@ -30,7 +30,7 @@ tags: [mac, soft, brew]
 
 В терминал прописываем
 
-```sh
+```bash
 $ xcode-select --install
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
@@ -42,7 +42,7 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 В терминал:
 
-```sh
+```bash
 $ brew install zsh
 ```
 
@@ -52,7 +52,7 @@ $ brew install zsh
 
 Установка:
 
-```sh
+```bash
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
@@ -77,7 +77,7 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/m
 
 Вводим:
 
-```sh
+```bash
 $ git clone https://github.com/powerline/fonts.git --depth=1 ; cd fonts
 $ ./install.sh
 $ cd .. ; rm -rf fonts
@@ -93,7 +93,7 @@ $ cd .. ; rm -rf fonts
 Список стандартных тем можно посмотреть [здесь](https://github.com/robbyrussell/oh-my-zsh/wiki/themes)
 Я использую нестандартную [Powerlevel9k](https://github.com/bhilburn/powerlevel9k). Если хотите ее же:
 
-```sh
+```bash
 $ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 ```
 
@@ -108,7 +108,7 @@ $ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/the
 
 Последний добавляет крутую подсветку синтаксиса для всего вводимого текста в терминал, но требует отдельной загрузки, тк не стандартный
 
-```sh
+```bash
 $ brew install zsh-syntax-highlighting
 ```
 
@@ -119,13 +119,13 @@ $ brew install zsh-syntax-highlighting
 
 Устанавливаем скачанные плагины, темы, добавляем дополнительные настройки
 
-```sh
+```bash
 open ~/.zshrc
 ```
 
 У меня конфиг выглядит так:
 
-```sh
+```bash
 # Не трогаем
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="/Users/amd/.oh-my-zsh"

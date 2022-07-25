@@ -40,7 +40,7 @@
 - Для отправки с Discourse с включенным по умолчанию STARTTLS порт должен быть 587, а не тот, что публично говорит Amazon
 - Скрипты для теста
 
-```sh email.sh
+```bash email.sh
 curl --ssl-reqd \
   --url 'smtps://email-smtp.us-east-1.amazonaws.com:465' \
   --user 'IAM_USER:IAM_PASS' \

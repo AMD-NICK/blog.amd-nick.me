@@ -28,7 +28,7 @@ tags: [crypto, finances, mining]
 
 Не забудьте заменить YOUR\_ADDRESS\_HERE в последней команде
 
-```sh
+```bash
 $ apt-get -y install git automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++
 
 $ git clone https://github.com/tpruvot/cpuminer-multi && cd cpuminer-multi/ && ./build.sh

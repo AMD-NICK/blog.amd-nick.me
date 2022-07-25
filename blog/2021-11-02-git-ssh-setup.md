@@ -16,7 +16,7 @@ tags: [git, github, ssh]
 
 ### Генерируем ключ на машине, которая будет выполнять git команды
 
-```sh
+```bash
 $ ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/.ssh/github
 ```
 
@@ -45,7 +45,7 @@ Host github.com
 
 Разница наглядно:
 
-```sh
+```bash
 $ git clone git@github.com:USER_NAME/REPO_NAME.git
 $ git clone https://github.com/USER_NAME/REPO_NAME.git
 ```

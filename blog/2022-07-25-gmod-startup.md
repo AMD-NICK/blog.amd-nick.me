@@ -36,7 +36,7 @@ image: https://i.imgur.com/VHsA4WS.png
 
 Вот команды, которые и делают всю "магию". Я выделил их отдельно для наглядности. Сам скрипт деплоя находится еще ниже
 
-```sh
+```bash
 # Путь к garrysmod папке production сервера
 $PROD_DIR=/home/user/gmod/prod/garrysmod
 
@@ -61,7 +61,7 @@ mv -v $PROD_DIR/superaddon $PROD_DIR/addons/
 Сам скрипт можно поместить куда угодно. Он у меня в `/home/user/gmod/deploy.sh`
 
 
-```sh
+```bash
 #!/bin/bash
 MMDD=$(date +%m%d)
 BASEPATH=$HOME'/gmod'
