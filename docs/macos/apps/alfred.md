@@ -1,5 +1,9 @@
 # Alfred
 
+:::info UPD 4 авг. 2022
+Спустя 4 года использования Alfred перешел с него на [Raycast](raycast.md)
+:::
+
 [Alfred](https://www.alfredapp.com) по-простому это замена Spotlight на стероидах. Запуск приложений, поиск файлов, автоматизации, менеджер буфера обмена, контакты...
 
 Используется ежедневно, очень часто (хотя и не так часто, [как он](https://wiki.nikiv.dev/macOS/apps/alfred/#workflows-i-use))
