@@ -1,6 +1,8 @@
 # Raycast
 
-[Лаунчер для всего](https://www.raycast.com) и не только. Замена стандартного Spotlight. Перешел на него с [Alfred](alfred.md), когда увидел в комментах где-то на просторах [vas3k.club](https://vas3k.club)
+Бесплатный [лаунчер для всего](https://www.raycast.com) и не только. Замена стандартного Spotlight. Перешел на него с [Alfred](alfred.md), когда увидел в комментах где-то на просторах [vas3k.club](https://vas3k.club)
+
+![](https://i.imgur.com/imi3CvX.png)
 
 ## Любимые фишечки
 
