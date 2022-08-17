@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Удаленное подключение. Keenetic Router
 
 :::caution
