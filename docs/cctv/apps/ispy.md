@@ -143,7 +143,7 @@ networks:
 
 #### Storage
 
-Жмите карандашик возле Starage пути
+Жмите карандашик возле Storage пути
 
 ![iSpy Storage Settings](https://i.imgur.com/fR0DcyD.png)
 
