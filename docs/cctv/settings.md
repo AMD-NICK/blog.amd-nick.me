@@ -30,7 +30,7 @@ sidebar_position: 2
 
 Сам битрейт выставляю x2 от стандартного предложенного. Так листва и трава не смывается в кляксу
 
-Кодек: https://help.c5k.info/176988-advanced-guides/368815-difference-between-h-264-and-h-265-compression-format
+Про выбор кодека: https://help.c5k.info/176988-advanced-guides/368815-difference-between-h-264-and-h-265-compression-format
 
 ### I Frame Interval
 
@@ -80,10 +80,8 @@ ONVIF желательно выключить, если планируется �
 
 Должен быть включен `System > Safety > System Service tab > CGI Service`. Это включает [HTTP API камеры](http://ftp.asm.cz/Dahua/kamerove_systemy/SDK&API/CGI_snapshot,stream.pdf), через который помимо скриншотов можно получить http видеопоток (и использовать вместо rtsp).
 
-У меня получилось получить скрин с камеры двумя ссылками:
-
-- `http://ip_or_domain/cgi-bin/snapshot.cgi?loginuse=admin&loginpas=PASSWORD`
-- `http://admin:PASSWORD@ip_or_domain/cgi-bin/snapshot.cgi`
+У меня удалось получить скрин с камеры такой ссылкой: `http://admin:PASSWORD@ip_or_domain/cgi-bin/snapshot.cgi`
 
 > С выключенным CGI будет ошибка `404 Not Found`
 
+P.S. Там не Basic Auth, как я сначала думал, а Digest Auth, с которой не дружит iSpy 👿 (не может брать оттуда скрины напрямую)
