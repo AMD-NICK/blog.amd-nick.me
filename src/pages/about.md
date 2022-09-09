@@ -50,26 +50,9 @@ image: https://s3.blog.amd-nick.me/2020/02/amd_nick-cover.jpg
 
 ## 📣 Social
 
-<p align="center">
-	<a href="https://t.me/amd_nick">
-  		<img width='32' src="https://i.imgur.com/wtCPYQy.png"></img>
-	</a>
-	<a href="https://instagram.com/amd_nick">
-  		<img width='32' src="https://i.imgur.com/M6yBwxS.png"></img>
-	</a>
-	<a href="https://steamcommunity.com/profiles/76561198071463189">
-  		<img width='32' src="https://i.imgur.com/UqlUsxD.png"></img>
-	</a>
-	<a href="https://twitter.com/amd_nick">
-  		<img width='32' src="https://i.imgur.com/iYkheW1.png"></img>
-	</a>
-	<a href="https://vk.me/amd_nick">
-  		<img width='32' src="https://i.imgur.com/XvsHnlT.png"></img>
-	</a>
-	<a href="https://www.youtube.com/user/AMDMin">
-  		<img width='32' src="https://i.imgur.com/1KMjig9.png"></img>
-	</a>
-</p>
-<!--
+- ✈️ [Telegram](https://t.me/amd_nick) – если первое сообщение это "Привет" без сути, то могу не ответить
+- 📸 [Instagram](https://instagram.com/amd_nick) – иногда тут фоточки выкладываю
+- 🎮 [Steam](https://steamcommunity.com/profiles/76561198071463189) – играю всякое. Перед добавлением лучше писать на стене причину
+- 🐦 [Twitter](https://twitter.com/amd_nick) – явно не мой формат :(
+- 👮‍♀️ [VK](https://vk.me/amd_nick) – чисто для работы и токсичных комментов
 - [YouTube](https://www.youtube.com/user/AMDMin) | [KinoPoisk](https://mykp.ru/amd) | [Nickname](https://nick-name.ru/nickname/amd)
- -->
