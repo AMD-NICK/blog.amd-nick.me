@@ -19,28 +19,25 @@
 `apt install lazygit` может сработать. Если нет, то под спойлером
 :::
 
-<details>
-  <summary>Установка</summary>
-
 ```bash
+# может сработать
+apt install lazygit
+
+# иначе
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[0-35.]+')
-```
 
-```bash
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
-```
 
-```bash
 sudo tar xf lazygit.tar.gz -C /usr/bin lazygit
 ```
-
-</details>
 
 ### [lazydocker](https://github.com/jesseduffield/lazydocker#binary-release-linuxosxwindows)
 
 Аналогичный инструмент для Docker. Используется намного реже
 
 <details>
+  <summary>Демка png</summary>
+
 ![lazydocker cui demo](https://github.com/jesseduffield/lazydocker/blob/master/docs/resources/demo3.gif?raw=true)
 </details>
 
@@ -82,7 +79,6 @@ apt install lsd
 
 # Потом примерно так:
 curl -oL lsd.deb https://github.com/Peltoche/lsd/releases/download/0.23.0/lsd-musl_0.23.0_amd64.deb && dpkg -i lsd.deb && rm lsd.deb
-
 ```
 
 #### Настройки lsd:
@@ -124,7 +120,6 @@ chmod +x /usr/local/bin/docker-compose
 adduser docker_user
 usermod -aG docker docker_user
 #usermod -aG sudo docker_user
-
 ```
 
 ## 🪞 Алиасы
