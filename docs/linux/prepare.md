@@ -8,7 +8,11 @@
 
 Удобный CUI для управления git репозиторием. Пишешь lazygit в папке репозитория и визуально делаешь то, что нужно
 
-![lazygit cui demo](https://i.imgur.com/5TpAh9X.png)
+<details>
+  <summary>Демка gif</summary>
+
+![lazygit cui demo](https://github.com/jesseduffield/lazygit/blob/assets/staging.gif?raw=true)
+</details>
 
 :::info
 Установка:
@@ -36,7 +40,9 @@ sudo tar xf lazygit.tar.gz -C /usr/bin lazygit
 
 Аналогичный инструмент для Docker. Используется намного реже
 
-![lazydocker gif demo](https://github.com/jesseduffield/lazydocker/blob/master/docs/resources/demo3.gif?raw=true)
+<details>
+![lazydocker cui demo](https://github.com/jesseduffield/lazydocker/blob/master/docs/resources/demo3.gif?raw=true)
+</details>
 
 ```bash
 DIR=/usr/bin
@@ -48,7 +54,11 @@ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/i
 
 **nano** на максималках. Практически полноценный, привычный редактор, но в терминале. Можно легко ставить в docker контейнерах
 
+<details>
+  <summary>Демка png</summary>
+
 ![micro screenshot demo](https://github.com/zyedidia/micro/blob/master/assets/micro-solarized.png?raw=true)
+</details>
 
 ```bash
 curl https://getmic.ro | bash
@@ -58,7 +68,11 @@ curl https://getmic.ro | bash
 
 `alias ls=lsd` с иконками
 
+<details>
+  <summary>Демка png</summary>
+
 ![lsd screenshot](https://i.imgur.com/NrftbGx.png)
+</details>
 
 ```bash
 apt install lsd
@@ -118,6 +132,8 @@ usermod -aG docker docker_user
 ```bash
 dc=docker-compose
 ssc='micro ~/.ssh/config'
+lg=lazygit
+ld=lazydocker
 
 # личное
 lr='luarocks --lua-dir=$(brew --prefix)/opt/lua@5.3'
