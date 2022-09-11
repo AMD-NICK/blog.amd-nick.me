@@ -4,7 +4,7 @@
 
 ## ⌨️ tools
 
-### [lazygit](https://github.com/jesseduffield/lazygit#ubuntu)
+### lazygit | [github](https://github.com/jesseduffield/lazygit)
 
 Удобный CUI для управления git репозиторием. Пишешь lazygit в папке репозитория и визуально делаешь то, что нужно
 
@@ -13,11 +13,6 @@
 
 ![lazygit cui demo](https://github.com/jesseduffield/lazygit/blob/assets/staging.gif?raw=true)
 </details>
-
-:::info
-Установка:
-`apt install lazygit` может сработать. Если нет, то под спойлером
-:::
 
 ```bash
 # может сработать
@@ -31,7 +26,7 @@ curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/lates
 sudo tar xf lazygit.tar.gz -C /usr/bin lazygit
 ```
 
-### [lazydocker](https://github.com/jesseduffield/lazydocker#binary-release-linuxosxwindows)
+### lazydocker | [github](https://github.com/jesseduffield/lazydocker)
 
 Аналогичный инструмент для Docker. Используется намного реже
 
@@ -47,7 +42,7 @@ DIR=/usr/bin
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 ```
 
-### [micro](https://github.com/zyedidia/micro#quick-install-script)
+### micro | [github](https://github.com/zyedidia/micro#quick-install-script) | [ufeed](https://t.me/uFeed/130)
 
 **nano** на максималках. Практически полноценный, привычный редактор, но в терминале. Можно легко ставить в docker контейнерах
 
@@ -61,7 +56,7 @@ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/i
 curl https://getmic.ro | bash
 ```
 
-### [lsd](https://github.com/Peltoche/lsd/releases) 😋
+### lsd | [github](https://github.com/Peltoche/lsd/releases) | [ufeed](https://t.me/uFeed/133)
 
 `alias ls=lsd` с иконками
 
