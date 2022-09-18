@@ -174,3 +174,18 @@ ssh-copy-id -i ~/.ssh/keyname.pub user@host
 
 # личная заметка: /AppData/ssh_keys/uni.pub
 ```
+
+## Прочие настройки
+
+- [Timezone](https://linuxize.com/post/how-to-set-or-change-timezone-in-linux/)
+
+```bash
+# текущие настройки
+timedatectl
+
+# список зон
+timedatectl list-timezones
+
+# установка зоны
+sudo timedatectl set-timezone Europe/Moscow
+```
