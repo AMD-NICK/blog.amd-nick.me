@@ -60,6 +60,6 @@ rm -r src/theme/BlogPostItem # уже мусорная папка
 
 ![gisqus](https://i.imgur.com/wDdcyD5.png)
 
-🧑‍💻 [Код для gisqus](http://cykablyat.com)
+🧑‍💻 [Код для gisqus](https://github.com/AMD-NICK/blog.amd-nick.me/blob/main/src/theme/BlogPostItem.tsx)
 
 # 🫡
