@@ -14,7 +14,7 @@ export default function DocPaginatorWrapper(props) {
     <>
       <DocPaginator {...props} />
       {(
-        <div className="docusaurus-mt-lg">
+        <div className="docusaurus-docs-comments">
           <Giscus
             id="comments"
             repo="AMD-NICK/blog.amd-nick.me"

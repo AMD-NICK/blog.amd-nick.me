@@ -19,7 +19,7 @@ export default function BlogPostItemWrapper(props) {
     <>
       <BlogPostItem {...props} />
       {(
-        <div className="docusaurus-mt-lg">
+        <div className="docusaurus-blog-comments">
           <Giscus
             id="blog_comments"
             repo="AMD-NICK/blog.amd-nick.me"
