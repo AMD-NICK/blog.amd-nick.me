@@ -4,44 +4,57 @@ import OriginalBlogPostItem from "@theme-original/BlogPostItem";
 import { useBlogPost } from "@docusaurus/theme-common/internal";
 import { useColorMode } from "@docusaurus/theme-common";
 
-const utterancesSelector = "iframe.utterances-frame";
-
 function BlogPostItem(props) {
   const { colorMode } = useColorMode();
   const { isBlogPostPage } = useBlogPost();
-  const utterancesTheme = colorMode === "dark" ? "github-dark" : "github-light";
+  const widgetTheme = colorMode === "dark" ? "dark_dimmed" : "light";
   const containerRef = useRef(null);
 
   useEffect(() => {
     if (!isBlogPostPage) return;
 
-    const utterancesEl = containerRef.current.querySelector(utterancesSelector);
-
-    const createUtterancesEl = () => {
+    const createGisqusEl = () => {
       const script = document.createElement("script");
 
-      script.src = "https://utteranc.es/client.js";
-      script.setAttribute("repo", "AMD-NICK/blog.amd-nick.me");
-      script.setAttribute("issue-term", "pathname");
-      script.setAttribute("label", "💬 blog comments");
-      script.setAttribute("theme", utterancesTheme);
+      script.src = "https://giscus.app/client.js";
+      script.setAttribute("data-repo", "AMD-NICK/blog.amd-nick.me");
+      script.setAttribute("data-repo-id", "R_kgDOHVBfKA");
+      script.setAttribute("data-category", "Announcements");
+      script.setAttribute("data-category-id", "DIC_kwDOHVBfKM4CRnCI");
+      script.setAttribute("data-mapping", "pathname");
+      script.setAttribute("data-strict", "0");
+      script.setAttribute("data-reactions-enabled", "1");
+      script.setAttribute("data-emit-metadata", "0");
+      script.setAttribute("data-input-position", "top");
+      script.setAttribute("data-theme", widgetTheme);
+      script.setAttribute("data-lang", "ru");
+      script.setAttribute("data-loading", "lazy");
+
       script.crossOrigin = "anonymous";
       script.async = true;
 
       containerRef.current.appendChild(script);
     };
 
-    const postThemeMessage = () => {
-      const message = {
-        type: "set-theme",
-        theme: utterancesTheme,
-      };
+	function getGisqusEl() {
+		return document.querySelector<HTMLIFrameElement>('iframe.giscus-frame') || createGisqusEl();
+	}
 
-      utterancesEl.contentWindow.postMessage(message, "https://utteranc.es");
-    };
+	function sendMessage<T>(message: T) {
+		const iframe = getGisqusEl();
+		if (iframe) {
+			iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+		}
+	}
 
-    utterancesEl ? postThemeMessage() : createUtterancesEl();
-  }, [utterancesTheme]);
+	sendMessage({
+		setConfig: {
+			theme: 'https://giscus.app/themes/' + widgetTheme + '.css',
+		//   reactionsEnabled: false,
+		}
+	});
+
+  }, [widgetTheme]);
 
   return (
     <>
