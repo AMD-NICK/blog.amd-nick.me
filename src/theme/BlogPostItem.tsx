@@ -23,7 +23,7 @@ function BlogPostItem(props) {
       script.src = "https://utteranc.es/client.js";
       script.setAttribute("repo", "AMD-NICK/blog.amd-nick.me");
       script.setAttribute("issue-term", "pathname");
-    //   script.setAttribute("label", "comment");
+      script.setAttribute("label", "post-comments");
       script.setAttribute("theme", utterancesTheme);
       script.crossOrigin = "anonymous";
       script.async = true;
