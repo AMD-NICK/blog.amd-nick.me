@@ -60,6 +60,11 @@ rm -r src/theme/BlogPostItem # уже мусорная папка
 
 ![giscus](https://i.imgur.com/wDdcyD5.png)
 
+```bash
+# устанавливаем зависимость
+yarn add @giscus/react
+```
+
 🧑‍💻 [Код для giscus](https://github.com/AMD-NICK/blog.amd-nick.me/blob/main/src/theme/BlogPostItem.tsx)
 
 # 🫡
