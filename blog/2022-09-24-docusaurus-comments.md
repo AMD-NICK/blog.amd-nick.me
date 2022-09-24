@@ -2,15 +2,15 @@
 title: "Добавляем комментарии в Docusaurus"
 date: '2022-09-24 16:02'
 slug: docusaurus-comments
-tags: [docusaurus, blog, utterances, gisqus, disqus]
+tags: [docusaurus, blog, utterances, giscus, disqus]
 image: https://i.imgur.com/1KYfkV9.png
 ---
 
-![gisqus](https://i.imgur.com/wDdcyD5.png)
+![giscus](https://i.imgur.com/wDdcyD5.png)
 
-Рассматрим 2 варианта добавления комментов: gisqus и utterances. Оба решения бесплатные 🆓, Open Source 😻 и не отправляют кучу аналитики, как мерзкий Disqus. **Для комментирования требуют GitHub аккаунт** (но у кого его нет..)
+Рассматрим 2 варианта добавления комментов: giscus и utterances. Оба решения бесплатные 🆓, Open Source 😻 и не отправляют кучу аналитики, как мерзкий Disqus. **Для комментирования требуют GitHub аккаунт** (но у кого его нет..)
 
-Их **главное** отличие в том, что gisqus хранит комменты в **Discussions** репозитория, а utterances в **Issues**. Еще gisqus имеет больше настроек и API
+Их **главное** отличие в том, что giscus хранит комменты в **Discussions** репозитория, а utterances в **Issues**. Еще giscus имеет больше настроек и API
 
 :::note
 Инструкция подойдет и для **Disqus**, но я его хейчу, так что если вы хотите использовать его, то я вам не помощник
@@ -54,12 +54,12 @@ rm -r src/theme/BlogPostItem # уже мусорная папка
 🧑‍💻 [Код для utterances](https://github.com/AMD-NICK/blog.amd-nick.me/blob/23d13cb6bb856ec7f4e8fc4ffd5fe6eb143c8d5d/src/theme/BlogPostItem.tsx)
 
 
-### gisqus 💎
+### giscus 💎
 
 Конфигуратор параметров и Demo тут: https://giscus.app/ru
 
-![gisqus](https://i.imgur.com/wDdcyD5.png)
+![giscus](https://i.imgur.com/wDdcyD5.png)
 
-🧑‍💻 [Код для gisqus](https://github.com/AMD-NICK/blog.amd-nick.me/blob/main/src/theme/BlogPostItem.tsx)
+🧑‍💻 [Код для giscus](https://github.com/AMD-NICK/blog.amd-nick.me/blob/main/src/theme/BlogPostItem.tsx)
 
 # 🫡

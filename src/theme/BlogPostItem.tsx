@@ -13,7 +13,7 @@ function BlogPostItem(props) {
   useEffect(() => {
     if (!isBlogPostPage) return;
 
-    const createGisqusEl = () => {
+    const createGiscusEl = () => {
       const script = document.createElement("script");
 
       script.src = "https://giscus.app/client.js";
@@ -36,12 +36,12 @@ function BlogPostItem(props) {
       containerRef.current.appendChild(script);
     };
 
-	function getGisqusEl() {
-		return document.querySelector<HTMLIFrameElement>('iframe.giscus-frame') || createGisqusEl();
+	function getGiscusEl() {
+		return document.querySelector<HTMLIFrameElement>('iframe.giscus-frame') || createGiscusEl();
 	}
 
 	function sendMessage<T>(message: T) {
-		const iframe = getGisqusEl();
+		const iframe = getGiscusEl();
 		if (iframe) {
 			iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
 		}
