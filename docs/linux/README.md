@@ -3,6 +3,7 @@
 
 - [Информация о команде](https://effective-shell.com/part-2-core-skills/understanding-commands) – `which where what whence whereis who`
 - [cheat.sh](https://github.com/chubin/cheat.sh) - получение шпаргалок через curl
+- [Лучшая система мониторинга, что я видел](https://github.com/netdata/netdata). Даже несмотря на то, что я не сторонник подобных систем. Не требует настройки, сразу Production ready, можно запустить прямо в Docker и смотреть графики на специальном удобнейшем сайте
 
 ## bash tips
 
