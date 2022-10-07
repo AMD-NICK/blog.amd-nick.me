@@ -41,9 +41,9 @@ sudo tar xf lazygit.tar.gz -C /usr/bin lazygit
 </details>
 
 ```bash
-DIR=/usr/bin
-
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+
+mv $HOME/.local/bin/lazydocker /usr/bin
 ```
 
 ### micro
@@ -60,6 +60,8 @@ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/i
 
 ```bash
 curl https://getmic.ro | bash
+
+mv micro /usr/bin
 ```
 
 ### lsd
@@ -81,7 +83,7 @@ apt install lsd
 # https://github.com/Peltoche/lsd/releases
 
 # Потом примерно так:
-curl -oL lsd.deb https://github.com/Peltoche/lsd/releases/download/0.23.0/lsd-musl_0.23.0_amd64.deb && dpkg -i lsd.deb && rm lsd.deb
+curl -o lsd.deb -L https://github.com/Peltoche/lsd/releases/download/0.23.0/lsd-musl_0.23.0_amd64.deb && dpkg -i lsd.deb && rm lsd.deb
 ```
 
 #### Настройки lsd:
