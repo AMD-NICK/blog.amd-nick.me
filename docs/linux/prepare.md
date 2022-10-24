@@ -144,6 +144,34 @@ sudo sysctl -p /etc/sysctl.conf
 sudo tailscale up --advertise-exit-node
 ```
 
+### fzf
+
+Поиск по командам в bash (`ctrl + r`) не имеет встроенного "fuzzy"(?) поиска. fzf добавляет его
+
+Установка:
+
+```bash
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+git clone https://github.com/4z3/fzf-plugins ~/.fzf-plugins
+```
+
+Настройка кейбиндов
+
+```bash
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Когда выбрали команду, `C-e` вставит ее для редактирования вместо выполнения
+FZF_CTRL_R_EDIT_KEY=ctrl-e
+FZF_CTRL_R_EXEC_KEY=enter
+source ~/.fzf-plugins/history-exec.bash
+
+# применяем настройки
+source ~/.bashrc
+```
+
+Ctrl + R активирует удобный поиск. Например, для lazydocker достаточно ввести lzdr > enter
+
 ## 🪞 Алиасы
 
 ```bash
