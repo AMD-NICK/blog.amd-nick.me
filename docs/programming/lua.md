@@ -20,6 +20,7 @@
 - [xFuscator](https://github.com/superfsm/XFuscator) обфускатор. Использовал сам
 - [luabundle](https://github.com/graue/luabundle) собирает модуль в один файл
 - [lockbox](https://github.com/somesocks/lua-lockbox) криптографические алгоритмы на чистом Lua
+- [luajit.me](https://github.com/rapidlua/luajit.me) сервис визуализации LuaJit компилятора. Узнал о нем с [этой презентации](https://www.youtube.com/watch?v=SeGK_NxmWOk), пока искал инфу про утечки памяти
 
 ---
 
@@ -135,3 +136,12 @@ lua test.lua
 dot -T jpeg -o example1.jpeg example1.dot
 ```
 
+#### loom
+
+У luajit есть модуль [dump](https://github.com/LuaJIT/LuaJIT/blob/master/src/jit/dump.lua), запускается примерно так: `luajit -jdump=T -e 'local s = 0; for i = 1, 100 do s = s + i end; print(s)'`. Он генерирует .txt или .html файлик с информацией о "трассах памяти"(?). Короче, вот такие отчеты: [клик](https://github.com/luavela/dumpanalyze/blob/master/tests/dump-files/test_cli.txt).
+
+На основе этих отчетов можно построить визуализации о работе jit компилятора.
+
+**[Loom](https://github.com/cloudflare/loom)** от CloudFlare улучшает эти отчеты, генерируя более подробный и красивый html файлик. Пальцем наугад я заметил в этих отчетах хоть только один, но очень важный участок кода, который поправил. Уверен, можно и больше, но пока что мне не хватает опыта.
+
+Установка проста: `git clone`, `mv jit $путь_в_пределах_package.path`, `mv loom.html $папка_с_initlua`. Потом запускаем свой скрипт: `luajit -jloom=loom.html,loom_dump.html init.lua`
