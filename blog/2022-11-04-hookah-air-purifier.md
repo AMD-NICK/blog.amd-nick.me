@@ -6,9 +6,9 @@ tags: [life, hookah]
 image: https://i.imgur.com/8wHdluL.png
 ---
 
-![levoit-filter-beauty-photo](https://i.imgur.com/8wHdluL.png)
+Обожаю кальяны, но их курение 4-5 шт в сутки в 25 кв/м помещении без вентиляции приводит к некоторым проблемам
 
-Обожаю кальяны, но их курение 4-5 шт в сутки в 25 кв/м помещении без вентиляции приводит к некоторым проблемам:
+![levoit-filter-beauty-photo](https://i.imgur.com/8wHdluL.png)
 
 <!--#todo фото грязной стены?-->
 
