@@ -1,6 +1,6 @@
 ---
 title: Портативный очиститель кальянного дыма
-date: 2022-11-04 13:37
+date: 2022-11-06 13:37
 slug: hookah-air-purifier
 tags: [life, hookah]
 image: https://i.imgur.com/8wHdluL.png
