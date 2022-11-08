@@ -69,6 +69,23 @@ docker inspect CONTAINER_NAME
 - ispy agent – видеонаблюдение. `Ctrl + K`, писал о нем
 - ghost cms, pritunl vpn, outline vpn, mariadb, redis, laradock, luarocks, openresty...
 
+### Быстро развернуть веб файловый менеджер
+
+[tinyfilemanager](https://github.com/prasathmani/tinyfilemanager) – запустил и работаешь. `admin:admin@123`. Не открывает .mkv видео
+
+```bash
+# будет доступен по порту 12345
+docker run -d -v $PWD:/var/www/html/data -p 12345:80 tinyfilemanager/tinyfilemanager:master
+```
+
+[filestash](https://github.com/mickael-kerjean/filestash) – вроде `admin:admin`, нужно кликнуть Local для доступа к локальной файловой системе. Даже открывает mkv вроде
+
+```bash
+docker run -d -v $PWD:/var/www/html/data -p 12345:8334 machines/filestash
+```
+
+Еще есть [filebrowser](https://github.com/filebrowser/filebrowser), самый популярный так то. Не помню пробовал ли
+
 ## 📒 Почитать
 
 - [Awesome docker](https://github.com/veggiemonk/awesome-docker) – список кучи всего связанного с Docker
