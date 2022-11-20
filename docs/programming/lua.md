@@ -22,11 +22,27 @@
 - [lockbox](https://github.com/somesocks/lua-lockbox) криптографические алгоритмы на чистом Lua
 - [luajit.me](https://github.com/rapidlua/luajit.me) сервис визуализации LuaJit компилятора. Узнал о нем с [этой презентации](https://www.youtube.com/watch?v=SeGK_NxmWOk), пока искал инфу про утечки памяти
 
+## Заметки
+
+### nil не то же, что отсутствие значения
+
+Поэтому если вы встретите в каких-то функциях `return nil`, то не спешите удалять эту строку. Возможно, она там не просто так
+
+Например `tonumber(nil)` вернет nil, а `tonumber()` (без nil) вызовет ошибку
+
+Проверить что nil это действительно nil, а не отсуствие аргумента в функции можно вот так: `select("#", ...)`. Функция вернет 1, если в параметрах передан nil и вернет 0, если ничего не указано
+
+![lua select nil](https://i.imgur.com/KVskJdN.jpg)
+
 ---
 
 ## Поиск утечек памяти
 
-Пришлось столкнуться. Мои микрозаметки на этот счет
+Пришлось столкнуться. Мои микрозаметки на этот счет.
+
+:::tip
+UPD: все, что описано ниже может быть полезным, но в моем случае полезнее всего оказалось [сбилдить LuaJit](https://github.com/TRIGONIM/ggram/blob/7e48477fb6e95fa9c8389bfc6ba253ab4631efed/Dockerfile_tarantool) от Tarantool и использовать встроенный в него memory profiler ([memprof](https://www.tarantool.io/en/doc/latest/reference/tooling/luajit_memprof/)), который покажет где и сколько памяти не высвободилось в коде.
+:::
 
 ### Ручной поиск
 
