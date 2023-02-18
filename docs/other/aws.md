@@ -34,6 +34,22 @@
 
 Аналоги: MailJet 25$ мес 1000 писем, MailGun не помню
 
+## \[ACM] Certificate Manager
+
+Жил, не тужил, поймал ошибку для одного домена, где картинки жили
+
+> One or more domain names has failed validation due to a certificate authority authorization (CAA) error
+
+SSL сертификат в итоге погиб, новый создать не получалось по этой же причине
+
+Нужно в DNS прописать `CAA` запись (раньше даже не слышал о такой). Имя `subdomain.example.com`, tag: `issue` (Only allow specific hostnames), CA Domain Name `amazontrust.com` (можно выбрать любой из списка [тут](https://docs.aws.amazon.com/acm/latest/userguide/setup-caa.html)).
+
+Затем создать новый сертификат в ACM и перепривязать его к домену в CloudFront (заменить истекший на новый).
+
+Выпуск сертификата занял около минуты, деплой CloudFront еще минуты 3.
+
+Подробнее про ошибку и решение [тут](https://aws.amazon.com/ru/premiumsupport/knowledge-center/acm-troubleshoot-caa-errors/)
+
 ### Заметки
 
 - По умолчанию домен добавляется в SandBox. С него нельзя слать на неподтвержденные email. Для теста нужно подтвердить
