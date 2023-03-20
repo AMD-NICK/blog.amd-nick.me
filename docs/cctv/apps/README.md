@@ -9,7 +9,6 @@ sidebar_position: 5
 Практически для любого из перечисленных приложений необходимо понимать [что такое RTSP](../connection.md) поток, а иногда даже как [сделать камеру доступной](../expose.md) с интернета. Рекомендую прочесть заранее
 :::
 
-
 ## [VLC](https://www.videolan.org/vlc/), [IINA](https://iina.io), etc Media Players
 
 ![VLC + rtsp](https://i.imgur.com/GXFSZ6m.png)
@@ -88,3 +87,4 @@ self-hosted решение, которое требует постоянно в�
 - https://camlytics.com/products что-то вроде sighthound?
 - https://zoneminder.com что-то вроде iSpy? [Git](https://github.com/ZoneMinder/ZoneMinder/)
 - https://xcape.io софт для квест румов? Нашел [отсюда](https://xcape.io/public/documentation/en/room/AddanexternalapplicationiSpy.html). Искал в гугле `ispy example configuration` (хотел найти best practices)
+- [Список NVR сервисов](https://medevel.com/10-cctv-open-source-solutions/). Щупал Kerberos Agent, он самый интересный, но сырой. Не уверен, что можно прикрутить AI. Shinobi и ZoneMinder даже запускать пришлось с лютого толкача. Все через жопу как-то.
