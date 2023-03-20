@@ -1,8 +1,14 @@
 # OpenResty
 
+## Логирование и отладка
+- Отключение луа кеша, чтобы изменения применялись мгновенно `lua_code_cache off;`
+- `docker-compose exec nginx -s reload` при обновлении .conf или .lua файлов (если кеш включен)
+- `tail -fn 100 /path_to/error.log`
+- Стандартный уровень логгинга в рести принтит `ngx.STDERR ngx.EMERG ngx.ALERT ngx.CRIT ngx.ERR`, а `ngx.WARN ngx.NOTICE ngx.INFO ngx.DEBUG` нет. Как мне мне, то лучше для error.log делать level warn, ибо ниже там флуд и говно
+
 ## Notes
 
-Ссылка по частям. Тут не хватает `ngx.var.args` и мб `ngx.req.get_uri_args()`. [Еще с args](https://stackoverflow.com/a/53260126/6490118)
+**Ссылка по частям**. Тут не хватает `ngx.var.args` и мб `ngx.req.get_uri_args()`. [Еще с args](https://stackoverflow.com/a/53260126/6490118)
 
 ```lua
 local full_url = ngx.var.scheme.."://"..ngx.var.http_host..ngx.var.request_uri
@@ -12,10 +18,20 @@ end
 ngx.say(full_url)
 ```
 
+**Функции времени**. Есть еще. Ниже ссылка на `extra TIME locations`
+
+```lua
+os.time() == ngx.time() == 1678064879
+ngx.today() == "2023-03-06"
+ngx.localtime() == "2023-03-06 01:07:59"
+ngx.now() == 1678064879.458
+```
+
 ## Ссылки
 
 - [Flow of lua nginx module directives](https://openresty-reference.readthedocs.io/en/latest/Directives/)
   ![](https://cloud.githubusercontent.com/assets/2137369/15272097/77d1c09e-1a37-11e6-97ef-d9767035fc3e.png)
+- [SSL Configuration Generator](https://ssl-config.mozilla.org) - генерация базового конфига с cipher
 
 - [Добавление хедера](https://gist.github.com/es/ef4da0558c23f8a9e83d1f54ae12bca9). `header_filter_by_lua_block`
 - [Выполнение запроса к хосту и /healthcheck](https://gist.github.com/sabretus/6002af0a9dd3a4401adafacaa67caa7f). `access_by_lua_block`
