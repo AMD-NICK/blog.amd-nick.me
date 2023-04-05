@@ -181,6 +181,30 @@ source ~/.bashrc
 
 Ctrl + R активирует удобный поиск. Например, для lazydocker достаточно ввести lzdr > enter
 
+### nnn (файловый менеджер)
+
+Плагины, иконки, минимализм. Как замена Midnight Commander. Привыкаю
+
+```bash
+# Установка самого nnn с красивыми иконками
+NNN_VERSION=$(curl -s "https://api.github.com/repos/jarun/nnn/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
+curl -Ls "https://github.com/jarun/nnn/releases/download/v$NNN_VERSION/nnn-nerd-static-$NNN_VERSION.x86_64.tar.gz" | tar xz &
+sudo mv nnn-nerd-static /usr/bin/nnn
+
+# Установка плагинов (не включаются сами). По умолчанию ставит в $HOME/.config/nnn/plugins
+sh -c "$(curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs)"
+```
+
+Также надо настроить. Добавлять куда-нибудь в `.bashrc`
+
+```bash
+export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
+# тут надо самому узнать и понять что вам нужно, а что нет. Включаются потом по ; > кнопка
+export NNN_PLUG='f:finder;p:preview-tui;v:imgview'
+```
+
+[Вот это](https://github.com/jarun/nnn/blob/master/misc/quitcd/quitcd.bash_zsh) очень рекомендую добавить тоже в .bashrc. Странное поведение, но без этого по умолчанию при выходе оно не входит в папку, где ты закрыл nnn. **Если добавили, то теперь запускайте nnn через `n`, а не nnn**.
+
 ## 🪞 Алиасы
 
 ```bash
