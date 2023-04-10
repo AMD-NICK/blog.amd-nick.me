@@ -200,7 +200,7 @@ sh -c "$(curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/get
 ```bash
 export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
 # тут надо самому узнать и понять что вам нужно, а что нет. Включаются потом по ; > кнопка
-export NNN_PLUG='f:finder;p:preview-tui;v:imgview'
+export NNN_PLUG='d:diffs;c:fzcd;v:imgview;p:preview-tui'
 ```
 
 [Вот это](https://github.com/jarun/nnn/blob/master/misc/quitcd/quitcd.bash_zsh) очень рекомендую добавить тоже в .bashrc. Странное поведение, но без этого по умолчанию при выходе оно не входит в папку, где ты закрыл nnn. **Если добавили, то теперь запускайте nnn через `n`, а не nnn**.
