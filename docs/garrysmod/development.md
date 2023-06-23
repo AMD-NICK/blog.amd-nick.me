@@ -8,7 +8,7 @@
 
 ## Репозитории
 
-Жирным выделены те, которые особо ценны для меня. 
+Жирным выделены те, которые особо ценны для меня.
 
 - Tags: [garrysmod](https://github.com/topics/garrysmod) | [glua](https://github.com/topics/glua) | [garrys-mod](https://github.com/topics/garrys-mod)
 - **[ggram](https://github.com/TRIGONIM/ggram) фреймворк для написания ботов на чистом Lua (не в гмоде) и Glua (в гмоде)**
@@ -66,4 +66,4 @@
 
 ## Ссылки
 - [Локализированная защита от подмены SteamID](https://github.com/Metastruct/luadev/pull/14/files) git commit
-- [print(glua koders)](https://t.me/gmodev) изначально шуточный Telegram чат, где могут помочь по glua вопросам
+- [print(glua koders)](https://t.me/+pf3ZgCscKR85ZmIy) изначально шуточный Telegram чат, где могут помочь по glua вопросам
