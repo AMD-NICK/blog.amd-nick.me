@@ -14,7 +14,7 @@ tags: [polling, lua, microservice, api]
 
 > Рассчитан для ограниченной среды, где усложнена или отсутствует возможность поднятия Web сервера для своих вебхуков.
 
-Рекомендую прочесть [это](https://learn.javascript.ru/long-polling), если вы представляете LongPolling как GET запрос раз в 10 секунд.
+Рекомендую прочесть [это](https://learn.javascript.ru/long-polling), если вы представляете LongPolling как GET запрос раз в 10 секунд (это не так).
 
 ![](https://s3.blog.amd-nick.me/2021/11/image-3.png)
 *Одной этой схемы достаточно, чтобы понять как все работает на примере Telegram бота*
@@ -25,8 +25,8 @@ tags: [polling, lua, microservice, api]
 
 Мы хотели сделать максимально простой API, поэтому нет никаких токенов, паролей, регистраций. Все данные считаются публичными (любой может прочесть или записать), но вы можете спрятать их, подставив вместо SECRET\_UID что-то вроде пароля или токена.
 
-- GET https://poll.gmod.app/SECRET\_UID/getUpdates
-- POST https://poll.gmod.app/SECRET\_UID/pushUpdates
+- GET https://poll.gmod.app/SECRET_UID
+- POST https://poll.gmod.app/SECRET_UID
 
 Больше ничего. Почти. У GET запроса есть возможность указания некоторых параметров, но сначала покажу пример ответа от GET запроса
 
@@ -38,9 +38,9 @@ tags: [polling, lua, microservice, api]
 
 ## Определение какой сервис прислал апдейт
 
-POST запрос может принять любые параметры. Они будут добавлены в каждый update объект, что полезно для идентификации сервиса, с которого пришел апдейт, если вы указываете один webhook на нескольких сервисах. Например, для определения какой телеграм бот прислал апдейт, я задаю каждому боту вебхук в таком стиле: `/setWebhook?url=https://poll.gmod.app/myS3cretU1D/pushUpdates?botname=video_thumbnails_bot`.
+POST запрос может принять любые параметры. Они будут добавлены в каждый update объект, что полезно для идентификации сервиса, с которого пришел апдейт, если вы указываете один webhook на нескольких сервисах. Например, для определения какой телеграм бот прислал апдейт, я задаю каждому боту вебхук в таком стиле: `/setWebhook?url=https://poll.gmod.app/myS3cretU1D?botname=video_thumbnails_bot`.
 
-Теперь на GET https://poll.gmod.app/myS3cretU1D/getUpdates в каждом таком апдейте будет поле botname=video\_thumbnails\_bot
+Теперь на GET https://poll.gmod.app/myS3cretU1D в каждом таком апдейте будет поле botname=video\_thumbnails\_bot
 
 ## Пример библиотеки на Lua для работы с poll.gmod.app
 
