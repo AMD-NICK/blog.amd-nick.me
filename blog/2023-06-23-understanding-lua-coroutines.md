@@ -3,7 +3,7 @@ title: Корутины в Lua с примерами
 date: '2023-06-23 13:37:00'
 slug: understanding-lua-coroutines
 image: https://file.def.pm/5a2V6yNW.png
-tags: [lua]
+tags: [dev, lua]
 ---
 
 ![coroutine-vs-function-line-view](https://file.def.pm/5a2V6yNW.png)

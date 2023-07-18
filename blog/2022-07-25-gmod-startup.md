@@ -2,7 +2,7 @@
 title: "Garry's Mod - Ускоряем загрузку сервера"
 date: '2022-07-25 13:37'
 slug: gmod-startup
-tags: [garrysmod]
+tags: [dev, garrysmod]
 image: https://i.imgur.com/VHsA4WS.png
 ---
 

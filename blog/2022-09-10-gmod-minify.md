@@ -2,7 +2,7 @@
 title: "Garry's Mod - Минификация кода сервера"
 date: '2022-09-10 20:30'
 slug: gmod-minify
-tags: [garrysmod]
+tags: [dev, garrysmod]
 image: https://i.imgur.com/oXeRmZJ.png
 ---
 
