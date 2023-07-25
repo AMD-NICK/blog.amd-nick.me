@@ -19,6 +19,17 @@ Mac на M1 это экстремально легкий, компактный �
 - **Trackpad** от Mac крут. Никогда не подумал бы, что захочу заменить мышку на трекпад даже на Windows
 - Нужно заставить себя принять, что Mac это не Windows и не гуглить всякое "Переключение раскладки по Alt + Shift"
 
+### Сайты для скачивания приложений на Mac:
+
+Найдены на reddit, я лишь сохранил ссылки.
+
+- https://xmac.app/app
+- https://www.macbed.com
+- https://cmacked.com ([хвалят](https://www.reddit.com/r/MacOS/comments/106lrd2/comment/j3l7n40/?utm_source=reddit&utm_medium=web2x&context=3) в [двух](https://www.reddit.com/r/Piracy/comments/pv9lho/mac_are_cracked_apps_for_the_tnt_team_generally/) постах на реддите)
+- https://www.mactorrents.is
+- https://www.torrentmac.net
+
+
 ## Links
 
 - [My MacOS by Nikita Voloboev](https://github.com/nikitavoloboev/my-mac-os) – Mac самого продуктивного человека, которого я знаю
