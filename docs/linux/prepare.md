@@ -92,22 +92,6 @@ curl -o lsd.deb -L https://github.com/Peltoche/lsd/releases/download/0.23.0/lsd-
 
 Если нет иконок: [клик](https://github.com/Peltoche/lsd/issues/199#issuecomment-494218334)
 
-Алиасы:
-```bash
-echo "
-alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lt='ls --tree'
-
-alias dps='docker ps --format \"{{.ID}}\\t{{.Status}}\\t{{.Names}}\"'
-alias dc='docker-compose'
-
-alias sls='screen -ls'
-alias sxu='screen -xU'
-" >> ~/.bash_aliases
-```
-
 Настройки
 ```bash
 mkdir -p ~/.config/lsd
@@ -119,6 +103,8 @@ sorting:
 date: +%F %R
 " >> ~/.config/lsd/config.yaml
 ```
+
+Алиасы в том числе для lsd перечислены ниже в отдельном блоке.
 
 ### docker + docker-compose
 
@@ -168,8 +154,10 @@ git clone https://github.com/4z3/fzf-plugins ~/.fzf-plugins
 Настройка кейбиндов
 
 ```bash
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# выполнить
+nano ~/.fzf.bash
 
+# добавить
 # Когда выбрали команду, `C-e` вставит ее для редактирования вместо выполнения
 FZF_CTRL_R_EDIT_KEY=ctrl-e
 FZF_CTRL_R_EXEC_KEY=enter
@@ -179,42 +167,70 @@ source ~/.fzf-plugins/history-exec.bash
 source ~/.bashrc
 ```
 
-Ctrl + R активирует удобный поиск. Например, для lazydocker достаточно ввести lzdr > enter
+Ctrl + R активирует удобный поиск. Например, для `lazydocker` достаточно ввести `lzdr` > enter
 
 ### nnn (файловый менеджер)
 
 Плагины, иконки, минимализм. Как замена Midnight Commander. Привыкаю
 
+Версия для ubuntu/debian (ниже для остального)
 ```bash
 # Установка самого nnn с красивыми иконками
 NNN_VERSION=$(curl -s "https://api.github.com/repos/jarun/nnn/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
 curl -Ls "https://github.com/jarun/nnn/releases/download/v$NNN_VERSION/nnn-nerd-static-$NNN_VERSION.x86_64.tar.gz" | tar xz &
 sudo mv nnn-nerd-static /usr/bin/nnn
+```
 
+Версия для других ОС. Тестировал на Raspberry Pi 3 B+
+```bash
+# установк требует sudo!, не root по каким-то причинам..
+git clone git@github.com:jarun/nnn.git && cd nnn
+sudo apt-get install pkg-config libncursesw5-dev libreadline-dev
+sudo make O_NERD=1 strip install
+```
+
+Установка плагинов. Настройка ниже
+
+```bash
 # Установка плагинов (не включаются сами). По умолчанию ставит в $HOME/.config/nnn/plugins
+# Подробнее тут в readme: https://github.com/jarun/nnn/tree/master/plugins
 sh -c "$(curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs)"
 ```
 
-Также надо настроить. Добавлять куда-нибудь в `.bashrc`
+Настройки. Добавлять куда-нибудь в `.bashrc` или дочерний source файл
 
 ```bash
-export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
 # тут надо самому узнать и понять что вам нужно, а что нет. Включаются потом по ; > кнопка
 export NNN_PLUG='d:diffs;c:fzcd;v:imgview;p:preview-tui'
+export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
+# Ставим редактор для nnn [e]
+export VISUAL=micro
 ```
 
-[Вот это](https://github.com/jarun/nnn/blob/master/misc/quitcd/quitcd.bash_zsh) очень рекомендую добавить тоже в .bashrc. Странное поведение, но без этого по умолчанию при выходе оно не входит в папку, где ты закрыл nnn. **Если добавили, то теперь запускайте nnn через `n`, а не nnn**.
+🔥 [Вот это](https://github.com/jarun/nnn/blob/master/misc/quitcd/quitcd.bash_zsh) **очень рекомендую** добавить тоже в .bashrc. Странное поведение, но без этого по умолчанию при выходе оно не входит в папку, где ты закрыл nnn. **Если добавили, то теперь запускайте nnn через `n`, а не nnn**.
 
 ## 🪞 Алиасы
 
 ```bash
-dc=docker-compose
-ssc='micro ~/.ssh/config'
-lg=lazygit
-ld=lazydocker
+echo "
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lt='ls --tree'
+
+alias dps='docker ps --format \"{{.ID}}\\t{{.Status}}\\t{{.Names}}\"'
+alias dc='docker compose'
+
+alias sls='screen -ls'
+alias sxu='screen -xU'
+
+alias ssc='micro ~/.ssh/config'
+alias lg=lazygit
+alias ld=lazydocker
 
 # личное
 lr='luarocks --lua-dir=$(brew --prefix)/opt/lua@5.3'
+" >> ~/.bash_aliases
 ```
 
 ## 🔑 SSH ключи

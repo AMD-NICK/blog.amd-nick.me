@@ -17,28 +17,3 @@
 4. Повтор команды с sudo `sudo !!`
 5. Очистить консоль `Ctrl + L`
 6. `export EDITOR=vim`, затем `Ctrl + X > Ctrl + E` откроет редактор, в котором удобно вводить большие команды
-
-## need sorting
-
-### nnn (file manager. mc analogue)
-
-
-```bash
-# nnn installation (need sudo!, not root for some reasons..)
-git clone git@github.com:jarun/nnn.git && cd nnn
-sudo apt-get install pkg-config libncursesw5-dev libreadline-dev
-sudo make strip install
-
-# Ставим редактор для nnn -e
-export VISUAL=micro
-nnn -e
-
-# todo сделать персистентным. .bashrc
-wget https://raw.githubusercontent.com/jarun/nnn/master/misc/quitcd/quitcd.bash_zsh
-source quitcd.bash_zsh
-
-# Установка всех плагинов и биндов к некоторым
-curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs | sh
-export NNN_PLUG='f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview'
-
-```
