@@ -7,7 +7,7 @@ tags:
 - docker
 ---
 
-[Здесь](https://habr.com/post/354632/) написано о запуске через docker-compose. Я пишу об установке в качестве сервиса systemd
+[Здесь](https://habr.com/post/354632/) написано о запуске через `docker compose`. Я пишу об установке в качестве сервиса systemd
 
 Если сервис "упадет" (Будь то убийство процесса или краш), он перезапустится через 10 секунд
 
@@ -59,6 +59,6 @@ tags:
 # Полезные ссылки
 
 - [Подробнее через systemd](https://github.com/kylemanna/docker-openvpn/blob/master/docs/systemd.md)
-- [Через docker-compose](https://github.com/kylemanna/docker-openvpn/blob/master/docs/docker-compose.md)
+- [Через docker compose](https://github.com/kylemanna/docker-openvpn/blob/master/docs/docker-compose.md)
 - [Debugging](https://github.com/kylemanna/docker-openvpn/blob/master/docs/debug.md)
 - [Управление клиентами](https://github.com/kylemanna/docker-openvpn/blob/master/docs/clients.md)

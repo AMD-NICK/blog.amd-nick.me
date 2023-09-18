@@ -95,7 +95,7 @@ tags: [docker, ghost, traefik, blog]
       traefiknet:
         name: traefiknet
 
-- `.network=traefiknet` обязательно создайте внизу файла вместе с `.name: traefiknet`, иначе docker-compose создаст сеть с другим названием (Issues: [2348](https://github.com/containous/traefik/issues/2348), [2700](https://github.com/containous/traefik/issues/2700))
+- `.network=traefiknet` обязательно создайте внизу файла вместе с `.name: traefiknet`, иначе `docker compose` создаст сеть с другим названием (Issues: [2348](https://github.com/containous/traefik/issues/2348), [2700](https://github.com/containous/traefik/issues/2700))
 - В `routers.ghost.rule` используются обратные кавычки
 - `.entrypoints`и `.certresolver` взяты с `traefik.toml`
 - `loadbalancer.server.port=2368` указывает на порт, который Ghost [использует внутри контейнера](https://ghost.org/docs/concepts/config/#server). Наружу этот порт не выносим

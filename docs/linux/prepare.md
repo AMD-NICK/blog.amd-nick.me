@@ -106,15 +106,11 @@ date: +%F %R
 
 Алиасы в том числе для lsd перечислены ниже в отдельном блоке.
 
-### docker + docker-compose
+### docker
 
 ```bash
 # Install docker
 curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
-
-# Install docker-compose
-curl -Lo /usr/local/bin/docker-compose "https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64"
-chmod +x /usr/local/bin/docker-compose
 
 # Create docker user
 adduser docker_user

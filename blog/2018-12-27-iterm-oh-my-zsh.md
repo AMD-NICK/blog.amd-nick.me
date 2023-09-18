@@ -104,7 +104,7 @@ $ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/the
 
 > Плагины добавляют новые алиасы к коммандам, а в некоторых случаях и изменяют вид терминала, например, при входе в папку .git репозитория
 
-Список стандартных плагинов [здесь](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins). Я использую `git docker docker-compose osx zsh-syntax-highlighting`
+Список стандартных плагинов [здесь](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins). Я перечислил ниже те, которые использую
 
 Последний добавляет крутую подсветку синтаксиса для всего вводимого текста в терминал, но требует отдельной загрузки, тк не стандартный
 

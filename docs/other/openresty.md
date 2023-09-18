@@ -2,7 +2,7 @@
 
 ## Логирование и отладка
 - Отключение луа кеша, чтобы изменения применялись мгновенно `lua_code_cache off;`
-- `docker-compose exec nginx -s reload` при обновлении .conf или .lua файлов (если кеш включен)
+- `docker compose exec nginx -s reload` при обновлении .conf или .lua файлов (если кеш включен)
 - `tail -fn 100 /path_to/error.log`
 - Стандартный уровень логгинга в рести принтит `ngx.STDERR ngx.EMERG ngx.ALERT ngx.CRIT ngx.ERR`, а `ngx.WARN ngx.NOTICE ngx.INFO ngx.DEBUG` нет. Как мне мне, то лучше для error.log делать level warn, ибо ниже там флуд и говно
 
