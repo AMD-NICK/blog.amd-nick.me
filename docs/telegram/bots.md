@@ -9,7 +9,8 @@
 
 ### Извлечение картинок из видео
 
-<details><summary>Скриншот</summary>
+<details>
+<summary>Скриншот</summary>
 
 ![screenshot_2022-06-14_22.38.58@2x](https://i.imgur.com/TE5u6bS.png)
 
@@ -22,7 +23,8 @@
 
 ### Генерация кодов авторизации Steam
 
-<details><summary>Скриншот</summary>
+<details>
+<summary>Скриншот</summary>
 
 ![screenshot_2022-06-14_22.37.11@2x](https://i.imgur.com/VsNroU6.png)
 
@@ -33,7 +35,8 @@
 
 ### Шифрование сообщений
 
-<details><summary>Скриншот</summary>
+<details>
+<summary>Скриншот</summary>
 
 ![screenshot_2022-06-14_22.36.13@2x](https://i.imgur.com/KRmqzGY.png)
 
@@ -44,7 +47,8 @@
 
 ### Сбор самых интересных постов со стены ВК
 
-<details><summary>Скриншот</summary>
+<details>
+<summary>Скриншот</summary>
 
 ![screenshot_2022-06-14_22.30.55@2x](https://i.imgur.com/y1nPujL.jpg)
 
@@ -56,7 +60,8 @@
 
 ### Отображение JSON кода Telegram сообщений
 
-<details><summary>Скриншот</summary>
+<details>
+<summary>Скриншот</summary>
 
 ![screenshot_2022-06-14_22.42.02@2x](https://i.imgur.com/OtytKak.png)
 
@@ -66,7 +71,8 @@
 
 ### Бот не-калькулятор
 
-<details><summary>Скриншот</summary>
+<details>
+<summary>Скриншот</summary>
 
 ![screenshot_2022-06-14_22.43.38@2x](https://i.imgur.com/gCnctAr.png)
 
@@ -76,7 +82,8 @@
 
 ### Хостинг файлов
 
-<details><summary>Скриншот</summary>
+<details>
+<summary>Скриншот</summary>
 
 ![img](https://file.def.pm/L00S3aSj.png)
 
