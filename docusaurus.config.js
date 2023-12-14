@@ -1,19 +1,20 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer').themes.github;
-const darkCodeTheme = require('prism-react-renderer').themes.dracula;
+const lightCodeTheme = require('prism-react-renderer').themes.nightOwlLight;
+const darkCodeTheme = require('prism-react-renderer').themes.nightOwl;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	title: 'Блог _AMD_',
-	tagline: 'Всякое гиковское',
+	favicon: 'img/favicon.ico',
+	// tagline: 'Всякое гиковское',
 	url: 'https://blog.amd-nick.me',
 	baseUrl: '/',
+
 	onBrokenLinks: 'throw',
 	// onBrokenMarkdownLinks: 'warn',
 	onBrokenMarkdownLinks: 'throw',
-	favicon: 'img/favicon.ico',
 
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
@@ -43,15 +44,15 @@ const config = {
 			/** @type {import('@docusaurus/preset-classic').Options} */
 			({
 				docs: {
-					sidebarPath: require.resolve('./sidebars.js'),
 					routeBasePath: "/docs",
-					// Remove this to remove the "edit this page" links.
+					sidebarPath: require.resolve('./sidebars.js'),
 					editUrl: 'https://github.com/AMD-NICK/docusaurustest/tree/main/',
+					showLastUpdateTime: true,
 				},
 
 				blog: {
-					showReadingTime: true,
 					routeBasePath: '/',
+					showReadingTime: true,
 					blogSidebarCount: 'ALL',
 					blogSidebarTitle: 'Другие посты',
 					// Remove this to remove the "edit this page" links.
@@ -59,7 +60,14 @@ const config = {
 				},
 
 				theme: {
-					customCss: require.resolve('./src/css/custom.css'),
+					customCss: [
+						// not my styles. Taken from here:
+						// https://github.com/vendure-ecommerce/vendure/blob/cc4826dfb7c1a2f4e6ed8daa13eb017090d8bd9a/docs/src/css/custom.css
+						require.resolve('./src/css/custom.css'),
+						require.resolve('./src/css/layout.css'),
+						require.resolve('./src/css/overrides.css'),
+						// require.resolve('./src/css/code-blocks.css'),
+					],
 				},
 
 				gtag: {
@@ -73,11 +81,17 @@ const config = {
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
+			colorMode: {
+                defaultMode: 'dark',
+                disableSwitch: false,
+                respectPrefersColorScheme: true,
+            },
+
 			navbar: {
-				title: '@amd_nick',
+				title: '',
 				logo: {
 					alt: 'Лого',
-					src: 'https://i.imgur.com/FEwbyUh.png',
+					src: 'img/logo.png', // todo webp
 				},
 				items: [
 					{
@@ -111,21 +125,6 @@ const config = {
 						label: '📦 Штуки',
 					},
 					{
-						href: "https://www.instagram.com/amd_nick",
-						position: "right",
-						label: "📷 Instagram",
-					},
-					{
-						href: "https://vk.com/amd_nick",
-						position: "right",
-						label: "👥 VK",
-					},
-					{
-						href: "https://t.me/amd_nick",
-						position: "right",
-						label: "💬 Telegram",
-					},
-					{
 						href: "https://github.com/AMD-NICK/blog.amd-nick.me",
 						position: "right",
 						className: "header-github-link",
@@ -136,7 +135,7 @@ const config = {
 			prism: {
 				theme: lightCodeTheme,
 				darkTheme: darkCodeTheme,
-				additionalLanguages: ['lua'],
+				additionalLanguages: ['lua', 'bash'],
 			},
 			algolia: {
 				appId: "03RIRS86OT",

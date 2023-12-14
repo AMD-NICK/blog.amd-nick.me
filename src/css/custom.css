@@ -1,41 +1,135 @@
-/**
-* Any CSS included here will be global. The classic template
-* bundles Infima by default. Infima is a CSS framework designed to
-* work well for content-centric websites.
+/*
+NOT MY STYLE. SOURCE:
+https://github.com/vendure-ecommerce/vendure/blob/cc4826dfb7c1a2f4e6ed8daa13eb017090d8bd9a/docs/src/css/custom.css
 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+:root {
+  --ifm-font-family-base: "Inter", sans-serif;
+}
 
 /* You can override the default Infima variables here. */
 :root {
-	--ifm-color-primary: #2e8555;
-	--ifm-color-primary-dark: #29784c;
-	--ifm-color-primary-darker: #277148;
-	--ifm-color-primary-darkest: #205d3b;
-	--ifm-color-primary-light: #33925d;
-	--ifm-color-primary-lighter: #359962;
-	--ifm-color-primary-lightest: #3cad6e;
-	--ifm-code-font-size: 95%;
+    --ifm-color-primary: hsl(196 100% 35%);
+    --ifm-color-primary-dark: hsl(196 100% 25%);
+    --ifm-color-primary-darker: hsl(196 100% 15%);
+    --ifm-color-primary-darkest: hsl(196 100% 7%);
+    --ifm-color-primary-light: hsl(196 100% 65%);
+    --ifm-color-primary-lighter: hsl(196 100% 75%);
+    --ifm-color-primary-lightest: hsl(196 100% 90%);
+    --ifm-navbar-background-color: #ffffff11;
+    --navbar-background-color-mobile: #ffffffee;
+    --ifm-color-content: var(--ifm-color-emphasis-800);
+    --ifm-code-font-size: 95%;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+    --color-graphql-comment: #47954d;
+    --color-graphql-identifier: rgb(227, 17, 108);
+    --color-members-border: var(--ifm-color-secondary);
+    --docusaurus-highlighted-code-line-bg: #e0f1ff;
+    --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" /></svg>');
+    --body-background: white;
+    --ifm-footer-background-color: #edf2f5;
+    --color-docsearch-border: #b7b7c3;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-	--ifm-color-primary: #25c2a0;
-	--ifm-color-primary-dark: #21af90;
-	--ifm-color-primary-darker: #1fa588;
-	--ifm-color-primary-darkest: #1a8870;
-	--ifm-color-primary-light: #29d5b0;
-	--ifm-color-primary-lighter: #32d8b4;
-	--ifm-color-primary-lightest: #4fddbf;
+    --ifm-color-primary: hsl(196 100% 45%);
+    --ifm-color-primary-dark: hsl(196 100% 35%);
+    --ifm-color-primary-darker: hsl(196 100% 25%);
+    --ifm-color-primary-darkest: hsl(196 100% 15%);
+    --ifm-color-primary-light: hsl(196 100% 65%);
+    --ifm-color-primary-lighter: hsl(196 100% 75%);
+    --ifm-color-primary-lightest: hsl(196 100% 90%);
+    --ifm-navbar-background-color: #00021211;
+    --navbar-background-color-mobile: #000212ee;
+    --ifm-card-background-color: transparent;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+    --color-graphql-comment: #6ea372;
+    --color-graphql-identifier: rgb(255, 121, 198);
+    --color-members-border: #333;
+    --docusaurus-highlighted-code-line-bg: rgba(15, 71, 117, 0.5);
+    --body-background: rgb(10, 10, 10);
+    --ifm-footer-background-color: #1a1f27;
+    --color-docsearch-border: #232347;
 }
 
-.docusaurus-highlight-code-line {
-	background-color: rgba(0, 0, 0, 0.1);
-	display: block;
-	margin: 0 calc(-1 * var(--ifm-pre-padding));
-	padding: 0 var(--ifm-pre-padding);
+/* Увеличение шрифтов текста и уменьшение размера заголовков постов */
+@media screen and (max-width: 996px) {
+	:root {
+		--ifm-font-size-base: 18px;
+	}
+	article header h1 {
+		font-size: 1.5rem !important;
+	}
+	.hero .hero__title {
+		font-size: 2.5rem;
+	}
 }
 
-[data-theme='dark'] .docusaurus-highlight-code-line {
-	background-color: rgba(0, 0, 0, 0.3);
+@media screen and (min-width: 997px) {
+	:root {
+		--ifm-font-size-base: 17px;
+	}
+	article header h1 {
+		font-size: 2rem !important;
+	}
+}
+
+/* Умеьшает ширину основного блока текста */
+/* article {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+} */
+
+/* Увеличивает размер шрифта в выпадающем списке навигации */
+/* .dropdown__link {
+	font-size: inherit;
+} */
+
+html[data-theme='light'] {
+    --ifm-background-color: #ffffff;
+}
+
+html[data-theme='dark'] {
+    --ifm-background-color: #000212;
+}
+
+.markdown h2:not(:first-of-type) {
+    --ifm-h2-vertical-rhythm-top: 5;
+}
+
+.markdown img {
+    border-radius: 4px;
+}
+
+
+.members-wrapper {
+    border-left: 1px solid var(--color-members-border);
+    padding-left: 32px;
+}
+
+.members-wrapper > h3 {
+    margin-top: 42px;
+}
+
+.sidebar-section-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    opacity: 0.8;
+    color: #afafaf;
+    padding: var(--ifm-menu-link-padding-vertical)
+         var(--ifm-menu-link-padding-horizontal);
+}
+
+.sidebar-section-divider {
+    border-bottom: 1px solid var(--ifm-font-color-base);
+    opacity: 0.2;
+    margin: 6px 12px;
 }
 
 .header-github-link:hover {
