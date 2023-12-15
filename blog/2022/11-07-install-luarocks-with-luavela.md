@@ -68,6 +68,6 @@ make && make install
 
 ## Может быть интересно
 
-- [Про __mode в метатаблицах](./2020-01-21-lua-metatables-mode.md)
+- [Про __mode в метатаблицах](../2020-01-21-lua-metatables-mode.md)
 - [Мои заметки про Lua](/docs/programming/lua)
 - [ggram - мой telegram bot api lua framework](https://git.io/ggram)
