@@ -217,9 +217,9 @@ local function fetchAllUrls(tUrls, cb)
 end
 
 fetchAllUrls({
-	"https://poll.gmod.app/asd?sleep=1",
-	"https://poll.gmod.app/asd?sleep=1",
-	"https://poll.gmod.app/asd?sleep=1",
+	"https://poll.def.pm/asd?sleep=1",
+	"https://poll.def.pm/asd?sleep=1",
+	"https://poll.def.pm/asd?sleep=1",
 }, fp{PRINT, "RES"})
 ```
 
