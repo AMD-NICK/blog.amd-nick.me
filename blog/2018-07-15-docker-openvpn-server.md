@@ -7,11 +7,19 @@ tags:
 - docker
 ---
 
+## UPD 2023.12.15
+
+**Статья морально устарела**. Сейчас модно использовать Tailscale (база – wireguard), либо хотя бы сам WireGuard. Еще можете погуглить Outline.
+
+> Кстати, напишите в ЛС, если каким-то образом попали сюда. Не знаю, кто в 2023 мог сюда попасть и очень интересно как именно.
+
+---
+
 [Здесь](https://habr.com/post/354632/) написано о запуске через `docker compose`. Я пишу об установке в качестве сервиса systemd
 
 Если сервис "упадет" (Будь то убийство процесса или краш), он перезапустится через 10 секунд
 
-# Создаем и запускаем сервис OpenVPN
+## Создаем и запускаем сервис OpenVPN
 
 1.
 
@@ -46,7 +54,7 @@ tags:
 **Лог сервиса** : `journalctl --unit docker-openvpn@example.service`
 **Остановка** : `systemctl stop docker-openvpn@example.service`
 
-# Создаем клиентские конфиги
+## Создаем клиентские конфиги
 
 Чтобы подключиться к VPN потребуется конфигурация. Заменяем CLIENTNAME в первой строчке
 
@@ -56,7 +64,7 @@ tags:
 
 На Windows ее нужно поместить в `C:\Program Files\OpenVPN\config`
 
-# Полезные ссылки
+## Полезные ссылки
 
 - [Подробнее через systemd](https://github.com/kylemanna/docker-openvpn/blob/master/docs/systemd.md)
 - [Через docker compose](https://github.com/kylemanna/docker-openvpn/blob/master/docs/docker-compose.md)

@@ -9,7 +9,7 @@ tags: [grafana, prometheus, mysql]
 
 <!--truncate-->
 
-# Основы
+## Основы
 
 В основах все просто и держится на 4 китах:
 

@@ -5,16 +5,22 @@ slug: koto-mining-docker
 tags: [docker, finances, mining, crypto]
 ---
 
+## UPD 2023.12.15
+
+Напиши мне в лс, если это читаешь. Мне очень интересно, кто в 2023 году сюда попал, а главное – КАК?
+
+---
+
 Ниже заметки, касательно KOTO и `yescrypt`, но используя `cpuminer-multi` майнятся и другие монеты
 
 ![yescrypt-cpu-mining](https://s3.blog.amd-nick.me/2018/07/yescrypt-cpu-mining.png)
 
-# Установка с Docker
+## Установка с Docker
 
 `docker run --rm defaced/cpuminer-multi --algo yescrypt --url stratum+tcp://koto.litepool.ru:3032 --user k1FQS7Q2XxaWWLjLdFXFJfG7cQq74mWsZph`
 Можно заменить адрес пула и кошелька
 
-# Установка без Docker
+## Установка без Docker
 
 Требуется Debian based OS\*
 
@@ -32,7 +38,7 @@ tags: [docker, finances, mining, crypto]
 Запускаем (В -u кошелек)
 `./minerd -a yescrypt -o stratum+tcp://koto.litepool.ru:3032 -u k1FQS7Q2XxaWWLjLdFXFJfG7cQq74mWsZph`
 
-# Статистика
+## Статистика
 
 Наблюдать за своими воркерами можно по ссылке:
 [http://koto.litepool.ru:8080/workers/k1FQS7Q2XxaWWLjLdFXFJfG7cQq74mWsZph](http://koto.litepool.ru:8080/workers/k1FQS7Q2XxaWWLjLdFXFJfG7cQq74mWsZph)

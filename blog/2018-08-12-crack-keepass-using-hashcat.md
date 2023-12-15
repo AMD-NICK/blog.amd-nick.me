@@ -5,17 +5,23 @@ slug: crack-keepass-using-hashcat
 tags: [hack, keepass]
 ---
 
+## UPD 2023.12.15
+
+Пару месяцев назад мне в телеграм писали, что что-то из этой статьи у кого-то не получилось. Если статья устарела – дайте знать в телегу или в Issue блога на GitHub и я поправлю.
+
+---
+
 Нашел на компе старую БД от [KeePass](2019-02-12-keepass-free-password-manager.md), от которой уже сто лет как забыл пароль. Немного гугла + вычислительных мощностей и наслаждение ностальгией не оставило себя ждать
 
 <!--truncate-->
 
-# Используем
+## Используем
 
 - keepass2john.py для извлечения хэша с имеющейся БД
 - hashcat для взлома полученного хэша
  ![hashcat_keepass](https://s3.blog.amd-nick.me/2018/08/hashcat_keepass.png)
 
-# Взлом
+## Взлом
 
 ```bash
 # Создаем рабочую директорию и переносим в нее БД
@@ -52,6 +58,6 @@ $ echo "hash" > my.hash
 `./hashcat/hashcat -a 3 -m 13400 -w 2 passwords.hash ?d?d?d?d?d?d?d?d?d`
 ?d - один символ от 0 до 9. Другие примеры в `./hashcat/hashcat --help`
 
-# Ссылки
+## Ссылки
 - [О взломе KeePass](https://defcon.ru/penetration-testing/3353/)
 - [Структура БД KeePass](https://habr.com/post/346820/)
