@@ -1,12 +1,12 @@
 ---
-title: Разработка прямо на удаленном сервере с кайфом
-date: '2023-07-24 13:37:00'
 slug: vscode-remote-ssh
-image: https://file.def.pm/K5F78aiH.png
+image: ./banner-official.png
 tags: [note, dev, soft, vscode]
 ---
 
-![official banner](https://file.def.pm/K5F78aiH.png)
+# Разработка прямо на удаленном сервере с кайфом
+
+![official banner](banner-official.png)
 
 Открыл для себя [VSCode Remote – SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh). Всегда думал, что оно 100% костыльно работает и не решался попробовать, а теперь хочу специально порекомендовать.
 
