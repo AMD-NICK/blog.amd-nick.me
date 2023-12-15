@@ -30,7 +30,7 @@ export default function BlogPostItemWrapper(props) {
             reactionsEnabled="1"
             emitMetadata="0"
             inputPosition="top"
-            theme={ colorMode === "dark" ? "dark_dimmed" : "light" }
+            theme={ colorMode === "dark" ? "transparent_dark" : "light" }
             lang={ 'ru' }
             loading="lazy"
           />

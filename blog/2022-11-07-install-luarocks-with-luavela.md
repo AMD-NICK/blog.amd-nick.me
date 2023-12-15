@@ -1,12 +1,12 @@
 ---
-title: Установка luarocks для luavela (ujit)
-date: 2022-11-07 13:37
 slug: install-luarocks-with-luavela
 tags: [lua, dev, luavela, ujit]
-image: https://luarocks.github.io/luarocks/luarocks.png
+image: https://raw.githubusercontent.com/luarocks/luarocks-logos/master/luarocks_new_logo.png
 ---
 
-![luarocks-logo-png](https://luarocks.github.io/luarocks/luarocks.png)
+# Установка luarocks для luavela (ujit)
+
+![luarocks-logo-png](https://raw.githubusercontent.com/luarocks/luarocks-logos/master/luarocks_new_logo.png)
 
 :::note
 Инструкция предназначена для debian-based дистрибутивов, включая ubuntu
