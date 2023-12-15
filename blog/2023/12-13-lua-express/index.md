@@ -1,12 +1,11 @@
 ---
-title: express.lua – создание веб приложений на Lua
-date: '2023-12-13 13:37:00'
-# slug: lua-express
-image: https://file.def.pm/v50V34N0.jpg
+image: ./banner-dark.png
 tags: [lua, dev]
 ---
 
-![lua-express-banner](https://file.def.pm/DKo8rl0g.jpg)
+# express.lua – создание веб приложений на Lua
+
+![lua-express-white-banner](banner-white.png)
 
 > 🌕 [express.lua](https://github.com/TRIGONIM/lua-express) это самый детализированный порт оригинального [express.js](https://expressjs.com), написанный на Lua. Пока кто-то не докажет обратного.
 
@@ -76,7 +75,7 @@ _\* к сожалению, не в вопросах работы с сокета
 
 ## 🌈 Преимущества:
 
-![sponge bob rainbow](https://file.def.pm/Tj216VUD.jpg)
+![sponge bob rainbow](sponge-bob-rainbow.png)
 
 - Не требует больших зависимостей. Например, [lapis](https://leafo.net/lapis/) требует целый openresty.
 - За основу взят express.js, который известен по всему миру своей простотой, гибкостью и производительностью.
