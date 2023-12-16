@@ -41,7 +41,7 @@ https://chrome.google.com/webstore/detail/autojoin-for-steamgifts/bchhlccjhoedhh
 
 ## ⭐️ Бонус
 Думаю, это может быть интересно
-- [Авторизация в Steam через Telegram вместо Authenticator](2020-01-29-steam-telegram-authenticator.md)
+- [Авторизация в Steam через Telegram вместо Authenticator](../2020-01-29-steam-telegram-authenticator.md)
 - [Telegram боты](/docs/telegram/bots)
-- Следим за Telegram юзером: [№ 1](2022-05-19-telegram-osint.md)
-- Следим за Telegram юзером: [№ 2](2020-12-23-telegram-online-chart.md)
+- Следим за Telegram юзером: [№ 1](./05-19-telegram-osint.md)
+- Следим за Telegram юзером: [№ 2](../2020-12-23-telegram-online-chart.md)

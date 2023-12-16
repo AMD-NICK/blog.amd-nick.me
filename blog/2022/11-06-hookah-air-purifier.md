@@ -65,6 +65,6 @@ image: https://i.imgur.com/8wHdluL.png
 
 ## Может быть интересно
 
-- [Apple TV: YouTube без рекламы, бесплатно](2022-11-03-disabling-youtube-ads-on-apple-tv.md)
-- [Не используйте один пароль на разных сайтах](2022-05-18-bitwarden.md)
+- [Apple TV: YouTube без рекламы, бесплатно](./11-03-disabling-youtube-ads-on-apple-tv.md)
+- [Не используйте один пароль на разных сайтах](./05-18-bitwarden.md)
 - [Следим за человеком в Telegram и не только](/tags/telegram)
