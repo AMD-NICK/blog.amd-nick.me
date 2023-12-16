@@ -1,73 +1,43 @@
-# Lua
-
-Реально простой и реально мощный язык программирования. luajit приближен по скорости к C++, с головой опережает python, node, ruby и многие другие языки, при этом имеет динамическую типизацию и не превращает все в ООП (но и не запрещает)
-
-## Мои применения
-
-- [Garry's Mod](https://wiki.facepunch.com/gmod/) - основной язык моддинга (я отсюда)
-- OpenResty, [Kong](https://github.com/Kong/kong) - програмная обработка запросов. Можно даже Telegram ботов и прочее хостить прямо на OpenResty. Смотрите еще [luvit](https://luvit.io) и [lapis](https://leafo.net/lapis/)
-- [hammerspoon](http://www.hammerspoon.org) - автоматизация задач на MacOS. Мост между MacOS API и Lua
-
-## Интересное
-
-- [ggram](http://git.io/ggram) - моя штука для создания Telegram ботов на Lua с асинхронностью. Может работать как внутри Garry's Mod, так и в чистом Lua без горы зависимостей
-- [deferred](https://github.com/zserge/lua-promises/blob/master/deferred.lua) - A+ промисы на Lua. Применяю почти везде. Особенность: error внутри цепочки вызывает reject
-- [copas](https://github.com/lunarmodules/copas) - асинхронные сокеты и http/https реквесты
-- [moses](https://github.com/Yonaba/Moses/blob/master/moses.lua) - функциональное программирование
-- [Tarantool](https://www.tarantool.io/en/doc/latest/tutorials/lua_tutorials/) - БД в RAM. Может заменить MySQL+Redis, насколько я понимаю
-- [love2d](https://love2d.org) - создание игр на Lua
-- [luash](https://github.com/zserge/luash) shell скрипты на Lua
-- [xFuscator](https://github.com/superfsm/XFuscator) обфускатор. Использовал сам
-- [luabundle](https://github.com/graue/luabundle) собирает модуль в один файл
-- [lockbox](https://github.com/somesocks/lua-lockbox) криптографические алгоритмы на чистом Lua
-- [luajit.me](https://github.com/rapidlua/luajit.me) сервис визуализации LuaJit компилятора. Узнал о нем с [этой презентации](https://www.youtube.com/watch?v=SeGK_NxmWOk), пока искал инфу про утечки памяти
-
-## Заметки
-
-<!-- #todo вынести инфу про утечки в отдельный файлик -->
-
-### nil не то же, что отсутствие значения
-
-Поэтому если вы встретите в каких-то функциях `return nil`, то не спешите удалять эту строку. Возможно, она там не просто так
-
-Например `tonumber(nil)` вернет nil, а `tonumber()` (без nil) вызовет ошибку
-
-Проверить что nil это действительно nil, а не отсуствие аргумента в функции можно вот так: `select("#", ...)`. Функция вернет 1, если в параметрах передан nil и вернет 0, если ничего не указано
-
-![lua select nil](https://i.imgur.com/KVskJdN.jpg)
-
+---
+tags: [lua, note]
 ---
 
-## Поиск утечек памяти
+# Поиск утечек памяти в Lua
+
+> Перенос информации с [/docs](/docs/programming/lua)
 
 Пришлось столкнуться. Мои микрозаметки на этот счет.
 
-:::tip
-UPD: все, что описано ниже может быть полезным, но в моем случае полезнее всего оказалось [сбилдить LuaJit](https://github.com/TRIGONIM/ggram/blob/7e48477fb6e95fa9c8389bfc6ba253ab4631efed/Dockerfile_tarantool) от Tarantool и использовать встроенный в него memory profiler ([memprof](https://www.tarantool.io/en/doc/latest/reference/tooling/luajit_memprof/)), который покажет где и сколько памяти не высвободилось в коде.
+:::tip TL;DR
+
+Все, что описано ниже может быть полезным, но в моем случае полезнее всего оказалось [сбилдить LuaJit](https://github.com/TRIGONIM/ggram/blob/7e48477fb6e95fa9c8389bfc6ba253ab4631efed/Dockerfile_tarantool) от Tarantool и использовать встроенный в него memory profiler ([memprof](https://www.tarantool.io/en/doc/latest/reference/tooling/luajit_memprof/)), который покажет где и сколько памяти не высвободилось в коде.
+
 :::
 
-### Ручной поиск
+<!--truncate-->
 
-В таймере каждую секунду принтить `collectgarbage("count") / 1024`, удаляя подозреваемые куски кода, пока память не перестанет "улетать в трубу"
+## Ручной поиск
+
+В таймере каждую секунду принтить `collectgarbage("count") / 1024`, удаляя подозреваемые куски кода, пока память не перестанет "улетать в трубу". Такой себе способ.
 
 ```lua
 -- Заметка для личного пользования
 
 timer.Create("gc_count", 1, 0, function()
 	local freeMem = collectgarbage("count")
-	MsgMC("&eGC Count: &a" .. math.Round(freeMem / 1024, 2) .. "&3 MB")
+	print("GC Count: " .. math.Round(freeMem / 1024, 2) .. " MB")
 end)
 ```
 
-Таймер работает на copas.
+Для таймера и Round используется библиотека [lua-gmod-lib](https://github.com/TRIGONIM/lua-gmod-lib)
 
-### Инструменты
+## Инструменты
 
 Может быть интересно полистать: [мини презентация](https://www.lua.org/wshop15/Musa2.pdf) по разным инструментам для поиска утечек
 
 Я использую `LuaMemorySnapshotDump + lua-microscope` в связке.
 
-#### LuaMemorySnapshotDump
+### LuaMemorySnapshotDump
 
 [LuaMemorySnapshotDump](https://github.com/yaukeywang/LuaMemorySnapshotDump) - делает файлы с дампом памяти. Чистый lua без сторонних модулей. Нужно сделать снимок "до" и "после" того, как часть памяти "уплыла", затем через этот же тул сделать diff
 
@@ -116,7 +86,7 @@ string: "yaukeywang"    registry.2[_G].Author.Name[string]      1
 table: 0x5618d4a7e5f0   registry.2[_G].Author   1
 ```
 
-#### lua-microscope
+### lua-microscope
 
 [lua-microscope](http://siffiejoe.github.io/lua-microscope/) – собирает информацию об указанной таблице, на выходе дает файл, который можно скормить [GraphViz](http://www.graphviz.org) и получить КАРТИНКУ памяти
 
@@ -144,7 +114,6 @@ end } )
 setmetatable( t2, { __index = t1 } )
 
 require( "microscope" )( "example1.dot", t1 )
-^D
 ```
 
 ```bash
@@ -154,7 +123,7 @@ lua test.lua
 dot -T jpeg -o example1.jpeg example1.dot
 ```
 
-#### loom
+### loom
 
 У luajit есть модуль [dump](https://github.com/LuaJIT/LuaJIT/blob/master/src/jit/dump.lua), запускается примерно так: `luajit -jdump=T -e 'local s = 0; for i = 1, 100 do s = s + i end; print(s)'`. Он генерирует .txt или .html файлик с информацией о "трассах памяти"(?). Короче, вот такие отчеты: [клик](https://github.com/luavela/dumpanalyze/blob/master/tests/dump-files/test_cli.txt).
 
