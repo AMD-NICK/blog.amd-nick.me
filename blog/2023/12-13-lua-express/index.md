@@ -17,30 +17,34 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-	<TabItem value="js" label="express.js">
-		```javascript
-		const express = require("express")
-		const app = express()
+<TabItem value="js" label="express.js">
 
-		app.get("/", function(req, res) {
-			res.send("Hello World")
-		})
+```javascript
+const express = require("express")
+const app = express()
 
-		app.listen(3000)
-		```
-	</TabItem>
-	<TabItem value="lua" label="express.lua">
-		```lua
-		local express = require("express")
-		local app = express()
+app.get("/", function(req, res) {
+	res.send("Hello World")
+})
 
-		app:get("/", function(req, res)
-			res:send("Hello World")
-		end)
+app.listen(3000)
+```
 
-		app:listen(3000)
-		```
-	</TabItem>
+</TabItem>
+<TabItem value="lua" label="express.lua">
+
+```lua
+local express = require("express")
+local app = express()
+
+app:get("/", function(req, res)
+	res:send("Hello World")
+end)
+
+app:listen(3000)
+```
+
+</TabItem>
 </Tabs>
 
 :::

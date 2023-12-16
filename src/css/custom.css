@@ -153,3 +153,8 @@ html[data-theme='dark'] {
 [class*=iconExternalLink] {
 	display: none;
 }
+
+/* Размер табуляции. По умолчанию 8, кажется */
+pre[class*="language-"] {
+	tab-size: 4;
+}
