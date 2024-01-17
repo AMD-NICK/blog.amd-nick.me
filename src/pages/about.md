@@ -55,4 +55,4 @@ image: https://s3.blog.amd-nick.me/2020/02/amd_nick-cover.jpg
 - 🎮 [Steam](https://steamcommunity.com/profiles/76561198071463189) – играю всякое. Перед добавлением лучше писать на стене причину
 - 🐦 [Twitter](https://twitter.com/amd_nick) – явно не мой формат :(
 - 👮‍♀️ [VK](https://vk.me/amd_nick) – чисто для работы и токсичных комментов
-- [YouTube](https://www.youtube.com/user/AMDMin) | [KinoPoisk](https://mykp.ru/amd) | [Nickname](https://nick-name.ru/nickname/amd)
+- [YouTube](https://www.youtube.com/user/AMDMin) | [KinoPoisk](https://mykp.ru/amd) | [Nickname](https://mynickname.com/amd_nick)
