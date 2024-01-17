@@ -31,18 +31,18 @@ iSpy это бесплатный Self-Hosted сервис **на стероид�
 Сначала я установил iSpy на свой Windows ПК, чтобы потыкать в него палкой и понять, нужен ли он мне. **Рекомендую сделать так же**
 :::
 
-iSpy работает в [Docker контейнере](https://github.com/doitandbedone/ispyagentdvr-docker) на выделенном сервере, а домен и логин+пароль повесил на него, добавив Traefik + Basic Auth Middleware. Вам не обязательно с этим возиться, можно просто установить на сервер Windows, затем там запустить iSpy, но мне было проще так, как я сделал и именно об этом я буду писать
+iSpy работает в [Docker контейнере](https://github.com/MekayelAnik/ispyagentdvr-docker/) на выделенном сервере, а домен и логин+пароль повесил на него, добавив Traefik + Basic Auth Middleware. Вам не обязательно с этим возиться, можно просто установить на сервер Windows, затем там запустить iSpy, но мне было проще так, как я сделал и именно об этом я буду писать
 
 **Если вы еще не знаете, что такое Docker и не готовы потратить вечерок-второй, чтобы базово в нем разобраться, то установите как-нибудь иначе и переходите к части "Настройка iSpy"**
 
 ### Traefik
 
-Использую для того, чтобы повесить iSpy на домен и закрыть за Basic Auth авторизацией (безопасность). P.S. Пароль на панель без Traefik вроде можно указать в `Server (сверху слева) > Settings > Local Settings (сверху справа модалки) > Username, Password`, но я не пробовал.
+Использую для того, чтобы повесить iSpy на домен и закрыть за Basic Auth авторизацией (безопасность).
 
 Traefik работает отдельно от iSpy, так как проксирует еще несколько других сайтов, которые динамично подключаются подобно тому, как я ниже подключу iSpy
 
 <details>
-  <summary>Код для docker-compose.yml</summary>
+  <summary>Код Traefik для docker-compose.yml</summary>
 
 ```yaml title="docker-compose.yml"
 version: '3'
@@ -50,7 +50,7 @@ version: '3'
 services:
   traefik:
     image: traefik:v2.6
-    container_name: traefik
+    # container_name: traefik
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
@@ -61,40 +61,40 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - ./acme.json:/acme.json
+      - ${DATA_PATH}/traefik/acme.json:/acme.json
     networks:
       - proxy
     command:
-        #- "--log.level=DEBUG"
-        - "--api"
-        - "--providers.docker=true"
-        - "--providers.docker.exposedbydefault=false"
-        - "--providers.docker.network=proxy"
-        - "--entrypoints.web.address=:80"
-        - "--entrypoints.web-secure.address=:443"
-        - "--serverstransport.insecureskipverify=true"
-        - "--certificatesresolvers.mytlschallenge.acme.tlschallenge=true"
-        - "--certificatesresolvers.mytlschallenge.acme.email=email@example.com" # change me
-        - "--certificatesresolvers.mytlschallenge.acme.storage=/acme.json"
+      #- "--log.level=DEBUG"
+      - "--api"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--providers.docker.network=proxy"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.web-secure.address=:443"
+      - "--serverstransport.insecureskipverify=true"
+      - "--certificatesresolvers.mytlschallenge.acme.tlschallenge=true"
+      - "--certificatesresolvers.mytlschallenge.acme.email=$TRAEF_ACME_EMAIL"
+      - "--certificatesresolvers.mytlschallenge.acme.storage=/acme.json"
 
     labels:
-        - "traefik.enable=true"
+      - "traefik.enable=true"
 
-        #Traefik dashboard config
-        - "traefik.http.routers.traefik.rule=Host(`dash.example.com`)" # change me
-        - "traefik.http.routers.traefik.service=api@internal"
-        - "traefik.http.routers.traefik.entrypoints=web-secure"
-        - "traefik.http.routers.traefik.tls.certresolver=mytlschallenge"
+      #Traefik dashboard config
+      - "traefik.http.routers.traefik.rule=Host(`$TRAEF_DASHBOARD_DOMAIN`)"
+      - "traefik.http.routers.traefik.service=api@internal"
+      - "traefik.http.routers.traefik.entrypoints=web-secure"
+      - "traefik.http.routers.traefik.tls.certresolver=mytlschallenge"
 
-        #Middleware
-        - "traefik.http.middlewares.https-redirect.redirectscheme.scheme=https"
-        - "traefik.http.middlewares.traefik-auth.basicauth.users=login:$$2a$05$$9kZMQL0neCA2TogroG8WbO3yObDtHbo6BRwflTnGtQy6vKJCvMDWe" # login=login, pass=123456
-        - "traefik.http.routers.traefik.middlewares=traefik-auth"
+      #Middleware
+      - "traefik.http.middlewares.https-redirect.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.traefik-auth.basicauth.users=login:$$2a$05$$9kZMQL0neCA2TogroG8WbO3yObDtHbo6BRwflTnGtQy6vKJCvMDWe" #  login=login, pass=123456
+      - "traefik.http.routers.traefik.middlewares=traefik-auth"
 
-        #global redirect to https
-        - "traefik.http.routers.http-catchall.rule=hostregexp(`{host:.+}`)"
-        - "traefik.http.routers.http-catchall.entrypoints=web"
-        - "traefik.http.routers.http-catchall.middlewares=https-redirect"
+      #global redirect to https
+      - "traefik.http.routers.http-catchall.rule=hostregexp(`{host:.+}`)"
+      - "traefik.http.routers.http-catchall.entrypoints=web"
+      - "traefik.http.routers.http-catchall.middlewares=https-redirect"
 
 
 networks:
@@ -111,9 +111,70 @@ networks:
 
 ### iSpy Agent
 
-Код для docker-compose.yml я публиковал тут ([клик](https://github.com/doitandbedone/ispyagentdvr-docker/issues/357#issuecomment-1206978330))
+<details>
+  <summary>Код для ispy docker-compose.yml</summary>
 
-Вместе с iSpy в docker-compose устанавливается DeepStack AI (микросервис, который будет детектить объекты и людей на наших записях)
+```yaml title="docker-compose.yml"
+version: '3'
+
+services:
+  ispy:
+    image: mekayelanik/ispyagentdvr:5.2.1.0 # актуально для этой версии. Но можете попробовать указать latest
+    depends_on:
+      - codeprojectai
+      - traefik
+    volumes:
+      - $PWD/config/:/AgentDVR/Media/XML/
+      - $PWD/media/:/AgentDVR/Media/WebServerRoot/Media/
+      - $PWD/commands/:/AgentDVR/Commands/
+    ports:
+      # - 8090:8090
+      # - 50000-50010:50000-50010/udp
+      - 3478:3478/udp # без этого бесконечная загрузка Agent страницы.
+    networks:
+      - proxy # та же, что у Traefik
+    environment:
+      - TZ=Europe/Moscow
+    tty: true # включает более детальный лог в консоли \_ :| _/
+    restart: unless-stopped
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.ispy_route.rule=Host(`$ISPY_DOMAIN`) # замените. Обратные кавычки не трогать
+      - traefik.http.routers.ispy_route.entrypoints=web # web-secure требует бизнес лицензию (49$)
+      # - traefik.http.routers.ispy_route.tls.certresolver=mytlschallenge
+      - traefik.http.routers.ispy_route.service=ispy_service
+      # - traefik.http.services.ispy_service.loadbalancer.server.scheme=https
+      - traefik.http.services.ispy_service.loadbalancer.server.port=8090
+	  - traefik.http.routers.ispy_route.middlewares=auth
+      - "traefik.http.middlewares.auth.basicauth.users=login:$$2a$05$$9kZMQL0neCA2TogroG8WbO3yObDtHbo6BRwflTnGtQy6vKJCvMDWe" # login:123456
+
+  codeprojectai:
+    image: codeproject/ai-server:cpu-2.5.0
+    depends_on:
+      - traefik
+    volumes:
+      - ${DATA_PATH}/codeprojectai/modules/:/app/modules
+      - ${DATA_PATH}/codeprojectai/data/:/etc/codeproject/ai
+    # ports:
+    #   - 8896:5000
+    networks:
+      - proxy
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.codeai.rule=Host(`$CODEPROJECT_DOMAIN`)
+      - traefik.http.routers.codeai.entrypoints=web-secure
+      - traefik.http.routers.codeai.tls.certresolver=mytlschallenge
+
+networks:
+  proxy:
+    name: proxy
+	# external: true # раскомментировать, если traefik сервис определен в отдельном compose файле
+```
+</details>
+
+Код для docker-compose.yml я ранее публиковал тут ([клик](https://github.com/doitandbedone/ispyagentdvr-docker/issues/357#issuecomment-1206978330)) (но сейчас я использую docker image не от `doitandbedone/ispyagentdvr`, а `mekayelanik/ispyagentdvr`, так что пути в volumes будут немного отличаться и будут как выше)
+
+Вместе с iSpy в `docker-compose` устанавливается DeepStack AI (микросервис, который будет детектить объекты и людей на наших записях)
 
 Не забудьте поправить в файле домен и логин/пароль от [Basic Auth](https://doc.traefik.io/traefik/middlewares/http/basicauth/) авторизации. Про генерацию хэша пароля я писал [тут](https://t.me/traefik_ru/7900).
 
