@@ -99,30 +99,19 @@ const config = {
 						label: '✍️ Блог',
 						position: 'left',
 						items: [
-						  {
-							label: 'Главная',
-							to: '/',
-						  },
-						  {
-							label: 'Обо мне',
-							to: 'about',
-						  },
-						  {
-							label: 'Telegram боты',
-							to: '/docs/telegram/bots',
-						  },
-						  {
-							label: 'Все по годам',
-							to: 'archive',
-						  },
+							{label: 'Главная', to: '/'},
+							{label: 'Все по годам', to: 'archive'},
 						],
 					},
-					// {to: '/', label: 'Блог', position: 'left'},
 					{
-						type: 'doc',
-						docId: 'intro',
+						type: 'dropdown',
+						label: '🙃 Не блог',
 						position: 'left',
-						label: '📦 Штуки',
+						items: [
+							{label: '📦 Куча полезностей', type: 'doc', docId: 'intro'},
+							{label: '👤 Обо мне', to: 'about'},
+							{label: '✈️ TG Боты', to: 'docs/telegram/bots'},
+						],
 					},
 					{
 						href: "https://github.com/AMD-NICK/blog.amd-nick.me",
