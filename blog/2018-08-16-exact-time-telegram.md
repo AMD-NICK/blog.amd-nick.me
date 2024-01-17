@@ -17,7 +17,7 @@ tags: [telegram, bot]
 ![telegram_show_json_bot](https://s3.blog.amd-nick.me/2018/08/telegram_show_json_bot.png)
 
 ## Интересно
-- [Графики онлайна человека в Telegram](2020-12-23-telegram-online-chart.md)
+- [Графики онлайна человека в Telegram](./2020-12-23-telegram-online-chart.md)
 - [Telegram боты](/docs/telegram/bots)
-- [Я знаю, на что ты дрочишь](2022-05-19-telegram-osint.md) (и не только)
-- [Авторизация в Steam через Telegram](2020-01-29-steam-telegram-authenticator.md)
+- [Я знаю, на что ты дрочишь](./2022/05-19-telegram-osint.md) (и не только)
+- [Авторизация в Steam через Telegram](./2020-01-29-steam-telegram-authenticator.md)

@@ -15,7 +15,7 @@ tags: [garrysmod, lua, sublimetext, vscode, git, cyberduck, xshell, soft]
 :::
 
 :::caution UPD 2023.07.23
-- В посте упомянут плагин SFTP. Я заменил его на [VSCode Remote – SSH](./2023-07-24-vscode-remote-ssh.md). По ссылке отдельный пост про этот плагин. Очень крутой плагин.
+- В посте упомянут плагин SFTP. Я заменил его на [VSCode Remote – SSH](./2023/07-24-vscode-remote-ssh/index.md). По ссылке отдельный пост про этот плагин. Очень крутой плагин.
 - Помимо него, советую замену плагина, который ниже упомянул в разделе "GLua синтаксис" на [Lua Language Server](https://github.com/LuaLS/lua-language-server). Когда установите, напишите команду в VSCode `Lua: Open Addon Manager` и установите оттуда поддержку glua (синтаксис, документация функций и т.д.). Так и называется – [Garry's Mod](https://github.com/LuaLS/LLS-Addons/tree/main/addons/garrysmod)
 :::
 
@@ -36,7 +36,7 @@ tags: [garrysmod, lua, sublimetext, vscode, git, cyberduck, xshell, soft]
 
 ## Софт, который будем использовать
 
-### **xShell** [(вместо Putty)](2020-03-03-xshell-alternative-for-putty.md)
+### **xShell** [(вместо Putty)](./2020-03-03-xshell-alternative-for-putty.md)
 Главное преимущество это очень удобное управление сессиями и окнами на экране. На больших разрешениях даже банальная замена Putty на xShell дает значительный (хотя и далеко не самый большой прирост эффективности)
 
 ![](https://s3.blog.amd-nick.me/2020/03/xshell-screenshot.png)
