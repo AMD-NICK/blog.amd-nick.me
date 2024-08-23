@@ -205,6 +205,25 @@ export VISUAL=micro
 
 🔥 [Вот это](https://github.com/jarun/nnn/blob/master/misc/quitcd/quitcd.bash_zsh) **очень рекомендую** добавить тоже в .bashrc. Странное поведение, но без этого по умолчанию при выходе оно не входит в папку, где ты закрыл nnn. **Если добавили, то теперь запускайте nnn через `n`, а не nnn**.
 
+### clifm (тоже файловый менеджер)
+
+Заморочился с установкой на Ubuntu 18.04 (на других ОС все было норм)
+
+<details>
+  <summary>Демка gif</summary>
+
+![demo](https://camo.githubusercontent.com/d721d2ad31d0a2fd8f8ae9b9df7387d22e4802f700887e7ddba0869b31666441/68747470733a2f2f692e706f7374696d672e63632f3158534b425268382f73756767657374696f6e732e676966)
+</details>
+
+```bash
+# самая проклятая строка, без которой не будет билдится clifm
+sudo apt update && sudo apt install libreadline-dev libcap-dev libacl1-dev libmagic-dev
+
+mkdir tmp && cd tmp
+git clone git@github.com:leo-arch/clifm.git && cd clifm
+make install
+```
+
 ## 🪞 Алиасы
 
 ```bash
@@ -225,6 +244,7 @@ alias lg=lazygit
 alias ld=lazydocker
 
 # личное
+nload='nload -t 1000 enp2s0'
 lr='luarocks --lua-dir=$(brew --prefix)/opt/lua@5.3'
 " >> ~/.bash_aliases
 ```
