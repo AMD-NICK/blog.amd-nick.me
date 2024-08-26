@@ -2,7 +2,7 @@
 title: Oh My Zsh - Улучшаем iTerm
 date: '2018-12-27 13:37:00'
 slug: iterm-oh-my-zsh
-image: https://s3.blog.amd-nick.me/2018/12/image-1.png
+image: https://s3.amd-nick.me/2018/12/image-1.png
 tags: [mac, soft, brew]
 ---
 
@@ -12,7 +12,7 @@ tags: [mac, soft, brew]
 
 ---
 
-![](https://s3.blog.amd-nick.me/2018/12/image-1.png)
+![](https://s3.amd-nick.me/2018/12/image-1.png)
 
 Эта инструкция написана для Mac'овского iTerm, но при помощи несложных манипуляций может применяться и в других термианалах в т.ч. на удаленных Linux машинах
 
@@ -67,7 +67,7 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/m
 Открываем настройки iTerm \> Profiles \> Default \> Command: /bin/zsh
 При перезапуске iTerm у вас уже будет Zsh (пока что ненастроенный)
 
-![](https://s3.blog.amd-nick.me/2018/12/image-2.png)
+![](https://s3.amd-nick.me/2018/12/image-2.png)
 *command > /bin/zsh*
 
 
@@ -156,7 +156,7 @@ source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 
-![](https://s3.blog.amd-nick.me/2018/12/image-3.png)
+![](https://s3.amd-nick.me/2018/12/image-3.png)
 
 ## Ссылки
 

@@ -19,7 +19,7 @@ tags: [hack, keepass]
 
 - keepass2john.py для извлечения хэша с имеющейся БД
 - hashcat для взлома полученного хэша
- ![hashcat_keepass](https://s3.blog.amd-nick.me/2018/08/hashcat_keepass.png)
+ ![hashcat_keepass](https://s3.amd-nick.me/2018/08/hashcat_keepass.png)
 
 ## Взлом
 
@@ -45,7 +45,7 @@ $ python keepass2john.py passwords.kdbx
 $ echo "hash" > my.hash
 ```
 
-![keepass2john](https://s3.blog.amd-nick.me/2018/08/keepass2john.png)
+![keepass2john](https://s3.amd-nick.me/2018/08/keepass2john.png)
 
 
 Перебор по словарю:

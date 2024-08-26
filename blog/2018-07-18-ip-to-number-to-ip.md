@@ -108,7 +108,7 @@ rshift это противоположность lshift, о котором я п
 ## Бонус
 
 Я начал изучение этого вопроса с функции, говорящей, входит ли IP в маску, поэтому делюсь и ею:
- ![lua-function-mask-has-ip](https://s3.blog.amd-nick.me/2018/07/lua-function-mask-has-ip.png)
+ ![lua-function-mask-has-ip](https://s3.amd-nick.me/2018/07/lua-function-mask-has-ip.png)
 
 ## Ссылки
 

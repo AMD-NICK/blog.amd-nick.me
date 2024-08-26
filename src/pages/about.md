@@ -1,7 +1,7 @@
 ---
 title: Обо мне
 slug: about
-image: https://s3.blog.amd-nick.me/2020/02/amd_nick-cover.jpg
+image: https://s3.amd-nick.me/2020/02/amd_nick-cover.jpg
 ---
 
 

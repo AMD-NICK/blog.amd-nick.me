@@ -2,11 +2,11 @@
 title: GitHub вместо Steam Workshop для Garry's Mod
 date: '2021-04-05 14:23:00'
 slug: github-workshop-garrysmod
-image: https://s3.blog.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg
+image: https://s3.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg
 tags: [gmdonate, garrysmod, git, github, lua, steam]
 ---
 
-![](https://s3.blog.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg)
+![](https://s3.amd-nick.me/2021/04/github-instead-of-steam-workshop.jpg)
 
 InGameShop (IGS) - внутриигровая менюшка для Garry's Mod серверов, через которую игроки донатят их владельцам с помощью [gm-donate.net](https://gm-donate.net). До недавней поры установка происходила через Steam Workshop. Сейчас готова версия, которая 1 запросом скачивает и выполняет код. Внизу будет реализация
 
@@ -42,7 +42,7 @@ Open Source [репозиторий](https://github.com/GM-DONATE/IGS) на GitH
 
 Нельзя просто так взять и залить какой-нить zip в интернет, скачать его с гмода, распаковать там и запустить, как ни в чем не бывало. Ну вообще-то кое-что подобное сделать можно, но не суть. Нельзя короче.
 
-![](https://s3.blog.amd-nick.me/2021/04/image.png)
+![](https://s3.amd-nick.me/2021/04/image.png)
 
 Исходный код содержится во множестве файлов, включая отдельные энтити, требующие особых правил загрузки и сторонние модули, которых нет в репозитории, но которые все равно должны подгружаться скачанным кодом.
 
@@ -66,7 +66,7 @@ Open Source [репозиторий](https://github.com/GM-DONATE/IGS) на GitH
 
 Нужно написать программку ([вот](https://github.com/GM-DONATE/IGS/blob/f69d14219b68d616f5ffeca3943aab22e10528e2/luapack/main.lua)), которая упакует ваш аддон в 1 файл. В нашем случае это superfile.txt. На момент написания поста это происходит так: скрипт рекурсивно "бегает" по папке `addons/igs-core`, читает каждый файл, превращает его в одну строку, а затем добавляет в superfile.txt путь к этому файлу и его содержимое.
 
-![](https://s3.blog.amd-nick.me/2021/04/image-1.png)
+![](https://s3.amd-nick.me/2021/04/image-1.png)
 *Частичка superfile.txt. Много строк типа `igs/init.lua print("я очечко")`*
 
 ### Автоматизатор + Доставщик

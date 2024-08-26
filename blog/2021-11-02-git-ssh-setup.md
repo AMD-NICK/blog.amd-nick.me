@@ -2,11 +2,11 @@
 title: Настройка git для работы через ssh
 date: '2021-11-02 13:37:00'
 slug: git-ssh-setup
-image: https://s3.blog.amd-nick.me/2021/11/git-ssh-setup.jpg
+image: https://s3.amd-nick.me/2021/11/git-ssh-setup.jpg
 tags: [git, github, ssh]
 ---
 
-![](https://s3.blog.amd-nick.me/2021/11/git-ssh-setup.jpg)
+![](https://s3.amd-nick.me/2021/11/git-ssh-setup.jpg)
 
 Вкратце: генерируем ключ, добавляем его на гитхаб, заставляем репозиторий использовать ключ вместо логин-токен
 

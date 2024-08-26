@@ -2,7 +2,7 @@
 title: KeePass - удобный и безопасный способ хранить сотни разных паролей
 date: '2019-02-12 13:37:00'
 slug: keepass-free-password-manager
-image: https://s3.blog.amd-nick.me/2019/02/keepassxc-screenshot-1.png
+image: https://s3.amd-nick.me/2019/02/keepassxc-screenshot-1.png
 tags: [keepass, soft]
 ---
 
@@ -12,13 +12,13 @@ tags: [keepass, soft]
 
 ---
 
-![](https://s3.blog.amd-nick.me/2019/02/keepassxc-screenshot-1.png)
+![](https://s3.amd-nick.me/2019/02/keepassxc-screenshot-1.png)
 
 Когда-то я рассказывал о своем способе [создания сложного и запоминающегося пароля](./2016-04-01-prostoy-no-slozniy-parol-lifehack.md), но он все равно недостаточно надежен для использования повсеместно. В идеале пароль от каждого сайта должен отличаться и совсем не обязательно его помнить, чтобы быстро и удобно авторизироваться.
 
 <!--truncate-->
 
-![](https://s3.blog.amd-nick.me/2019/02/kak-ne-nuzno-hranit-paroli.png)
+![](https://s3.amd-nick.me/2019/02/kak-ne-nuzno-hranit-paroli.png)
 *Многие хранят пароли в открытом виде и "управляют" ими простой копи-пастой*
 
 [KeePass](https://keepass.info) - это бесплатный менеджер паролей. Возможно, вы слышали про 1Password или LastPass. Вот это вот оно, но бесплатно и безопаснее. Благодаря KeePass я использую на каждом сайте и сервере разные пароли большой длины и не беспокоюсь о том, что когда-то увижу свои данные в [HaveIBeenPwned](https://haveibeenpwned.com/Passwords) или подобных сервисах.

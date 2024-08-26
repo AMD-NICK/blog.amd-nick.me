@@ -13,7 +13,7 @@ tags: [docker, finances, mining, crypto]
 
 Ниже заметки, касательно KOTO и `yescrypt`, но используя `cpuminer-multi` майнятся и другие монеты
 
-![yescrypt-cpu-mining](https://s3.blog.amd-nick.me/2018/07/yescrypt-cpu-mining.png)
+![yescrypt-cpu-mining](https://s3.amd-nick.me/2018/07/yescrypt-cpu-mining.png)
 
 ## Установка с Docker
 
@@ -44,6 +44,6 @@ tags: [docker, finances, mining, crypto]
 [http://koto.litepool.ru:8080/workers/k1FQS7Q2XxaWWLjLdFXFJfG7cQq74mWsZph](http://koto.litepool.ru:8080/workers/k1FQS7Q2XxaWWLjLdFXFJfG7cQq74mWsZph)
 Нужно только заменить адрес кошелька на свой.
 
-![koto-litepool-stats](https://s3.blog.amd-nick.me/2018/07/koto-litepool-stats.png)
+![koto-litepool-stats](https://s3.amd-nick.me/2018/07/koto-litepool-stats.png)
 
 Если есть несколько воркеров (aka rigs), то его имя можно указать через точку после адреса при запуске майнера: `--user ADDRESS.rigname`

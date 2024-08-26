@@ -2,7 +2,7 @@
 title: DMarket API - практика и замечания
 date: '2019-04-27 13:37:00'
 slug: dmarket-api
-image: https://s3.blog.amd-nick.me/2019/04/1_bq4grqwes3fcrchfatxmzw.jpg
+image: https://s3.amd-nick.me/2019/04/1_bq4grqwes3fcrchfatxmzw.jpg
 tags: [api]
 ---
 
@@ -20,7 +20,7 @@ tags: [api]
 
 ---
 
-![](https://s3.blog.amd-nick.me/2019/04/1_bq4grqwes3fcrchfatxmzw.jpg)
+![](https://s3.amd-nick.me/2019/04/1_bq4grqwes3fcrchfatxmzw.jpg)
 
 Заметки для тех, кто решил поработать с API DMarket.com. Сразу предупреждаю, что некоторые из них могут быть неуместны, поскольку все знать невозможно и я просто не понял разработчиков, что сделали ту или иную "странность"
 
@@ -34,7 +34,7 @@ tags: [api]
 
 Он помещается в Headers и в сам запрос.
 
-![dmarket_token](https://s3.blog.amd-nick.me/2019/04/dmarket_token.jpg)
+![dmarket_token](https://s3.amd-nick.me/2019/04/dmarket_token.jpg)
 
 При больших GET запросах возможен провал из-за огромной длины ключа, но по факту с таким еще не сталкивался. Но в некоторых методах достаточно только в Headers (вроде)
 
@@ -44,17 +44,17 @@ tags: [api]
 
 Угадаете, чему будет равен b в Lua `b = "120" < "15"`? (true, блэд)
 
-![](https://s3.blog.amd-nick.me/2019/04/dmarket_pretty_json_numbers_format.jpg)
+![](https://s3.amd-nick.me/2019/04/dmarket_pretty_json_numbers_format.jpg)
 
 Еще не ясно почему JSON в pretty виде, но это мелочи жизни
 
-![Число или строка? Эээ](https://s3.blog.amd-nick.me/2019/04/dmarket_number_or_string.jpg)
+![Число или строка? Эээ](https://s3.amd-nick.me/2019/04/dmarket_number_or_string.jpg)
 
 И иногда числа бывают числами. Вот и ковыряйтесь
 
 ### Не стандартизированы регистры переменных
 
-![](https://s3.blog.amd-nick.me/2019/04/dmarket_vars_cases.jpg)
+![](https://s3.amd-nick.me/2019/04/dmarket_vars_cases.jpg)
 
 Тут по интуиции работать не получится. Если в одном месте вы писали `.price`, то в другом нужно уже `.Price`. Но есть маленький лайфхак: есть результат находится внутри таблицы Items, значит юзается UpperCamel, если же внутри results, то lowerCamel, только это вроде не всегда. Вопрос, почему некоторые результаты внутри results, а другие Items тоже не совсем понятно
 
@@ -68,7 +68,7 @@ tags: [api]
 
 ### offer.updated не соответствует действительности
 
-![](https://s3.blog.amd-nick.me/2019/04/dmarket_offer_updated.jpg)
+![](https://s3.amd-nick.me/2019/04/dmarket_offer_updated.jpg)
 
 У офферов есть поле `updated`, а есть `created`. У итемов тоже есть такое поле, но имеет другое название: `lastUpdated` (ррр). Так вот эти поля обновляются по какому-то странному алгоритму. Возможно, чтобы продвигать определенные предметы в списке на сайте (UPD. Если кто-то изменяет цену предмета на сайте, итем (листинг) считается обновленным).
 
@@ -78,7 +78,7 @@ tags: [api]
 
 ### Какой-то повсеместный рассинхрон данных
 
-![В разных местах указана разная цена](https://s3.blog.amd-nick.me/2019/04/dmarket_data_missmatch.jpg)
+![В разных местах указана разная цена](https://s3.amd-nick.me/2019/04/dmarket_data_missmatch.jpg)
 
 У итемов есть поле `.cheapestOfferPrice`. А еще есть `.offerPrices.cheapest.amount` и они отличаются \_ :| \_/. Обратите внимание не на тот и ваш скрипт начнет присылать вам :poop: (корректно второе)
 
@@ -91,7 +91,7 @@ tags: [api]
 ### Проблема списка депозитов
 
 Речь про `/trading/v1/report/accounting/balance`. Выглядит вот так:
- ![dmarket_deposits](https://s3.blog.amd-nick.me/2019/04/dmarket_deposits.jpg)
+ ![dmarket_deposits](https://s3.amd-nick.me/2019/04/dmarket_deposits.jpg)
 
 Про регистры переменных я уже писал, поэтому добавлю немного про рассинхрон, скорость выполнения и еще одну косметическую проблему
 
@@ -103,19 +103,19 @@ tags: [api]
 
 ### Не стандартизированные ошибки
 
-![dmarket_errors_standart](https://s3.blog.amd-nick.me/2019/04/dmarket_errors_standart.jpg)
+![dmarket_errors_standart](https://s3.amd-nick.me/2019/04/dmarket_errors_standart.jpg)
 
 Мне пришлось провозиться пол часа, чтобы понять, почему я получаю `METHOD NOT ALLOWED`. Дело было в лишнем слеше, который в GET нормально обрабатывается. Конечно, это мой провтык, но что с форматом и детализацией ошибок?
 
 После решения проблемы со слешем натыкаешься на уже json (в предыдущем случае была plain text) ошибку `INVALID_REQUEST_BODY`. Провтык был в том, что цену нужно было указать в виде строки, а не decimal или int
 
 Но проблема не только в сериализации выхлопа ошибки, но и в разных ее форматах. Например, бывает и такое:
- ![dmarket_error_format](https://s3.blog.amd-nick.me/2019/04/dmarket_error_format.png)
+ ![dmarket_error_format](https://s3.amd-nick.me/2019/04/dmarket_error_format.png)
 
 HasErrors, который опять же CamelCase, можно было заменить на ok = true/false, как сделано в телеграм (очень удобно: `if res.ok then ... else ...`). Кстати, внутри даже Status = "failed", что ни в какие ворота не лезет
 
 Уже смирились? Ловите:
- ![trading/v1/report/accounting/balance](https://s3.blog.amd-nick.me/2019/04/dmarket_errors_standart2.jpg)
+ ![trading/v1/report/accounting/balance](https://s3.amd-nick.me/2019/04/dmarket_errors_standart2.jpg)
 Это в `trading/v1/report/accounting/balance` и чтобы понять в чем дело потребовалось еще не менее 20 минут. В lua все числа это decimal по умолчанию и библиотека конвертации в json добавляла к числам `.0`. Пришлось костылями фиксить, чтобы этот нолик снимался
 
 * * *

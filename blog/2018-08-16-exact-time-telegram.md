@@ -14,7 +14,7 @@ tags: [telegram, bot]
 5. Видим точное время сообщения, включая секунды
 6. Пишем в комментариях, зачем вам это нужно было)
 
-![telegram_show_json_bot](https://s3.blog.amd-nick.me/2018/08/telegram_show_json_bot.png)
+![telegram_show_json_bot](https://s3.amd-nick.me/2018/08/telegram_show_json_bot.png)
 
 ## Интересно
 - [Графики онлайна человека в Telegram](./2020-12-23-telegram-online-chart.md)

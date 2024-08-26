@@ -21,7 +21,7 @@ tags: [life, finances, bank]
 
 Мне повезло стать ~212 тысячным клиентом этого банка и пользуюсь их карточкой уже примерно 4-5 месяцев. Считаю, что этот банк со временем вытеснит или, по крайней мере, потеснит нынче самый популярный PrivatBank.
 
-![monobank-open-pack](https://s3.blog.amd-nick.me/2018/07/monobank-open-pack.jpg)
+![monobank-open-pack](https://s3.amd-nick.me/2018/07/monobank-open-pack.jpg)
 
 ## Плюсы
 
@@ -38,7 +38,7 @@ tags: [life, finances, bank]
 - Кстати, офисов у них нет, но вы это и так знаете. Регистрируетесь, приходите "на точку" и забираете карточку. Профит! А действительно, зачем офисы?
 - Курс валют выгоднее за PrivatBank. Когда я вывожу денежку с интернета себе на карточку, то получаю на моно больше денежек. А даже если показалось, то на моно они все равно приходят быстрее
 
-![monobank-stickers](https://s3.blog.amd-nick.me/2018/07/monobank-stickers.jpg)
+![monobank-stickers](https://s3.amd-nick.me/2018/07/monobank-stickers.jpg)
 
 ## Минусы
 

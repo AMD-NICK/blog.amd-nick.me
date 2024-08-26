@@ -16,7 +16,7 @@ tags: [ihor, hosting]
 Цены на ddos-guard слишком дики, да и процессоры их совсем не подходят для однопоточных игровых серверов. У многобайт дела с этим обстоят намного лучше, там хотя бы есть E3-1270v3, у которого с производительностью отдельного ядра все хорошо, но вместе с защитой цена бы вышла в 2 с хреном раза выше, чем я платил за тот же тариф на любимом renter.ru.
 
 Но что-то я отошел от айхора, выбор на котором в конечном итоге и остановился.
- ![ihor-landing](https://s3.blog.amd-nick.me/2018/07/ihor-landing.png)
+ ![ihor-landing](https://s3.amd-nick.me/2018/07/ihor-landing.png)
 
 ## Чем изначально привлекал
 
@@ -30,7 +30,7 @@ tags: [ihor, hosting]
 ## Впечатления до начала использования
 
 Часть я описал выше. Все было отлично, но после первого же обращения начали появляться сомнения.
- ![ihor-reaction-delay](https://s3.blog.amd-nick.me/2018/07/ihor-reaction-delay.png)
+ ![ihor-reaction-delay](https://s3.amd-nick.me/2018/07/ihor-reaction-delay.png)
 
 Хмм, ради ответа приходится столько ждать? А что, если у меня ЧП случится? Ааа, наверное, это они так долго отвечали, потому что я написал поздно — подумал я.
 
@@ -43,22 +43,22 @@ tags: [ihor, hosting]
 Оформление заказа происходит через тикет, который создается автоматически, чего я сначала не совсем понял. От меня никаких действий не требовалось, про оплату никто ничего не написал, хотя я решил предостеречься и сразу пополнил счет на необходимую сумму.
 
 Что очень обрадовало, так это то, что сервер я получил практически мгновенно!1!1 (нет). Обратите внимание на выделенные в тикете области
- ![ihor-reaction-delay-zakaz-servera-1](https://s3.blog.amd-nick.me/2018/07/ihor-reaction-delay-zakaz-servera.png)
+ ![ihor-reaction-delay-zakaz-servera-1](https://s3.amd-nick.me/2018/07/ihor-reaction-delay-zakaz-servera.png)
 
 Посидел, отдохнул пару дней, т.к. делать без сервера то нечего, но что-то на почту оповещений от айхоришка не приходит. Ну я человек простой, решил спросить в чем же дело. Создал отдельный тикет, чтобы не упасть в низ очереди
 
-![ihor-reaction-delay-zakaz-servera-2](https://s3.blog.amd-nick.me/2018/07/ihor-reaction-delay-zakaz-servera-2.png)
+![ihor-reaction-delay-zakaz-servera-2](https://s3.amd-nick.me/2018/07/ihor-reaction-delay-zakaz-servera-2.png)
 
 Оказывается, у них просто в магазин некого послать было. Ну что же, бывает, да? Мы то подождем, правда? Счет то пополнили уже, не вырывать же из рук. Они же даже извинились, как в инструкции по эксплуатации клиентов написано. Как за это можно ругать?
 
 Спустя всего 4, МАТЬ ЕГО, ДНЯ я все же получил свой серверок
- ![ihor-reaction-delay-zakaz-servera-3](https://s3.blog.amd-nick.me/2018/07/ihor-reaction-delay-zakaz-servera-3.png)
+ ![ihor-reaction-delay-zakaz-servera-3](https://s3.amd-nick.me/2018/07/ihor-reaction-delay-zakaz-servera-3.png)
 
 ## Косяки компании
 
 Мелочь, а **не** приятно. В тех. поддержке не смогли предоставить практически никакой информации по поводу атаки. Не может ли это значить, что работают с атаками они «вслепую»? А может, это инновационный эффективный метод борьбы с ними?
 
-![ihor-no-attack-info](https://s3.blog.amd-nick.me/2018/07/ihor-no-attack-info.png)
+![ihor-no-attack-info](https://s3.amd-nick.me/2018/07/ihor-no-attack-info.png)
 
 ## Как сисадмины систему переустанавливали
 
@@ -68,7 +68,7 @@ tags: [ihor, hosting]
 
 Спустя недельку решил, что надо возвращаться на любимый линукс, которому все по барабану, пока канала хватает, которого у меня ого-го.
 
-![ihor-os-reinstall](https://s3.blog.amd-nick.me/2018/07/ihor-os-reinstall.png)
+![ihor-os-reinstall](https://s3.amd-nick.me/2018/07/ihor-os-reinstall.png)
 
 Я так и не понял, что чел имел в виду, когда говорил «админы работают и ночью». Наверное, у нас разные понятия о «работе». Я потерял весь свой рабочий день из-за того, что должен был отоспаться, а потом просто был разряжен и все лишь потому что админы понимают «работу» не так, как я.
 
@@ -81,15 +81,15 @@ tags: [ihor, hosting]
 Поддержка отвечала еще хуже, чем раньше. Начало создаваться впечатление, что после нескольких обращений они кинули меня в низ приоритетов и написали рядом «уебок». Делаю то же рядом с вашим стафф менеджером (если он есть) и директором компании. Оскорбления в мою сторону нервируют меня меньше игнора, который я наблюдаю на каждом шагу.
 
 Много говорить не буду, просто прикладываю скрины
- ![ihor-shit-guardians-1.1](https://s3.blog.amd-nick.me/2018/07/ihor-shit-guardians-1.1.png)
- ![ihor-shit-guardians-1.2](https://s3.blog.amd-nick.me/2018/07/ihor-shit-guardians-1.2.png)
- ![ihor-shit-guardians-1.3](https://s3.blog.amd-nick.me/2018/07/ihor-shit-guardians-1.3.png)
- ![ihor-shit-guardians-1.4](https://s3.blog.amd-nick.me/2018/07/ihor-shit-guardians-1.4.png)
+ ![ihor-shit-guardians-1.1](https://s3.amd-nick.me/2018/07/ihor-shit-guardians-1.1.png)
+ ![ihor-shit-guardians-1.2](https://s3.amd-nick.me/2018/07/ihor-shit-guardians-1.2.png)
+ ![ihor-shit-guardians-1.3](https://s3.amd-nick.me/2018/07/ihor-shit-guardians-1.3.png)
+ ![ihor-shit-guardians-1.4](https://s3.amd-nick.me/2018/07/ihor-shit-guardians-1.4.png)
 
 ## Второй запрос в одном скриншоте
 
 Выше первый запрос. Теперь второй, до сих пор активный
- ![ihor-shit-guardians-2.1](https://s3.blog.amd-nick.me/2018/07/ihor-shit-guardians-2.1.png)
+ ![ihor-shit-guardians-2.1](https://s3.amd-nick.me/2018/07/ihor-shit-guardians-2.1.png)
 
 ## Подсчитал активность сотрудников
 

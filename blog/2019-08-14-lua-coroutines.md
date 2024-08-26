@@ -2,11 +2,11 @@
 title: Понимаем корутины в Lua
 date: '2019-08-14 13:37:00'
 slug: lua-coroutines
-image: https://s3.blog.amd-nick.me/2019/08/lua-coroutines.jpg
+image: https://s3.amd-nick.me/2019/08/lua-coroutines.jpg
 tags: [lua]
 ---
 
-![](https://s3.blog.amd-nick.me/2019/08/lua-coroutines.jpg)
+![](https://s3.amd-nick.me/2019/08/lua-coroutines.jpg)
 
 **Coroutines (сопрограммы)** позволяют разбивать громоздкие задачи на части, чтобы те не "вешали" процесс.
 

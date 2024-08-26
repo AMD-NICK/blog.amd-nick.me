@@ -2,11 +2,11 @@
 title: Хостим приложения с динамическим IP
 date: '2019-02-19 13:37:00'
 slug: remote-access-for-dynamic-ip
-image: https://s3.blog.amd-nick.me/2019/02/duckdns-banner.png
+image: https://s3.amd-nick.me/2019/02/duckdns-banner.png
 tags: [pi, api]
 ---
 
-![](https://s3.blog.amd-nick.me/2019/02/duckdns-banner.png)
+![](https://s3.amd-nick.me/2019/02/duckdns-banner.png)
 
 Проблема динамического IP в том, что для работы сайта или веб приложения нужно следить за тем, чтобы домен всегда указывал на актуальный адрес, иначе сайт будет недоступен.
 
@@ -20,7 +20,7 @@ tags: [pi, api]
 
 После авторизации создайте любой поддомен и обратите внимание на token, указанный сверху той же страницы. Вы можете указать этот поддомен в качестве [CNAME записи](https://yandex.ru/support/pdd/set-mail/cname.html) (зеркала) своего основного домена, если не хотите пользоваться выданным
 
-![duckdns-free-dynamic-dns](https://s3.blog.amd-nick.me/2019/02/duckdns-free-dynamic-dns.png)
+![duckdns-free-dynamic-dns](https://s3.amd-nick.me/2019/02/duckdns-free-dynamic-dns.png)
 
 ### Настройка
 

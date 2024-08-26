@@ -54,10 +54,10 @@ $ ./cpuminer -a cryptonight -o stratum+tcp://pool.minexmr.com:4444 -u YOUR_ADDRE
 
 Если вы все сделали правильно, то на сайте пула, который вы выбрали, **спустя пару минут** должна появиться информация о ваших воркерах (запущенных майнерах). У меня это страница [http://minexmr.com/#worker\_stats](http://minexmr.com/#worker_stats)
 
-![monero-mining-workers-stats](https://s3.blog.amd-nick.me/2018/09/monero-mining-workers-stats.png)
+![monero-mining-workers-stats](https://s3.amd-nick.me/2018/09/monero-mining-workers-stats.png)
 
 Примерный вид выхлопа в терминале:
- ![monero-cpuminer-multi-console-output](https://s3.blog.amd-nick.me/2018/09/monero-cpuminer-multi-console-output.png)
+ ![monero-cpuminer-multi-console-output](https://s3.amd-nick.me/2018/09/monero-cpuminer-multi-console-output.png)
 
 ---
 

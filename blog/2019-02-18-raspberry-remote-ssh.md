@@ -2,11 +2,11 @@
 title: Как сделать Raspberry Pi доступным из интернета
 date: '2019-02-18 13:37:00'
 slug: raspberry-remote-ssh
-image: https://s3.blog.amd-nick.me/2019/02/IMG_2218.jpg
+image: https://s3.amd-nick.me/2019/02/IMG_2218.jpg
 tags: [pi]
 ---
 
-![](https://s3.blog.amd-nick.me/2019/02/IMG_2218.jpg)
+![](https://s3.amd-nick.me/2019/02/IMG_2218.jpg)
 
 ## Задача
 
@@ -39,9 +39,9 @@ tags: [pi]
 1. Входим в админку роутера, открыв в браузере 192.161.1.1 (адрес может отличаться. Найти можно, введя в консоль ipconfig. Ищите там похожие адреса). Роутер может запросить логин и пароль. Попробуйте найти наклейку на самом роутере или попробуйте admin admin
 2. Находим мак-адрес расбы `ifconfig wlan0 | grep ether`
 3. Находим раздел для резервации IP и прописываем там найденный мак. Если у вас получилось подключиться к роутеру по 192.161.1.1, то можете смело указывать рядом с маком 192.168.1.123. В другом случае может потребоваться изменение адреса, как требует DHCP (настраивается рядом, скорее всего)
- ![dhcp-mac-ip-reservation](https://s3.blog.amd-nick.me/2019/02/dhcp-mac-ip-reservation.png)
+ ![dhcp-mac-ip-reservation](https://s3.amd-nick.me/2019/02/dhcp-mac-ip-reservation.png)
 4. После перезагрузки роутера Raspberry должен выделиться новый внутренний адрес. Проверить можно введя на нем `ifconfig wlan0`. Если этого не случилось, то поищите настройки, похожие на те, что на скриншоте ниже
- ![binding-ip-to-mac](https://s3.blog.amd-nick.me/2019/02/binding-ip-to-mac.png)
+ ![binding-ip-to-mac](https://s3.amd-nick.me/2019/02/binding-ip-to-mac.png)
 Также убедитесь, что с этого момента вы можете подключиться к расбе через `ssh pi@192.168.1.123`. Напишите в комментариях, если возникли проблемы
 
 ### Пробрасываем 22 порт с расбы "наружу"
@@ -51,9 +51,9 @@ tags: [pi]
 Наша Raspberry с предыдущего пункта имеет адрес `192.168.1.123`
 
 1. Находим настройки виртуальных серверов (virtual servers). Может иметь другое название, но должно быть связано с разделом переадресации (redirects)
- ![tp-link-virtual-servers-settings](https://s3.blog.amd-nick.me/2019/02/tp-link-virtual-servers-settings.png)
+ ![tp-link-virtual-servers-settings](https://s3.amd-nick.me/2019/02/tp-link-virtual-servers-settings.png)
 2. Добавляем новое правило. Порты некоторых сервисов: SSH 22, FTP 21, WEB 80 и 443 (для https://)
- ![tp-link-add-virtual-server](https://s3.blog.amd-nick.me/2019/02/tp-link-virtual-servers-settings-1.png)
+ ![tp-link-add-virtual-server](https://s3.amd-nick.me/2019/02/tp-link-virtual-servers-settings-1.png)
 3. Перезагружаем роутер и подключаемся к устройству уже через `ssh pi@ip`, где ip -- ваш внешний IP адрес (можно узнать на 2ip.ru)
 4. **Вы великолепны**
 

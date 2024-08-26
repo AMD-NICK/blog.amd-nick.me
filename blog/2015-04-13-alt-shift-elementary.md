@@ -6,7 +6,7 @@ slug: alt-shift-elementary
 
 Вчера установил Elementary OS **Freya** и обнаружил один небольшой, но проблемный баг с переключением раскладки клавиатуры. Дело в том, что через Switchboard настроить переключение на **Alt+Shift** или **Ctrl+Shift** нельзя.
 
-![elementary-os-logo](https://s3.blog.amd-nick.me/2018/08/elementary-os-logo.png)
+![elementary-os-logo](https://s3.amd-nick.me/2018/08/elementary-os-logo.png)
 
 Немного погуглив, я узнал, что этот баг уже публиковался на лаунчпаде и был отмечен, как Fix Commited, т.е. пофикшен, но на самом деле что-то ничего не изменилось, судя по всему.
 

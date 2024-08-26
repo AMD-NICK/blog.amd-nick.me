@@ -7,7 +7,7 @@ tags: [steam, windows]
 
 После запуска игры в Steam у меня автоматически добавляется лишняя раскладка клавиатуры. Чтобы удалить ее из "карусели" Alt-Shift, приходится заходить в настройки, самому добавлять ее, затем сразу же удалять. И так после каждого рестарта компьютера
 
-![](https://s3.blog.amd-nick.me/2019/06/unwanted-keyboard-layout.png)
+![](https://s3.amd-nick.me/2019/06/unwanted-keyboard-layout.png)
 *Раскладка отображается в "карусели" Alt-Shift, но чтобы увидеть ее в настройках, придется вручную ее добавить снова*
 
 Проблема возникает, если при установки Windows вы выбрали основным языком тот, который вам не нужен и вы его удалили. У меня это украинский
@@ -19,7 +19,7 @@ tags: [steam, windows]
 3. В адресной строке отобразится ID раскладки
 4. Переходим в `HKEY_USERS.DEFAULT\Keyboard Layout\Preload`, находим там третьего лишнего и удаляем. Предварительно экспортируйте запись на всякий случай
 
-![](https://s3.blog.amd-nick.me/2019/06/regedit-control-keyboard-layouts-ukrainian.png)
+![](https://s3.amd-nick.me/2019/06/regedit-control-keyboard-layouts-ukrainian.png)
 
 Заметил, что есть еще еще похожая ветка `HKEY_CURRENT_USER\Keyboard Layout\Preload`, где всего 2 раскладки и как раз лишняя отсутствует
 

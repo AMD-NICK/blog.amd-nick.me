@@ -2,11 +2,11 @@
 title: Ghost + Traefik v2 = блог с автообновлением SSL
 date: '2019-11-02 13:37:00'
 slug: ghost-traefik-v2
-image: https://s3.blog.amd-nick.me/2019/11/traefik-ghost-banner.jpg
+image: https://s3.amd-nick.me/2019/11/traefik-ghost-banner.jpg
 tags: [docker, ghost, traefik, blog]
 ---
 
-![](https://s3.blog.amd-nick.me/2019/11/traefik-ghost-banner.jpg)
+![](https://s3.amd-nick.me/2019/11/traefik-ghost-banner.jpg)
 
 Этот блог работает внутри Docker контейнера и использует Traefik в качестве reverse proxy для Ghost. Недавно вышла версия v2.0, в которой были изменены некоторые фундаментальные особенности, что требует переконфигурации trafik.toml, acme.json и docker-compose.yml
 

@@ -2,11 +2,11 @@
 title: Открытие банковского счета в Польше. Bank Millennium
 date: '2020-02-10 13:37:00'
 slug: bank-account-poland
-image: https://s3.blog.amd-nick.me/2020/02/poland-bank-account-for-paypal.jpg
+image: https://s3.amd-nick.me/2020/02/poland-bank-account-for-paypal.jpg
 tags: [finances, bank, paypal, poland travel]
 ---
 
-![](https://s3.blog.amd-nick.me/2020/02/poland-bank-account-for-paypal.jpg)
+![](https://s3.amd-nick.me/2020/02/poland-bank-account-for-paypal.jpg)
 
 Интервью с другом, который ездил в Польшу для открытия счета в банке Millennium для привязки к PayPal. Рассказывает что и как нужно делать, а также о нюансах и советы, как не запороть счет при использовании в PayPal.
 

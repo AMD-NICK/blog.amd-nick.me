@@ -2,11 +2,11 @@
 title: Webhook без веб сервера
 date: '2021-03-08 13:37:00'
 slug: webhook-bez-web-servera
-image: https://s3.blog.amd-nick.me/2021/03/long-polling-instead-webhook.jpg
+image: https://s3.amd-nick.me/2021/03/long-polling-instead-webhook.jpg
 tags: [webhook, polling, microservice, api]
 ---
 
-![](https://s3.blog.amd-nick.me/2021/03/long-polling-instead-webhook.jpg)
+![](https://s3.amd-nick.me/2021/03/long-polling-instead-webhook.jpg)
 
 :::warning 🆘 UPD 2023.12.15
 
@@ -33,7 +33,7 @@ tags: [webhook, polling, microservice, api]
 
 ## Документация
 
-<!-- ![](https://s3.blog.amd-nick.me/2021/11/poll-gmod-app-docs.jpg) -->
+<!-- ![](https://s3.amd-nick.me/2021/11/poll-gmod-app-docs.jpg) -->
 [poll.def.pm документация](2021-11-15-poll-gmod-app-docs.md)
 
 ## Применения
