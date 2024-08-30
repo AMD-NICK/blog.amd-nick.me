@@ -9,6 +9,8 @@ tags: [docker, redis]
 
 В redis репозитории docker'a такой информации нет, а на сайтах устаревшие или нерабочие способы.
 
+<!--truncate-->
+
 ## Вкратце
 
 1. `wget http://download.redis.io/redis-stable/redis.conf`

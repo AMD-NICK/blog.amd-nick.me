@@ -13,9 +13,9 @@ tags: [telegram, bot]
 
 Также вы можете попробовать использовать этот бот: [@crssbot](https://t.me/crssbot), но он **вроде** медленно обновлял информацию и не поддерживается
 
-## Зачем это мне
+<!--truncate-->
 
-Вкратце - [vk.com/rurage](https://vk.com/rurage). Сюда временно дублируется содержание моего [t.me/tlitter](https://t.me/tlitter) канала
+## Зачем это мне
 
 ![](https://s3.amd-nick.me/2019/11/image-12.png)
 

@@ -13,6 +13,8 @@ tags: [mac, alfred, contexts, vscode, soft]
 Ссылки ниже
 :::
 
+<!--truncate-->
+
 ## Настройки:
 
 https://blog.amd-nick.me/docs/macos/settings/

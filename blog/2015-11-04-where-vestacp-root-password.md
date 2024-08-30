@@ -6,6 +6,8 @@ slug: where-vestacp-root-password
 
 При чистой установке VestaCP на Debian-based или CentOS пароль будет храниться в следующем файле:
 
+<!--truncate-->
+
 `cat /usr/local/vesta/conf/mysql.conf`
 
 Найдите такую часть:

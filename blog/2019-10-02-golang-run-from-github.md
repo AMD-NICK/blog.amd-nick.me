@@ -7,11 +7,16 @@ tags: [golang, github]
 
 Итак, вы уже знаете какой-то язык, нашли GitHub репозиторий с проектом на Golang и решили его поковырять. В основах, как тру проггер разберетесь методом тыка, нужно как-то только начать. Hello World для слабаков
 
+<!--truncate-->
+
 ## Установка Golang:
 
-Использую Ubuntu 18.04  
-Я установил то, что было в системе: `apt update && apt install -y golang-go`  
-Встала версия go1.10.4 ([свежая 1.13](https://golang.org/doc/devel/release.html))  
+Использую Ubuntu 18.04
+
+Я установил то, что было в системе: `apt update && apt install -y golang-go`
+
+Встала версия go1.10.4 ([свежая 1.13](https://golang.org/doc/devel/release.html))
+
 Установка свежего [описана тут](https://github.com/golang/go/wiki/Ubuntu)
 
 ## Запуск приложения с GitHub
@@ -24,7 +29,7 @@ tags: [golang, github]
 
 ## Бонус:
 
-Документация `godoc fmt Println`  
+Документация `godoc fmt Println`
 Второе - название пакета, третье - функция
 
 `godoc -http=":6060"` - запустит вебсервер с докой на :6060 порту

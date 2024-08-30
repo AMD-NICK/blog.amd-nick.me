@@ -8,6 +8,8 @@ slug: alt-shift-elementary
 
 ![elementary-os-logo](https://s3.amd-nick.me/2018/08/elementary-os-logo.png)
 
+<!--truncate-->
+
 Немного погуглив, я узнал, что этот баг уже публиковался на лаунчпаде и был отмечен, как Fix Commited, т.е. пофикшен, но на самом деле что-то ничего не изменилось, судя по всему.
 
 Еще немного поковыряв гугл, русскоязычное [сообщество](https://vk.com/elementary_os) Elementary OS ВКонтакте, их блог и форум, я нашел решение проблемы.
