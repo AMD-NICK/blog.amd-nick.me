@@ -1,8 +1,57 @@
 # Подготовка Linux хоста
 
-Чаще всего использую Ubuntu 20.04 и 22.04
+Страница [часто](https://github.com/AMD-NICK/blog.amd-nick.me/commits/main/docs/linux/prepare.md) обновляется. Чаще всего использую Ubuntu 22.04 и 24.04.
+
+## 🧢 База
+
+```bash
+apt update && apt -y upgrade
+
+# Новый не root юзер (me)
+adduser me
+usermod -aG sudo me
+
+# Установка docker (с репозитория)
+# https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+# Затем \/
+groupadd docker
+usermod -aG docker me
+
+# Перенос данных через rsync со старого хоста
+rsync -azP local-dir/ me@ip:/home/me/remote-dir
+```
+
+```bash
+# info source: https://linuxize.com/post/how-to-set-or-change-timezone-in-linux/
+
+# текущие настройки
+timedatectl
+
+# список зон
+timedatectl list-timezones
+
+# установка зоны
+sudo timedatectl set-timezone Europe/Moscow
+```
 
 ## ⌨️ tools
+
+### tailscale
+
+VPN сеть
+
+```bash
+# install tailscale
+curl -fsSL https://tailscale.com/install.sh | sh
+
+# enable IP forwarding
+echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf
+echo 'net.ipv6.conf.all.forwarding = 1' | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p /etc/sysctl.conf
+
+# start tailscale as exit node
+sudo tailscale up --advertise-exit-node
+```
 
 ### lazygit
 
@@ -21,7 +70,7 @@
 apt install lazygit
 
 # иначе
-LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
+LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*') && echo $LAZYGIT_VERSION
 
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
 
@@ -37,7 +86,7 @@ sudo install lazygit /usr/local/bin
 Аналогичный инструмент для Docker. Используется намного реже
 
 <details>
-  <summary>Демка png</summary>
+  <summary>Демка gif</summary>
 
 ![lazydocker cui demo](https://github.com/jesseduffield/lazydocker/blob/master/docs/resources/demo3.gif?raw=true)
 </details>
@@ -45,7 +94,29 @@ sudo install lazygit /usr/local/bin
 ```bash
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 
-mv $HOME/.local/bin/lazydocker /usr/bin
+sudo install $HOME/.local/bin/lazydocker /usr/bin
+```
+
+### gdu
+
+[github](https://github.com/dundee/gdu)
+
+Поиск и чистка диска. Пользуюсь постоянно. По умолчанию ищет большие файлы в текущей папке, но я часто делаю `gdu /` для поиска по всему диску
+
+<details>
+  <summary>Демка jpg</summary>
+
+![demo](https://camo.githubusercontent.com/d8fa7d2f7bdd10dce45a81c2accf26d597b300b82e01b97a1288ff2f1fe06c57/68747470733a2f2f61736369696e656d612e6f72672f612f3338323733382e737667)
+</details>
+
+```bash
+# curl
+curl -L https://github.com/dundee/gdu/releases/latest/download/gdu_linux_amd64.tgz | tar xz
+chmod +x gdu_linux_amd64
+mv gdu_linux_amd64 /usr/bin/gdu
+
+# docker
+docker run --rm --init --interactive --tty --privileged --volume /:/mnt/root ghcr.io/dundee/gdu /mnt/root
 ```
 
 ### micro
@@ -63,7 +134,7 @@ mv $HOME/.local/bin/lazydocker /usr/bin
 ```bash
 curl https://getmic.ro | bash
 
-mv micro /usr/bin
+sudo install micro /usr/bin
 ```
 
 ### lsd
@@ -75,7 +146,7 @@ mv micro /usr/bin
 <details>
   <summary>Демка png</summary>
 
-![lsd screenshot](https://i.imgur.com/NrftbGx.png)
+![lsd screenshot](https://file.def.pm/535QK48i.jpg)
 </details>
 
 ```bash
@@ -85,7 +156,7 @@ apt install lsd
 # https://github.com/Peltoche/lsd/releases
 
 # Потом примерно так:
-curl -o lsd.deb -L https://github.com/Peltoche/lsd/releases/download/0.23.0/lsd-musl_0.23.0_amd64.deb && dpkg -i lsd.deb && rm lsd.deb
+curl -L -o lsd.deb https://github.com/lsd-rs/lsd/releases/download/v1.1.5/lsd-musl_1.1.5_amd64.deb && sudo dpkg -i lsd.deb && rm lsd.deb
 ```
 
 #### Настройки lsd:
@@ -105,35 +176,6 @@ date: +%F %R
 ```
 
 Алиасы в том числе для lsd перечислены ниже в отдельном блоке.
-
-### docker
-
-```bash
-# Install docker
-curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
-
-# Create docker user
-adduser docker_user
-usermod -aG docker docker_user
-#usermod -aG sudo docker_user
-```
-
-### tailscale
-
-VPN сеть
-
-```bash
-# install tailscale
-curl -fsSL https://tailscale.com/install.sh | sh
-
-# enable IP forwarding
-echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf
-echo 'net.ipv6.conf.all.forwarding = 1' | sudo tee -a /etc/sysctl.conf
-sudo sysctl -p /etc/sysctl.conf
-
-# start tailscale as exit node
-sudo tailscale up --advertise-exit-node
-```
 
 ### fzf
 
@@ -165,47 +207,7 @@ source ~/.bashrc
 
 Ctrl + R активирует удобный поиск. Например, для `lazydocker` достаточно ввести `lzdr` > enter
 
-### nnn (файловый менеджер)
-
-Плагины, иконки, минимализм. Как замена Midnight Commander. Привыкаю
-
-Версия для ubuntu/debian (ниже для остального)
-```bash
-# Установка самого nnn с красивыми иконками
-NNN_VERSION=$(curl -s "https://api.github.com/repos/jarun/nnn/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
-curl -Ls "https://github.com/jarun/nnn/releases/download/v$NNN_VERSION/nnn-nerd-static-$NNN_VERSION.x86_64.tar.gz" | tar xz &
-sudo mv nnn-nerd-static /usr/bin/nnn
-```
-
-Версия для других ОС. Тестировал на Raspberry Pi 3 B+
-```bash
-# установк требует sudo!, не root по каким-то причинам..
-git clone git@github.com:jarun/nnn.git && cd nnn
-sudo apt-get install pkg-config libncursesw5-dev libreadline-dev
-sudo make O_NERD=1 strip install
-```
-
-Установка плагинов. Настройка ниже
-
-```bash
-# Установка плагинов (не включаются сами). По умолчанию ставит в $HOME/.config/nnn/plugins
-# Подробнее тут в readme: https://github.com/jarun/nnn/tree/master/plugins
-sh -c "$(curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs)"
-```
-
-Настройки. Добавлять куда-нибудь в `.bashrc` или дочерний source файл
-
-```bash
-# тут надо самому узнать и понять что вам нужно, а что нет. Включаются потом по ; > кнопка
-export NNN_PLUG='d:diffs;c:fzcd;v:imgview;p:preview-tui'
-export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
-# Ставим редактор для nnn [e]
-export VISUAL=micro
-```
-
-🔥 [Вот это](https://github.com/jarun/nnn/blob/master/misc/quitcd/quitcd.bash_zsh) **очень рекомендую** добавить тоже в .bashrc. Странное поведение, но без этого по умолчанию при выходе оно не входит в папку, где ты закрыл nnn. **Если добавили, то теперь запускайте nnn через `n`, а не nnn**.
-
-### clifm (тоже файловый менеджер)
+### clifm (cli file manager)
 
 Заморочился с установкой на Ubuntu 18.04 (на других ОС все было норм)
 
@@ -217,10 +219,10 @@ export VISUAL=micro
 
 ```bash
 # самая проклятая строка, без которой не будет билдится clifm
-sudo apt update && sudo apt install libreadline-dev libcap-dev libacl1-dev libmagic-dev
+sudo apt update && sudo apt install -y build-essential libreadline-dev libcap-dev libacl1-dev libmagic-dev
 
 mkdir tmp && cd tmp
-git clone git@github.com:leo-arch/clifm.git && cd clifm
+git clone https://github.com/leo-arch/clifm.git && cd clifm
 make install
 ```
 
@@ -233,6 +235,13 @@ alias l='ls -l'
 alias la='ls -a'
 alias lt='ls --tree'
 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ~='cd ~'
+alias -- -='cd -'
+
 alias dps='docker ps --format \"{{.ID}}\\t{{.Status}}\\t{{.Names}}\"'
 alias dc='docker compose'
 
@@ -243,10 +252,20 @@ alias ssc='micro ~/.ssh/config'
 alias lg=lazygit
 alias ld=lazydocker
 
-# личное
-nload='nload -t 1000 enp2s0'
-lr='luarocks --lua-dir=$(brew --prefix)/opt/lua@5.3'
+# Create a new directory and enter it
+function mkd() {
+    mkdir -p \"$@\" && cd \"$@\"
+}
+
+# Применить изменения без перелогина:
+# source ~/.bash_aliases
 " >> ~/.bash_aliases
+```
+
+```bash
+# парочка личных экстра алиасов, которые под каждую машину свои
+nload='nload -t 1000 ens3'
+lr='luarocks --lua-dir=$(brew --prefix)/opt/lua@5.3
 ```
 
 ## 🔑 SSH ключи
@@ -287,17 +306,3 @@ ssh-copy-id -i ~/.ssh/keyname.pub user@host
 # личная заметка: /AppData/ssh_keys/uni.pub
 ```
 
-## Прочие настройки
-
-- [Timezone](https://linuxize.com/post/how-to-set-or-change-timezone-in-linux/)
-
-```bash
-# текущие настройки
-timedatectl
-
-# список зон
-timedatectl list-timezones
-
-# установка зоны
-sudo timedatectl set-timezone Europe/Moscow
-```
