@@ -42,3 +42,15 @@
 - [Вот тут](https://www.raycast.com/community-stories) юз кейсы от самих пользователей. Стоит почитать
 - [Сниппеты в Raycast](https://manual.raycast.com/snippets) работают не так, как представлялось и хочется найти им реальное применение
 
+## Мой Raycast Wrapped 2024
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="1" label="1"> ![](raycast-wrapped-2024-1.jpg) </TabItem>
+  <TabItem value="2" label="2"> ![](raycast-wrapped-2024-2.jpg) </TabItem>
+  <TabItem value="3" label="3"> ![](raycast-wrapped-2024-3.jpg) </TabItem>
+  <TabItem value="4" label="4"> ![](raycast-wrapped-2024-4.jpg) </TabItem>
+</Tabs>
+
