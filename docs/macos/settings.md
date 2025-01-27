@@ -4,6 +4,16 @@
 
 ![](https://s3.amd-nick.me/2022/05/image_2022-05-12_12-42-17.png)
 
+## Включаем Touch ID для sudo
+
+> [Информация взята тут](https://jc0b.computer/posts/enabling-touchid-for-sudo-macos-sonoma/)
+
+```shell
+sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+# в файле нужно раскомментировать строку с #auth
+nano /etc/pam.d/sudo_local
+```
+
 ## Больше места на экране
 
 Скейлим разрешение экрана на максимум

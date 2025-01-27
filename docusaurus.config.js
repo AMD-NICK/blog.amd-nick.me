@@ -105,10 +105,10 @@ const config = {
 					},
 					{
 						type: 'dropdown',
-						label: '🙃 Не блог',
+						label: '📦 Ресурсы',
 						position: 'left',
 						items: [
-							{label: '📦 Куча полезностей', type: 'doc', docId: 'intro'},
+							{label: '🧠 База знаний', type: 'doc', docId: 'intro'},
 							{label: '👤 Обо мне', to: 'about'},
 							{label: '✈️ TG Боты', to: 'docs/telegram/bots'},
 						],
