@@ -9,11 +9,11 @@
 ![Graph блога на 2022-05-21 15:35:51](https://i.imgur.com/zzVv8RJ.png)
 _Граф построен при помощи Obsidian_ (не помню когда)
 
-Сайт теперь использует [Docusaurus 2](https://docusaurus.io/) – генератор статичных веб сайтов.
+Сайт теперь использует [Docusaurus 3](https://docusaurus.io/) – генератор статичных веб сайтов.
 
 Вопросы и предложения можно оставить в Issues. Исправления ошибок через Pull Request.
 
-Вдохновлен идеей [Nikita Voloboev – Everything I Know](https://wiki.nikiv.dev)
+Вдохновлен идеей [Nikita Voloboev – Everything I Know](https://wiki.nikiv.dev) (раньше он был free и испопльзовал docusaurus). 2025 нашел еще безбашенного [cho.sh](https://cho.sh/r/000000).
 
 ---
 
@@ -25,7 +25,7 @@ _Граф построен при помощи Obsidian_ (не помню ког
 
 ### Заметки:
 
-- Локальный запуск для проверки поста: `yarn run start`
+- Локальный запуск для написания постов: `git clone`, затем `yarn run dev` [--port 12345]
 
 
 
