@@ -1,8 +1,4 @@
----
-title: Переключение раскладки в Elementary OS по Alt + Shift
-date: '2015-04-13 22:39:00'
-slug: alt-shift-elementary
----
+# Переключение раскладки в Elementary OS по Alt + Shift
 
 Вчера установил Elementary OS **Freya** и обнаружил один небольшой, но проблемный баг с переключением раскладки клавиатуры. Дело в том, что через Switchboard настроить переключение на **Alt+Shift** или **Ctrl+Shift** нельзя.
 
@@ -14,15 +10,15 @@ slug: alt-shift-elementary
 
 Еще немного поковыряв гугл, русскоязычное [сообщество](https://vk.com/elementary_os) Elementary OS ВКонтакте, их блог и форум, я нашел решение проблемы.
 
-### Для переключения по Alt+Shift
+## Для переключения по Alt+Shift
 
 `gsettings set org.pantheon.desktop.gala.keybindings switch-input-source "['<Alt>Shift_L', '<Alt>Shift_R', '<Shift>Alt_L', '<Shift>Alt_R']"`
 
-### Для переключения по Ctrl+Shift
+## Для переключения по Ctrl+Shift
 
 `gsettings set org.pantheon.desktop.gala.keybindings switch-input-source "['<Ctrl>Shift_L', '<Ctrl>>Shift_R', '<Shift>Control_L', '<Shift>Control_R']"`
 
-### Для переключения по Caps Lock
+## Для переключения по Caps Lock
 
 `gsettings set org.pantheon.desktop.gala.keybindings switch-input-source "['Caps_Lock']"`
 
