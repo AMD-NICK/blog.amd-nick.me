@@ -6,9 +6,9 @@ tags: [note, dev, soft, vscode]
 
 # Разработка прямо на удаленном сервере с кайфом
 
-![official banner](banner-official.png)
-
 Открыл для себя [VSCode Remote – SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh). Всегда думал, что оно 100% костыльно работает и не решался попробовать, а теперь хочу специально порекомендовать.
+
+![official banner](banner-official.png)
 
 <!--truncate-->
 

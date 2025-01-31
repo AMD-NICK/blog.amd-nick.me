@@ -1,19 +1,20 @@
 # blog.amd-nick.me
 
 - WordPress 2014-2018
-- Ghost 2018-2022
-- Docusaurus 2022-?
+- [Ghost CMS](https://github.com/TryGhost/Ghost) 2018-2022
+- [Docusaurus](https://docusaurus.io/) 2022-?
+- [Fumadocs](https://github.com/fuma-nama/fumadocs) ?-?
 
 Перенос своего [блога](https://blog.amd-nick.me) с Ghost на GitHub.
 
 ![Graph блога на 2022-05-21 15:35:51](https://i.imgur.com/zzVv8RJ.png)
 _Граф построен при помощи Obsidian_ (не помню когда)
 
-Сайт теперь использует [Docusaurus 3](https://docusaurus.io/) – генератор статичных веб сайтов.
+Сайт теперь использует Docusaurus 3 – генератор статичных веб сайтов.
 
 Вопросы и предложения можно оставить в Issues. Исправления ошибок через Pull Request.
 
-Вдохновлен идеей [Nikita Voloboev – Everything I Know](https://wiki.nikiv.dev) (раньше он был free и испопльзовал docusaurus). 2025 нашел еще безбашенного [cho.sh](https://cho.sh/r/000000).
+Вдохновлен идеей [Nikita Voloboev – Everything I Know](https://wiki.nikiv.dev) (раньше он был free и испопльзовал docusaurus). 2025 нашел еще безбашенного [cho.sh](https://cho.sh/r/000000), а nikiv создал новый сайт: [клик](https://docs.nikiv.dev) (не запутайтесь)
 
 ---
 
