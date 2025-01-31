@@ -36,6 +36,9 @@ const config = {
 				counterID: '49559035',
 			},
 		],
+		[
+			require.resolve('./src/plugins/backlinks-plugin'), {},
+		],
 	],
 
 	presets: [
@@ -57,6 +60,9 @@ const config = {
 					blogSidebarTitle: 'Другие посты',
 					// Remove this to remove the "edit this page" links.
 					// editUrl: 'https://github.com/AMD-NICK/docusaurustest/tree/main/',
+					// processBlogPosts: async ({blogPosts}) => {
+					// 	console.log("[Docusaurus config] processBlogPosts blogPosts", blogPosts)
+					// }
 				},
 
 				theme: {
