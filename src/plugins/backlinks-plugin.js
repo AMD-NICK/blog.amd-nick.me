@@ -37,6 +37,8 @@ async function getBlogAndDocsContent(plugins) {
 	]
 }
 
+// I found only this solution: https://github.com/facebook/docusaurus/blob/78f44d0ae70fb98a63681b469977e8f074d339da/packages/docusaurus-utils/src/markdownLinks.ts#L50-L79
+// explanation: https://github.com/facebook/docusaurus/blob/78f44d0ae70fb98a63681b469977e8f074d339da/packages/docusaurus-utils/src/__tests__/markdownLinks.test.ts#L8
 function getMarkdownLinkResolver(pages_with_metadata) {
 	function createResolverContext(file_permalink_dict) {
 		return {
@@ -88,6 +90,7 @@ async function getBacklinksMap(pages_with_metadata) {
 			throw new Error("Content is undefined")
 		}
 
+		// may be useful to know: https://github.com/facebook/docusaurus/pull/10168/files (parsing using remark and some tests)
 		const links = content.match(/(?<!!)\[([^\]]*)\]\(([^)]+)\)/g) || []
 
 		for (const linkMarkup of links) {
