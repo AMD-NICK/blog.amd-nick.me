@@ -1,6 +1,3 @@
-// import { usePluginData } from '@docusaurus/core';
-// import { parseMarkdownString } from '@docusaurus/utils';
-
 import {aliasedSitePathToRelativePath, resolveMarkdownLinkPathname} from '@docusaurus/utils';
 import fs from 'fs-extra';
 import path from 'path';
@@ -14,14 +11,13 @@ const ignoreRoutes = new Set([
 
 module.exports = function (context) {
 	return {
-		name: 'docusaurus-backlinks-plugin',
+		name: 'docusaurus-plugin-backlinks',
+
+		// #todo create blank backlinks.json to avoid browser fetch error in component
+		// async contentLoaded({content, actions}) {}
 
 		// https://docusaurus.io/docs/api/plugin-methods/lifecycle-apis#postBuild
-		async postBuild(props) {
-			// console.log("[backlinks-plugin] postBuild hook", props) // много интересного (роуты, исходники постов в .md, полностью загруженные данные всех плагинов, siteDir, siteConfig и т.д.). Демо: https://file.def.pm/rlGTzVv6.jpg
-			const {plugins, outDir} = props
-			// console.log("[backlinks-plugin] postBuild hook, plugins", plugins)
-
+		async postBuild({plugins, outDir}) {
 			const blogPlugin = plugins.find(plugin => plugin.name === 'docusaurus-plugin-content-blog')
 			const docsPlugin = plugins.find(plugin => plugin.name === 'docusaurus-plugin-content-docs')
 
@@ -69,7 +65,11 @@ module.exports = function (context) {
 				),
 			}
 
-			const backlinks_map = {}
+			const backlinks_map = {
+				links: {}, // target -> [source1, source2, ...]
+				descriptions: {}, // source -> description
+			}
+
 			for (const {content, metadata} of allContent) {
 				// console.log("[backlinks-plugin] postBuild, 📁", metadata.source)
 				if (!content) {
@@ -84,15 +84,20 @@ module.exports = function (context) {
 					const [_, title, url] = link_markup.match(/(?<!!)\[([^\]]*)\]\(([^)]+)\)/)
 					// console.log("[backlinks-plugin] postBuild hook, url, title", url, title)
 
-					// Функция делает просто .replace('@site/', ''),
-					// так как инпуты такие: @site/blog/2015-03-06-sozdanie-poddomena-ispmanager.md
+					// The function just replaces '@site/' with ''
+					// because the input is like this: @site/blog/2015-03-06-sozdanie-poddomena-ispmanager.md
 					resolverContext.sourceFilePath = aliasedSitePathToRelativePath(metadata.source)
 					const resolvedUrl = resolveMarkdownLinkPathname(url, resolverContext) || (registeredRoutes.has(url) ? url : null)
-					// console.log("[backlinks-plugin] postBuild hook, resolvedUrl", resolvedUrl)
 
 					if (resolvedUrl) {
-						if (!backlinks_map[resolvedUrl]) backlinks_map[resolvedUrl] = {}
-						backlinks_map[resolvedUrl][metadata.permalink] = metadata.description || ''
+						if (!backlinks_map.descriptions[metadata.permalink]) {
+							backlinks_map.descriptions[metadata.permalink] = (metadata.description || '')
+						}
+
+						if (!backlinks_map.links[resolvedUrl]) {
+							backlinks_map.links[resolvedUrl] = new Set()
+						}
+						backlinks_map.links[resolvedUrl].add(metadata.permalink)
 
 					// #todo fix hardcoded shit
 					} else if (!(url.startsWith('http') || ignoreRoutes.has(url) || url == '#' || url == '/' || url.startsWith('/tags/'))) {
@@ -100,7 +105,10 @@ module.exports = function (context) {
 					}
 				}
 			}
-			// console.log("[backlinks-plugin] backlinks_map:", backlinks_map)
+
+			for (const key in backlinks_map.links) {
+				backlinks_map.links[key] = Array.from(backlinks_map.links[key])
+			}
 
 			const backlinksPath = path.join(outDir, 'backlinks.json');
 			try {

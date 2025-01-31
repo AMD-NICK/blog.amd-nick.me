@@ -4,7 +4,10 @@ import styles from './styles.module.css'
 import { translate } from '@docusaurus/Translate'
 
 interface BacklinksData {
-	[key: string]: {
+	links: {
+		[key: string]: string[]
+	}
+	descriptions: {
 		[key: string]: string
 	}
 }
@@ -14,7 +17,7 @@ type Props = {
 }
 
 const Backlink: React.FC<Props> = ({ documentPath }) => {
-	const [backlinks, setBacklinks] = useState<BacklinksData>({})
+	const [backlinks, setBacklinks] = useState<BacklinksData>({ links: {}, descriptions: {} })
 
 	useEffect(() => {
 		const fetchBacklinks = async () => {
@@ -30,7 +33,7 @@ const Backlink: React.FC<Props> = ({ documentPath }) => {
 		fetchBacklinks()
 	}, [])
 
-	const backlinkItems = backlinks[documentPath] || {}
+	const backlinkPaths = backlinks.links[documentPath] || []
 
 	return (
 		<div className={styles.backlinkTable}>
@@ -42,18 +45,18 @@ const Backlink: React.FC<Props> = ({ documentPath }) => {
 				})}
 			</h2>
 			<div className={styles.backlinkGridView}>
-				{Object.keys(backlinkItems).length > 0 ? (
-					Object.entries(backlinkItems)
+				{backlinkPaths.length > 0 ? (
+					backlinkPaths
 						.sort()
 						.reverse()
-						.map(([link, description]) => (
+						.map((link) => (
 							<Link to={link} className={styles.backlinkItemLink} key={link}>
 								<div className={styles.backlinkItem}>
 									<h3 className={styles.backlinkMentionedFileName}>
 										{link.split('/').filter(Boolean).pop()}
 									</h3>
 									<pre className={styles.backlinkItemText}>
-										{description}
+										{backlinks.descriptions[link] || ''}
 									</pre>
 								</div>
 							</Link>
