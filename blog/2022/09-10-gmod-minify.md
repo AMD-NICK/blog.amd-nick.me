@@ -137,5 +137,5 @@ find prod/garrysmod/addons -name '*.lua' -exec bash -c 'lua minify.lua minify "$
 - Можно улучшить скрипт, чтобы он минифицировал только клиентские файлы
 - Дописать `deploy.sh` из поста про ускорение запуска [гмод сервера](./07-25-gmod-startup.md), чтобы он и файлы минифицировал
 - Можно минифицировать также `gamemodes/name`
-- А еще поискать прочие [Штуки](/docs/garrysmod)
+- А еще поискать прочие [Штуки](/docs/garrysmod/)
 - [Посмотреть на индуса](https://ru.freepik.com/free-photo/beautiful-male-portrait-isolated-young-emotional-hindu-man-in-blue-shirt-astonished-shocked-crazy-happy_11649046.htm)

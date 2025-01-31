@@ -5,6 +5,13 @@ import {aliasedSitePathToRelativePath, resolveMarkdownLinkPathname} from '@docus
 import fs from 'fs-extra';
 import path from 'path';
 
+// Do not report this routes as unresolved
+// http*, /tags/*, "#" and / ignored by default
+const ignoreRoutes = new Set([
+	'/about',
+	'about',
+])
+
 module.exports = function (context) {
 	return {
 		name: 'docusaurus-backlinks-plugin',
@@ -16,13 +23,38 @@ module.exports = function (context) {
 			// console.log("[backlinks-plugin] postBuild hook, plugins", plugins)
 
 			const blogPlugin = plugins.find(plugin => plugin.name === 'docusaurus-plugin-content-blog')
-			const blogPosts  = blogPlugin.content.blogPosts
-			// console.log("[backlinks-plugin] postBuild hook, blogPosts", blogPosts)
-			// console.log("[backlinks-plugin] postBuild hook, blogPosts 👆")
+			const docsPlugin = plugins.find(plugin => plugin.name === 'docusaurus-plugin-content-docs')
 
+			const blogPosts = blogPlugin?.content?.blogPosts || []
+			const docItems = docsPlugin?.content?.loadedVersions[0]?.docs || []
+
+			const allContent = [
+				...blogPosts.map(post => ({
+					content: post.content,
+					metadata: post.metadata
+				})),
+				...docItems.map(doc => ({
+					// #todo быстрый фикс. Почему в docs нет content?
+					content: fs.readFileSync(aliasedSitePathToRelativePath(doc.source), 'utf8'),
+					metadata: {
+						source: doc.source,
+						permalink: doc.permalink,
+						description: doc.description
+					}
+				}))
+			]
+
+			// Создаем словарь source -> permalink
 			const sourceToPermalinkDict = {}
-			for (const {metadata} of blogPosts) {
+			for (const {metadata} of allContent) {
 				sourceToPermalinkDict[metadata.source] = metadata.permalink
+			}
+
+			// Костыль, чтобы дать второй шанс Unresolved ссылкам, которые ссылаются с /docs на ссылки блога и наоборот
+			// В docusaurus НЕТ нормального роутинга между блогами и доками. И да, я хорошо искал. Они в разных вселенных.
+			const registeredRoutes = new Set()
+			for (const {metadata} of allContent) {
+				registeredRoutes.add(metadata.permalink)
 			}
 
 			const resolverContext = {
@@ -30,7 +62,7 @@ module.exports = function (context) {
 				// sourceFilePath: 'override me', // Это файл, относительно которого будет ресолвиться ссылка.
 				contentPaths: {
 					contentPath: 'blog',
-					contentPathLocalized: 'blablabla', // без этого внешние ссылки не ресолвятся и выдает ошибку из-за undefined первым элементом в getContentPathList
+					contentPathLocalized: 'docs', // без этого внешние ссылки не ресолвятся и выдает ошибку из-за undefined первым элементом в getContentPathList
 				},
 				sourceToPermalink: new Map(
 					Object.entries(sourceToPermalinkDict)
@@ -38,9 +70,15 @@ module.exports = function (context) {
 			}
 
 			const backlinks_map = {}
-			for (const {content, metadata} of blogPosts) {
+			for (const {content, metadata} of allContent) {
+				// console.log("[backlinks-plugin] postBuild, 📁", metadata.source)
+				if (!content) {
+					console.error("[backlinks-plugin] postBuild, content is undefined", metadata.source)
+					throw new Error("Content is undefined")
+				}
+
 				const links = content.match(/(?<!!)\[([^\]]*)\]\(([^)]+)\)/g) || [];
-				// console.log("[backlinks-plugin] postBuild hook, links", links)
+				// console.log("[backlinks-plugin] postBuild, 🔗", links)
 
 				for (const link_markup of links) {
 					const [_, title, url] = link_markup.match(/(?<!!)\[([^\]]*)\]\(([^)]+)\)/)
@@ -49,25 +87,29 @@ module.exports = function (context) {
 					// Функция делает просто .replace('@site/', ''),
 					// так как инпуты такие: @site/blog/2015-03-06-sozdanie-poddomena-ispmanager.md
 					resolverContext.sourceFilePath = aliasedSitePathToRelativePath(metadata.source)
-					const resolvedUrl = resolveMarkdownLinkPathname(url, resolverContext)
+					const resolvedUrl = resolveMarkdownLinkPathname(url, resolverContext) || (registeredRoutes.has(url) ? url : null)
 					// console.log("[backlinks-plugin] postBuild hook, resolvedUrl", resolvedUrl)
 
 					if (resolvedUrl) {
-						if (!backlinks_map[resolvedUrl]) {
-							backlinks_map[resolvedUrl] = {}
-						}
-
+						if (!backlinks_map[resolvedUrl]) backlinks_map[resolvedUrl] = {}
 						backlinks_map[resolvedUrl][metadata.permalink] = metadata.description || ''
+
+					// #todo fix hardcoded shit
+					} else if (!(url.startsWith('http') || ignoreRoutes.has(url) || url == '#' || url == '/' || url.startsWith('/tags/'))) {
+						console.warn("🤔 [backlinks-plugin] postBuild hook, NOT resolved Url", url, " in ", metadata.source)
 					}
-					// else if (!url.startsWith('http')) { // tags, tg://, pages, /, временно /docs (нет в индексе) и таки пара аномалий
-					// 	console.log("🤔 [backlinks-plugin] postBuild hook, NOT resolved Url", url, " in ", metadata.source)
-					// }
 				}
 			}
 			// console.log("[backlinks-plugin] backlinks_map:", backlinks_map)
 
 			const backlinksPath = path.join(outDir, 'backlinks.json');
-			await fs.outputFile(backlinksPath, JSON.stringify(backlinks_map, null, 2));
+			try {
+				await fs.outputFile(backlinksPath, JSON.stringify(backlinks_map, null, 2));
+			} catch (err) {
+				console.error("[backlinks-plugin] postBuild hook, error writing backlinks.json", err)
+				throw err
+			}
 		}
 	};
 };
+
