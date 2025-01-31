@@ -73,6 +73,18 @@ module.exports = function (context) {
 				sourceToPermalinkDict[metadata.source] = metadata.permalink
 			}
 
+			const context = {
+				siteDir: ".", //siteConfig.baseUrl, // baseUrl == "/", url == "https://blog.amd-nick.me"
+				// sourceFilePath: 'override me', // Это файл, относительно которого будет ресолвиться ссылка. Функция делает просто .replace('@site/', '')
+				contentPaths: {
+					contentPath: 'blog',
+					contentPathLocalized: 'blablabla', // без этого внешние ссылки не ресолвятся и выдает ошибку из-за undefined первым элементом в getContentPathList
+				},
+				sourceToPermalink: new Map(
+					Object.entries(sourceToPermalinkDict)
+				),
+			}
+
 			const backlinks_map = {}
 			for (const {content, metadata} of blogPosts) {
 
@@ -98,19 +110,7 @@ module.exports = function (context) {
 					//// console.log("[backlinks-plugin] postBuild hook, parseURLPath(url)", parseURLPath(url))
 					//// console.log("[backlinks-plugin] postBuild hook, parseLocalURLPath(url)", parseLocalURLPath(url))
 
-					// context.sourceFilePath = sourceFilePath
-
-					const context = {
-						siteDir: ".", //siteConfig.baseUrl, // baseUrl == "/", url == "https://blog.amd-nick.me"
-						sourceFilePath: aliasedSitePathToRelativePath(metadata.source), // Это файл, относительно которого будет ресолвиться ссылка. Функция делает просто .replace('@site/', '')
-						contentPaths: {
-							contentPath: 'blog',
-							contentPathLocalized: 'blablabla', // без этого внешние ссылки не ресолвятся и выдает ошибку из-за undefined первым элементом в getContentPathList
-						},
-						sourceToPermalink: new Map(
-							Object.entries(sourceToPermalinkDict)
-						),
-					}
+					context.sourceFilePath = aliasedSitePathToRelativePath(metadata.source)
 
 					const resolvedUrl = resolveMarkdownLinkPathname(url, context)
 					// console.log("[backlinks-plugin] postBuild hook, resolvedUrl", resolvedUrl)

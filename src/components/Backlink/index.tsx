@@ -37,7 +37,7 @@ const Backlink: React.FC<Props> = ({ documentPath }) => {
 			<h2 className={styles.backlinkTableH2}>
 				{translate({
 					id: 'backlink.title',
-					message: 'Ссылки на эту страницу',
+					message: 'Это страница упоминается в:',
 					description: 'Заголовок блока обратных ссылок',
 				})}
 			</h2>
@@ -62,7 +62,7 @@ const Backlink: React.FC<Props> = ({ documentPath }) => {
 					<p className={styles.noBacklink}>
 						{translate({
 							id: 'backlink.noBacklink',
-							message: 'Обратных ссылок нет...',
+							message: 'Другие публикации не ссылаются на эту. Пока что',
 							description: 'Сообщение, отображаемое при отсутствии обратных ссылок',
 						})}
 					</p>
