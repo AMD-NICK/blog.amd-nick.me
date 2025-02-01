@@ -3,7 +3,7 @@ import DocPaginator from "@theme-original/DocPaginator";
 import { useDoc } from '@docusaurus/plugin-content-docs/client';
 import { useColorMode } from "@docusaurus/theme-common";
 import Giscus from "@giscus/react";
-import Backlink from '@site/src/components/Backlink'
+import Backlink from "docusaurus-plugin-backlinks/src/components/Backlink";
 
 export default function DocPaginatorWrapper(props) {
 	const { colorMode } = useColorMode();

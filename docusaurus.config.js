@@ -36,9 +36,7 @@ const config = {
 				counterID: '49559035',
 			},
 		],
-		[
-			require.resolve('./src/plugins/backlinks-plugin'), {},
-		],
+		'docusaurus-plugin-backlinks',
 	],
 
 	presets: [
