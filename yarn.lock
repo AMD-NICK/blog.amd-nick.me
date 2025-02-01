@@ -4199,10 +4199,10 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docusaurus-plugin-backlinks@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/docusaurus-plugin-backlinks/-/docusaurus-plugin-backlinks-1.0.0.tgz#ea8bd712e149bc098d9662279ce3f0a25c325f38"
-  integrity sha512-saZWlkua+UxaeD6HT2R6ptCuBoI8/ZaQ5NBLy6MkarAP9ljE5JJnK5msxOHfpl9CVu0JwAkbG6dsPneLt/2i6A==
+docusaurus-plugin-backlinks@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-backlinks/-/docusaurus-plugin-backlinks-1.0.1.tgz#19fc070eee4a12c76c67e9dc9532c28ec7073cfa"
+  integrity sha512-OMMls76KdC88GBasvehpzGiBQ2tidXsv3go/jhfwFyHVbVMdHhHYFUzw3m5en+s2xGWBxev75sYhCJQm5VGvlQ==
 
 docusaurus-plugin-yandex-metrica@^1.0.1:
   version "1.2.1"

@@ -1,0 +1,4 @@
+# source ~/.shell_aliases
+
+alias devo='yarn run dev'
+alias dev='devo --no-open'
