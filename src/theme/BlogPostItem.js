@@ -3,7 +3,7 @@ import BlogPostItem from "@theme-original/BlogPostItem";
 import { useBlogPost } from '@docusaurus/plugin-content-blog/client';
 import { useColorMode } from "@docusaurus/theme-common";
 import Giscus from "@giscus/react";
-import Backlink from "docusaurus-plugin-backlinks/src/components/Backlink";
+import { Backlink } from "docusaurus-plugin-backlinks";
 
 export default function BlogPostItemWrapper(props) {
 	const { colorMode } = useColorMode();
