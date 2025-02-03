@@ -1,4 +1,7 @@
 # source ~/.shell_aliases
 
+alias yr='yarn run'
+alias build='yarn run build'
+alias serve='yarn run build && yarn run serve'
 alias devo='yarn run dev'
-alias dev='devo --no-open'
+alias dev='yarn run dev --no-open'

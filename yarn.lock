@@ -1998,7 +1998,7 @@
     url-loader "^4.1.1"
     webpack "^5.88.1"
 
-"@docusaurus/utils@3.7.0":
+"@docusaurus/utils@3.7.0", "@docusaurus/utils@^3.0.0":
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-3.7.0.tgz#dfdebd63524c52b498f36b2907a3b2261930b9bb"
   integrity sha512-e7zcB6TPnVzyUaHMJyLSArKa2AG3h9+4CfvKXKKWNx6hRs+p0a+u7HHTJBgo6KW2m+vqDnuIHK4X+bhmoghAFA==
@@ -4199,10 +4199,13 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docusaurus-plugin-backlinks@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/docusaurus-plugin-backlinks/-/docusaurus-plugin-backlinks-1.0.1.tgz#19fc070eee4a12c76c67e9dc9532c28ec7073cfa"
-  integrity sha512-OMMls76KdC88GBasvehpzGiBQ2tidXsv3go/jhfwFyHVbVMdHhHYFUzw3m5en+s2xGWBxev75sYhCJQm5VGvlQ==
+docusaurus-plugin-backlinks@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-backlinks/-/docusaurus-plugin-backlinks-1.0.5.tgz#f97edfc14d3778cbfd222c0ca1f3c3d809ba0c6d"
+  integrity sha512-igYd4JWyH0psPR8XV9F3cRMCUK49INRL+q1T+00EHkyls2/q/DbzEt5XxalsaLc9+4kg7wvFifkfSflYUmxeGQ==
+  dependencies:
+    "@docusaurus/utils" "^3.0.0"
+    fs-extra "^11.3.0"
 
 docusaurus-plugin-yandex-metrica@^1.0.1:
   version "1.2.1"
@@ -4816,7 +4819,7 @@ fresh@0.5.2:
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
   integrity sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==
 
-fs-extra@^11.1.1, fs-extra@^11.2.0:
+fs-extra@^11.1.1, fs-extra@^11.2.0, fs-extra@^11.3.0:
   version "11.3.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.3.0.tgz#0daced136bbaf65a555a326719af931adc7a314d"
   integrity sha512-Z4XaCL6dUDHfP/jT25jJKMmtxvuwbkrD1vNSMFlo9lNLY2c5FHYSQgHPRZUjAB26TpDEoW9HCOgplrdbaPV/ew==
