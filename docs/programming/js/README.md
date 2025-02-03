@@ -1,4 +1,4 @@
-# Javascript / TypeScript notes
+# JS & TS
 
 ## Заметки нуба
 
