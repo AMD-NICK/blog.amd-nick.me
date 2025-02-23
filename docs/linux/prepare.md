@@ -1,4 +1,4 @@
-# Подготовка Linux хоста
+# Подготовка хоста
 
 Страница [часто](https://github.com/AMD-NICK/blog.amd-nick.me/commits/main/docs/linux/prepare.md) обновляется. Чаще всего использую Ubuntu 22.04 и 24.04.
 
@@ -32,6 +32,16 @@ timedatectl list-timezones
 
 # установка зоны
 sudo timedatectl set-timezone Europe/Moscow
+```
+
+```shell
+# ~/.bashrc
+
+# Сохранение истории после каждой команды. Синхронизация истории между сессиями
+PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
+
+# Предпочтение по редактору. Ctrl + X + E например
+export EDITOR=micro
 ```
 
 ## ⌨️ tools
@@ -179,14 +189,13 @@ date: +%F %R
 
 ### fzf
 
-Поиск по командам в bash (`ctrl + r`) не имеет встроенного "fuzzy"(?) поиска. fzf добавляет его
+Поиск по командам в bash (`ctrl + r`) не имеет встроенного "fuzzy" поиска. fzf добавляет его
 
 Установка:
 
 ```bash
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
-git clone https://github.com/4z3/fzf-plugins ~/.fzf-plugins
 ```
 
 Настройка кейбиндов
@@ -251,6 +260,9 @@ alias sxu='screen -xU'
 alias ssc='micro ~/.ssh/config'
 alias lg=lazygit
 alias ld=lazydocker
+
+# Fuzzy cd to directory. dir= needs to not cd home dir when no selection made
+alias cdf='dir=$(find . -type d -not -path \"*/\.*\" | fzf --preview \"ls -l {}\") && cd $dir'
 
 # Create a new directory and enter it
 function mkd() {
