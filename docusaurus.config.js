@@ -30,13 +30,12 @@ const config = {
 	},
 
 	plugins: [
+		'docusaurus-plugin-backlinks',
 		[
-			'docusaurus-plugin-yandex-metrica',
-			{
+			'docusaurus-plugin-yandex-metrica', {
 				counterID: '49559035',
 			},
 		],
-		'docusaurus-plugin-backlinks',
 	],
 
 	presets: [
