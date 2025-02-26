@@ -1,5 +1,12 @@
 amd:
   name: Mad Kernel
   title: Старый пердун
-  url: https://github.com/AMD-NICK
+  url: /about
   image_url: https://github.com/AMD-NICK.png
+  email: me@amd-nick.me
+  socials:
+    x: amd_nick
+    github: AMD-NICK
+    youtube: amd_nick
+    telegram: https://t.me/amd_nick
+    vk: https://vk.com/amd_nick

@@ -1,15 +1,18 @@
 ---
 slug: lua-remote-debug
+description: Настройка удалённой отладки Lua с VSCode Lua Debugger, LuaPanda и MobDebug. Решение проблем в Docker и Tailscale
 image: ./banner.png
-tags: [dev, lua, debug]
+tags: [dev, lua]
+keywords: [lua, remote-debug, debug, lua-debug, luapanda, mobdebug, debugger]
+authors: amd
 ---
 
-# Lua - Отладка кода на remote сервере
+# Удалённая отладка Lua: Инструменты и настройка
 
 ![debugger.lua](banner.png)
 
 :::note
-Пост создан в стиле заметок, а не руководства. Будет полезен тем, кто хочет удаленно дебажить свои Lua приложения, но еще подбирает инструмент.
+Пост создан в стиле заметок. Будет полезен тем, кто хочет удаленно дебажить свои Lua приложения, но еще подбирает инструмент.
 :::
 
 Проблема в том, что вся информация на китайском. **Каждый известный LuaDebug написал китаец и они не хотят переводить документацию на английский**.
@@ -25,7 +28,7 @@ tags: [dev, lua, debug]
 
 Сначала запускается сервер (нажатие кнопки старта debug в VSCode начинает слушать определенный порт), затем клиент подключается к серверу по TCP. Нажатие кнопки отладки, в отличии от локального дебага, не запускает код на компе с VSCode, а начинает ждать подключение по TCP
 
-## VSCode LuaHelper + LuaPanda.lua
+## LuaHelper + LuaPanda.lua
 
 - [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=yinfei.luahelper)
 - [LuaPanda.lua](https://github.com/Tencent/LuaPanda/blob/master/Debugger/LuaPanda.lua)
@@ -58,7 +61,7 @@ tags: [dev, lua, debug]
 require('LuaPanda').start('123.123.123.123', 8172)
 ```
 
-## VSCode Lua Debugger от devCAT + vscode-debuggee.lua
+## Lua Debugger от devCAT + vscode-debuggee.lua
 
 - [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=devCAT.lua-debug)
 - [vscode-debuggee.lua](https://github.com/devcat-studio/VSCodeLuaDebug/blob/master/debuggee/vscode-debuggee.lua)
@@ -92,7 +95,7 @@ local startResult, breakerType = debuggee.start(json, {
 print('debuggee start ->', startResult, breakerType)
 ```
 
-## VSCode MobDebug Adapter + mobdebug.lua
+## MobDebug Adapter + mobdebug.lua
 
 - [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=AlexeyMelnichuk.lua-mobdebug)
 - [mobdebug.lua](https://github.com/moteus/vscode-mobdebug/blob/main/lua/mobdebug.lua) – важно использовать именно этот файл.
@@ -131,7 +134,7 @@ mobdebug.logging(true)
 mobdebug.start("123.123.123.123", 8172)
 ```
 
-## VSCode LuaDebug от actboy168 + не пойму что
+## LuaDebug от actboy168
 
 - [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=actboy168.lua-debug)
 
@@ -145,7 +148,7 @@ mobdebug.start("123.123.123.123", 8172)
 
 ![debugger.lua](banner.png)
 
-Это [один файл-дебаггер](https://github.com/slembcke/debugger.lua/blob/master/debugger.lua). Код прелестный, минималистичный. Все нравится. Но нет расширения для VSCode. Это REPL скрипт, который подкупает, если запустить интерактивный туториал:
+Это [один файл-дебаггер](https://github.com/slembcke/debugger.lua/blob/master/debugger.lua). Код прелестный, минималистичный. Все нравится. Это REPL скрипт, который подкупает, если запустить интерактивный туториал:
 
 ```bash
 git clone https://github.com/slembcke/debugger.lua.git debugger && cd debugger
