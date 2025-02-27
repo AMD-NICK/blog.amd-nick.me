@@ -1,5 +1,7 @@
 {
 	"github": {
 		"silent": true
-	}
+	},
+	"trailingSlash": false,
+	"cleanUrls": true
 }
