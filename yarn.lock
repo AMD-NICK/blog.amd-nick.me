@@ -4211,10 +4211,10 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docusaurus-plugin-backlinks@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/docusaurus-plugin-backlinks/-/docusaurus-plugin-backlinks-1.0.6.tgz#e3ef4c1a45e6cd0f9a12d3a1aca422b28108bfdd"
-  integrity sha512-LVDgx+m6JA3ac7SJ00/I0SvqCP9KEVWDXvkmWMM57ySpnMWWhTRQMEGW/GXHiuUBDVQksYCI4uWN4W/6Gn7QCg==
+docusaurus-plugin-backlinks@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-backlinks/-/docusaurus-plugin-backlinks-1.0.7.tgz#e66bfc4062fcbf7d8d91e0480d9898679a799773"
+  integrity sha512-WbtXz/TC6Q9cPs0SqSlhywz/aOCWPH2pTMfDfQCs9e5ui1tuNWUK4sKRuK/Z9yDUmKMZBatJxTSCk/DA1IXMMw==
   dependencies:
     "@docusaurus/utils" "^3.0.0"
     fs-extra "^11.3.0"
