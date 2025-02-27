@@ -1,5 +1,5 @@
 import React from "react";
-import DocPaginator from "@theme-original/DocPaginator";
+// import DocPaginator from "@theme-original/DocPaginator";
 import { useDoc } from '@docusaurus/plugin-content-docs/client';
 import { useColorMode } from "@docusaurus/theme-common";
 import Giscus from "@giscus/react";
@@ -13,7 +13,7 @@ export default function DocPaginatorWrapper(props) {
 
 
 	return (<>
-		<DocPaginator {...props} />
+		{/* <DocPaginator {...props} /> */}
 		<Backlink documentPath={metadata.permalink} />
 		{(
 			<div className="docusaurus-docs-comments">
