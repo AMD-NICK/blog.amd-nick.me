@@ -3,5 +3,15 @@
 		"silent": true
 	},
 	"trailingSlash": false,
-	"cleanUrls": true
+	"cleanUrls": true,
+	"redirects": [
+		{"source": "/docs/other/crowdsec", "destination": "/docs/tools/crowdsec"},
+		{"source": "/docs/other/docker", "destination": "/docs/tools/docker"},
+		{"source": "/docs/other/docusaurus", "destination": "/docs/tools/docusaurus"},
+		{"source": "/docs/other/openresty", "destination": "/docs/tools/openresty"},
+		{"source": "/docs/other/vpn/tailscale", "destination": "/docs/tools/tailscale"},
+		{"source": "/docs/other/aws", "destination": "/docs/services/aws"},
+		{"source": "/docs/devtools/github","destination": "/docs/services/github"},
+		{"source": "/docs/devtools/github/actions/cheatsheet","destination": "/docs/services/github/actions/cheatsheet"}
+  ]
 }
