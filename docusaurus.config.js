@@ -111,7 +111,7 @@ const config = {
 						label: '📦 Ресурсы',
 						position: 'left',
 						items: [
-							{label: '🧠 База знаний', type: 'doc', docId: 'intro'},
+							{label: '🧠 База знаний', type: 'doc', docId: 'root'},
 							{label: '👤 Обо мне', to: 'about'},
 							{label: '✈️ TG Боты', to: 'docs/telegram/bots'},
 						],

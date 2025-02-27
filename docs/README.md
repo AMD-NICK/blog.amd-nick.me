@@ -1,5 +1,6 @@
 ---
 slug: /
+id: root
 sidebar_position: 1
 ---
 

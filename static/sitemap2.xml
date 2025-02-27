@@ -71,11 +71,6 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://blog.amd-nick.me/docs/devtools/github/actions/cheatsheet</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
         <loc>https://blog.amd-nick.me/docs/garrysmod/</loc>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
