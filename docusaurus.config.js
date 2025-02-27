@@ -53,7 +53,6 @@ const config = {
 
 				blog: {
 					routeBasePath: '/',
-					showReadingTime: true,
 					blogSidebarCount: 'ALL',
 					blogSidebarTitle: 'Другие посты',
 					// Remove this to remove the "edit this page" links.
@@ -61,6 +60,11 @@ const config = {
 					// processBlogPosts: async ({blogPosts}) => {
 					// 	console.log("[Docusaurus config] processBlogPosts blogPosts", blogPosts)
 					// }
+				},
+
+				sitemap: {
+					lastmod: 'date',
+					ignorePatterns: ['/tags/**', '/page/**'],
 				},
 
 				theme: {
