@@ -9,6 +9,7 @@ const config = {
 	title: 'Блог _AMD_',
 	favicon: 'img/favicon.ico',
 	// tagline: 'Всякое гиковское',
+	trailingSlash: false, // если README.md в доках внутри папки, то создается / в конце url. Отвратительно
 	url: 'https://blog.amd-nick.me',
 	baseUrl: '/',
 
