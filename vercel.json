@@ -12,6 +12,7 @@
 		{"source": "/docs/other/vpn/tailscale", "destination": "/docs/tools/tailscale"},
 		{"source": "/docs/other/aws", "destination": "/docs/services/aws"},
 		{"source": "/docs/devtools/github","destination": "/docs/services/github"},
-		{"source": "/docs/devtools/github/actions/cheatsheet","destination": "/docs/services/github/actions/cheatsheet"}
+		{"source": "/docs/devtools/github/actions/cheatsheet","destination": "/docs/services/github/actions/cheatsheet"},
+		{"source": "/docs/tangibles","destination": "/docs/other/things"}
   ]
 }
