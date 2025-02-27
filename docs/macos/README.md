@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # 💻 MacOS
 
 :::info
@@ -34,3 +38,7 @@ Mac на M1 это экстремально легкий, компактный �
 
 - [My MacOS by Nikita Voloboev](https://github.com/nikitavoloboev/my-mac-os) – Mac самого продуктивного человека, которого я знаю
 - [mac-setup](https://github.com/sb2nov/mac-setup) - настройка мака для разработчиков. Как по мне, то "ну такое"
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

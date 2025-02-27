@@ -1,6 +1,6 @@
 # Docker
 
-![docker banner](https://i.imgur.com/WpRwAhO.png)
+![](https://i.imgur.com/WpRwAhO.png)
 
 ## 🤔 Зачем он лично мне
 

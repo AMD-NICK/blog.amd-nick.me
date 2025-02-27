@@ -35,6 +35,26 @@
 - `Opt + T` Telegram
 - `Opt + V` VSCode
 
+## Плагины (extensions)
+
+### [Image Modification](https://www.raycast.com/HelloImSteven/sips)
+
+Изменение изображений прямо в Raycast. Изменения размера, скейлинг, оптимизация и т.д.
+
+![](raycast-extension-image-modification.png)
+
+### [kill process](https://www.raycast.com/rolandleth/kill-process)
+
+Быстрый поиск и убийство процессов. Есть сортировка по CPU/памяти
+
+![](raycast-extension-kill-process.png)
+
+### [Visual Studio Code](https://www.raycast.com/thomas/visual-studio-code)
+
+Использую исключительно ради хоткея для Search Recent Projects в Cursor.
+
+![](raycast-extension-vscode.png)
+
 ## Прочие полезности
 
 - Использую расширение Authy для генерации 2FA кодов в "2 клика"

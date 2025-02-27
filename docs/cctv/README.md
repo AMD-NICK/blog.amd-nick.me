@@ -1,3 +1,7 @@
+---
+sidebar_position: 9
+---
+
 # 📸 Видеонаблюдение
 
 У меня на даче несколько раз лазили воры. Для базовой безопасности решил установить 1 камеру, но я сильно увлекся и сейчас у меня 6 камер (Dahua) [IMOU Bullet Lite 4MP](https://www.imoulife.com/product/detail/BulletLite4MP) с искусственным интеллектом и плюшками.
@@ -23,6 +27,10 @@
 
 - https://securitycamcenter.com/technical/dahua-technical-guides/
 - https://ipcamtalk.com/forums/ (sighthound нашел тут. Раздел Camera Software)
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />
 
 
 <!--
