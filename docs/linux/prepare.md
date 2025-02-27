@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Подготовка хоста
 
 Страница [часто](https://github.com/AMD-NICK/blog.amd-nick.me/commits/main/docs/linux/prepare.md) обновляется. Чаще всего использую Ubuntu 22.04 и 24.04.
