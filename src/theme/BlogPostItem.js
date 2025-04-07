@@ -23,6 +23,7 @@ export default function BlogPostItemWrapper(props) {
 					repoId="R_kgDOHVBfKA"
 					category="Blog comments"
 					categoryId="DIC_kwDOHVBfKM4CRnM9"
+					strict="1"
 					mapping="pathname"
 					reactionsEnabled="1"
 					emitMetadata="0"

@@ -16,7 +16,7 @@ sidebar_position: 1
 Рекомендую попробовать использовать поиск по сайту через `Ctrl + K` (cmd + k на mac)
 :::
 
-![Crew Dragon Launch](https://i.imgur.com/5mJhId8.png)
+![](amd-headed-person.png)
 
 _Запуск Crew Dragon от SpaceX_
 

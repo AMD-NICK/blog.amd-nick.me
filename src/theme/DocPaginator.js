@@ -23,6 +23,7 @@ export default function DocPaginatorWrapper(props) {
 					repoId="R_kgDOHVBfKA"
 					category="Docs comments"
 					categoryId="DIC_kwDOHVBfKM4CRnJe"
+					strict="1"
 					mapping="pathname"
 					reactionsEnabled="1"
 					emitMetadata="0"
